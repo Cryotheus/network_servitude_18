@@ -1,17 +1,17 @@
-disabled_initial_spawns = [
+var disabled_initial_spawns = [
 	//'enigmaticlegacy:cursed_ring',
 	//'enigmaticlegacy:enigmatic_amulet'
 	//'patchouli:guide_book',
 	//'tconstruct:materials_and_you'
 ]
 
-disabled_count = disabled_initial_spawns.length
-standard_issue_nbt = '{display:{Lore:["{\\"text\\":\\"§7Standard issue for Network Serfs§r\\"}"]}}'
+var disabled_count = disabled_initial_spawns.length
+var standard_issue_nbt = '{display:{Lore:["{\\"text\\":\\"§7Standard issue for Network Serfs§r\\"}"]}}'
 
 function color_random() {return Math.floor(Math.random() * 16777215)}
 
 function grant_items(player) {
-	inventory = player.inventory
+	var inventory = player.inventory
 	
 	//player.setLegsArmorItem(Item.of('environmental:yak_pants', '{Unbreakable:1,Enchantments:[{id:"cyclic:traveler",lvl:1}],"quark:RuneAttached":1,"quark:RuneColor":{Count:1,id:"quark:blank_rune"},display:{Name:"{\\"text\\":\\"§fSerious Slacks§r\\"}",Lore:["{\\"text\\":\\"§7Standard issue for Network Serfs§r\\"}","{\\"text\\":\\"§7Although they are called \\\\\\"Slacks\\\\\\" please do not do so§r\\"}"]}}'))
 	player.setOffHandItem(Item.of('minecraft:shield', '{Enchantments:[{id:"unbreaking",lvl:1}],"quark:RuneAttached":1,"quark:RuneColor":{Count:1,id:"quark:blank_rune"},display:{Name:"{\\"text\\":\\"§fWorker Rights§r\\"}",Lore:["{\\"text\\":\\"§7Standard issue for Network Serfs§r\\"}"]}}'))
@@ -31,14 +31,14 @@ function grant_items(player) {
 }
 
 function remove_items(player) {
-	march = 0
-	inventory = player.inventory
-	stages = player.stages
-	stage_tracker = {}
+	var march = 0
+	var inventory = player.inventory
+	var stages = player.stages
+	var stage_tracker = {}
 	
 	disabled_initial_spawns.forEach(id => {
-		slot = inventory.find(Item.of(id).ignoreNBT())
-		stage_id = 'network_servitude_initial_removals_' + id
+		var slot = inventory.find(Item.of(id).ignoreNBT())
+		var stage_id = 'network_servitude_initial_removals_' + id
 		
 		if (stages.has(stage_id) && !stage_tracker[stage_id])
 		{
@@ -46,7 +46,7 @@ function remove_items(player) {
 			stage_tracker[stage_id] = true
 		}
 		else if (slot > -1) {
-			item = inventory.get(slot)
+			var item = inventory.get(slot)
 			
 			inventory.clear(item)
 			
@@ -64,14 +64,14 @@ function remove_items(player) {
 }
 
 onEvent('ftbquests.completed.initial_items', event => {
-	player = event.player
+	var player = event.player
 	
 	if (player) {grant_items(player)}
 })
 
 onEvent('ftbquests.completed.initial_items_removal', event => {
-	player = event.player
-	stages = player.stages
+	var player = event.player
+	var stages = player.stages
 	
 	if (player) {
 		//disabled_initial_spawns.forEach(id => {stages.remove("network_servitude_initial_removals_" + id)})
@@ -82,8 +82,8 @@ onEvent('ftbquests.completed.initial_items_removal', event => {
 })
 
 onEvent('player.inventory.changed', event => {
-	player = event.player
-	stages = player.stages
+	var player = event.player
+	var stages = player.stages
 	
 	if (stages.has("network_servitude_initial_items") && !stages.has("network_servitude_initial_removals")) {
 		remove_items(player)
@@ -92,8 +92,8 @@ onEvent('player.inventory.changed', event => {
 
 onEvent("player.logged_in", event => {
 	if (!event.player.stages.has("network_servitude_initial_items")) {
-		player = event.player
-		stages = player.stages
+		var player = event.player
+		var stages = player.stages
 		
 		grant_items(player)
 		
