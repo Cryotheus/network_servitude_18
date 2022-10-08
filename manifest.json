@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Network Servitude 18",
-  "version": "0.0.-1",
+  "version": "0.0.0",
   "author": "",
   "files": [
     {
@@ -341,7 +341,7 @@
     },
     {
       "projectID": 220318,
-      "fileID": 3759236,
+      "fileID": 3827434,
       "required": true
     },
     {
@@ -450,6 +450,11 @@
       "required": true
     },
     {
+      "projectID": 676136,
+      "fileID": 4022111,
+      "required": true
+    },
+    {
       "projectID": 412525,
       "fileID": 3829113,
       "required": true
@@ -482,7 +487,7 @@
     {
       "projectID": 308663,
       "fileID": 3968048,
-      "required": false
+      "required": true
     },
     {
       "projectID": 248353,
@@ -581,7 +586,7 @@
     },
     {
       "projectID": 309858,
-      "fileID": 3712899,
+      "fileID": 3906364,
       "required": true
     },
     {
@@ -607,7 +612,7 @@
     {
       "projectID": 232791,
       "fileID": 3965743,
-      "required": true
+      "required": false
     },
     {
       "projectID": 445025,
@@ -826,7 +831,7 @@
     },
     {
       "projectID": 266515,
-      "fileID": 3848558,
+      "fileID": 3957263,
       "required": true
     },
     {
@@ -922,7 +927,7 @@
     {
       "projectID": 574856,
       "fileID": 3929515,
-      "required": false
+      "required": true
     },
     {
       "projectID": 577096,
@@ -1066,7 +1071,7 @@
     },
     {
       "projectID": 248787,
-      "fileID": 3927564,
+      "fileID": 3686482,
       "required": true
     },
     {
@@ -1156,7 +1161,7 @@
     },
     {
       "projectID": 596224,
-      "fileID": 3783158,
+      "fileID": 3812301,
       "required": true
     },
     {
@@ -1232,7 +1237,7 @@
     {
       "projectID": 242195,
       "fileID": 3830309,
-      "required": false
+      "required": true
     },
     {
       "projectID": 256717,
@@ -1372,7 +1377,7 @@
     {
       "projectID": 551736,
       "fileID": 3817266,
-      "required": false
+      "required": true
     },
     {
       "projectID": 622112,
