@@ -1,0 +1,60 @@
+type = menu
+
+customization-meta {
+  identifier = com.mrcrayfish.catalogue.client.screen.CatalogueModListScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = bottom-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  label = Back (Menu)
+  vr:showif:worldloaded = false
+  loopbackgroundanimations = true
+  x = 10
+  width = 127
+  actionid = 10297153-3c1a-4fb8-8eaf-76ae90ac08e31665272574952
+  action = addbutton
+  y = -27
+  value = 
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = opengui
+  label = Back (Game)
+  vr:showif:worldloaded = true
+  loopbackgroundanimations = true
+  x = 10
+  width = 127
+  actionid = a940791f-6385-4ad0-87b1-6a6b3a384ab21665272615009
+  action = addbutton
+  y = 310
+  value = net.minecraft.client.gui.screens.PauseScreen
+  height = 20
+}
+
+customization {
+  identifier = %id=140973%
+  orientation = bottom-left
+  x = 141
+  action = movebutton
+  y = -27
+}
+
+customization {
+  identifier = %id=10973%
+  action = hidebutton
+}
+

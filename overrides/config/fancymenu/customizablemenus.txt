@@ -1,0 +1,20 @@
+type = customizablemenus
+
+net.minecraft.client.gui.screens.TitleScreen {
+}
+
+net.minecraft.client.gui.screens.LevelLoadingScreen {
+}
+
+net.minecraft.client.gui.screens.ConnectScreen {
+}
+
+net.minecraft.client.gui.screens.OnlineOptionsScreen {
+}
+
+net.minecraft.client.gui.screens.PauseScreen {
+}
+
+com.mrcrayfish.catalogue.client.screen.CatalogueModListScreen {
+}
+

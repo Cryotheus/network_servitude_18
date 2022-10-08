@@ -1,0 +1,149 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.PauseScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_feedback_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=606330%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=606330%
+  orientation = bottom-left
+  x = 618
+  action = movebutton
+  y = -23
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_report_bugs_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=374330%
+  action = hidebutton
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = opengui
+  x = -102
+  width = 101
+  actionid = ba0e25f1-ff88-4cac-aafa-900b03bbb1491665271401651
+  action = addbutton
+  y = -28
+  label = Mods
+  value = com.mrcrayfish.catalogue.client.screen.CatalogueModListScreen
+  height = 20
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  x = 1
+  width = 101
+  actionid = 38ef18d4-c554-41e3-b124-fe9c285315271665271954636
+  action = addbutton
+  y = -28
+  label = Report Bugs
+  value = https://github.com/Cryotheus/network_servitude_18/issues
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  orientation = mid-centered
+  x = -102
+  action = movebutton
+  y = -50
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  width = 101
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  orientation = mid-centered
+  x = 1
+  action = movebutton
+  y = -6
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  width = 101
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
+  orientation = mid-centered
+  x = -102
+  action = movebutton
+  y = -72
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
+  orientation = mid-centered
+  x = -102
+  action = movebutton
+  y = 22
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  orientation = mid-centered
+  x = -102
+  action = movebutton
+  y = -6
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  width = 101
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  orientation = mid-centered
+  x = 1
+  action = movebutton
+  y = -50
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  width = 101
+  action = resizebutton
+  height = 20
+}
+
