@@ -109,11 +109,14 @@ def write_json(file_path, object):
 	him.write(json.dumps(object))
 	him.close()
 
+#sets the current working directory to the parent folder of the script
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 for metal in metals:
 	info = metals[metal]
 	path = "processing/" + metal + "/"
+	
+	print("Building metal files " + metal + "...")
 	
 	clean_slurry = info["clean_slurry"]
 	clump = info["clump"]
@@ -126,6 +129,8 @@ for metal in metals:
 	shard = info["shard"]
 	
 	os.makedirs(path + "clump", 0o777, True)
+	os.makedirs(path + "shard", 0o777, True)
+	os.makedirs(path + "slurry/dirty", 0o777, True)
 	os.makedirs(path + "dust", 0o777, True)
 	os.makedirs(path + "ore", 0o777, True)
 	
@@ -139,8 +144,17 @@ for metal in metals:
 		}
 	})
 	
-	#modify the count for raw ore to dust
-	#{"type":"mekanism:enriching","input":{"amount":3,"ingredient":{"tag":"forge:raw_materials/copper"}},"output":{"item":"mekanism:dust_copper","count":4}}
+	#modify the count for the output of raw ore crafts
+	write_json(path + "clump/from_raw_ore.json", {
+		"type": "mekanism:purifying",
+		"itemInput": {"ingredient": {"item": raw_ore}},
+		"chemicalInput": {"amount": 1, "gas": "mekanism:oxygen"},
+		"output": {
+			"item": clump,
+			"count": 3
+		}
+	})
+	
 	write_json(path + "dust/from_raw_ore.json", {
 		"type": "mekanism:enriching",
 		"input": {"ingredient": {"item": raw_ore}},
@@ -150,15 +164,32 @@ for metal in metals:
 		}
 	})
 	
-	#write_json(path + "clump/from_raw_ore.json", {"type":"mekanism:purifying","itemInput":{"ingredient":{"tag":"forge:raw_materials/copper"}},"chemicalInput":{"amount":1,"gas":"mekanism:oxygen"},"output":{"item":"mekanism:clump_copper","count":2}}
-	#
-	write_json(path + "clump/from_raw_ore.json", {
-		"type": "mekanism:purifying",
-		"itemInput": {"ingredient": {"tag": raw_ore}},
-		"chemicalInput": {"amount": 1, "gas": "mekanism:oxygen"},
+	write_json(path + "shard/from_raw_ore.json", {
+		"type": "mekanism:injecting",
+		"itemInput": {"ingredient": {"item": raw_ore}},
+		"chemicalInput": {
+			"amount": 1,
+			"gas": "mekanism:hydrogen_chloride"
+		},
+		
 		"output": {
-			"item": clump,
-			"count": 3
+			"item": shard,
+			"count": 4
+		}
+	})
+	
+	write_json(path + "slurry/dirty/from_raw_ore.json", {
+		"type": "mekanism:dissolution",
+		"itemInput": {"ingredient": {"item": raw_ore}},
+		"gasInput": {
+			"amount": 1,
+			"gas": "mekanism:sulfuric_acid"
+		},
+		
+		"output": {
+			"amount": 1000,
+			"chemicalType": "slurry",
+			"slurry": dirty_slurry
 		}
 	})
 	
@@ -168,3 +199,9 @@ for metal in metals:
 	write_json(path + "dust/from_raw_block.json", ban_recipe)
 	write_json(path + "ore/deepslate_from_raw.json", ban_recipe)
 	write_json(path + "ore/from_raw.json", ban_recipe)
+	write_json(path + "shard/from_ore.json", ban_recipe)
+	write_json(path + "shard/from_raw_block.json", ban_recipe)
+	write_json(path + "slurry/dirty/from_ore.json", ban_recipe)
+	write_json(path + "slurry/dirty/from_raw_block.json", ban_recipe)
+
+print("Completed!")
