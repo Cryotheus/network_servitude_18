@@ -1,6 +1,5 @@
 var disabled_initial_spawns = [
-	'tconstruct:materials_and_you',
-	'byg:biomepedia',
+	//'byg:biomepedia',
 ]
 
 var disabled_count = disabled_initial_spawns.length
@@ -75,18 +74,19 @@ onEvent('ftbquests.completed.initial_items_removal', event => {
 		//disabled_initial_spawns.forEach(id => {stages.remove("network_servitude_initial_removals_" + id)})
 		
 		//stages.remove("network_servitude_initial_removals")
-		remove_items(player)
+		//remove_items(player)
 	}
 })
 
+/*
 onEvent('player.inventory.changed', event => {
 	var player = event.player
 	var stages = player.stages
 	
 	if (stages.has("network_servitude_initial_items") && !stages.has("network_servitude_initial_removals")) {
-		remove_items(player)
+		//remove_items(player)
 	}
-})
+})*/
 
 onEvent("player.logged_in", event => {
 	if (!event.player.stages.has("network_servitude_initial_items")) {
