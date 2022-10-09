@@ -1,9 +1,10 @@
 import json
+import os
 
 ban_recipe = {
 	"type": "crafting_shapeless",
-	"ingredients": [{"item": "minecraft:air"}],
-	"result": {"item": "minecraft:air"}
+	"ingredients": [{"item": "minecraft:barrier"}],
+	"result": {"item": "minecraft:barrier"}
 }
 
 metals = {
@@ -13,8 +14,9 @@ metals = {
 		"crystal": "mekanism:crystal_copper",
 		"dirty_slurry": "mekanism:dirty_copper",
 		"dust": "mekanism:dust_copper",
-		"ingot": "mekanism:ingot_copper",
+		"ingot": "minecraft:copper_ingot",
 		"ore_tag": "forge:ores/copper",
+		"raw_ore": "minecraft:raw_copper",
 		"shard": "mekanism:shard_copper",
 	},
 	
@@ -24,8 +26,9 @@ metals = {
 		"crystal": "mekanism:crystal_gold",
 		"dirty_slurry": "mekanism:dirty_gold",
 		"dust": "mekanism:dust_gold",
-		"ingot": "mekanism:ingot_gold",
+		"ingot": "minecraft:gold_ingot",
 		"ore_tag": "forge:ores/gold",
+		"raw_ore": "minecraft:raw_gold",
 		"shard": "mekanism:shard_gold",
 	},
 	
@@ -35,20 +38,10 @@ metals = {
 		"crystal": "mekanism:crystal_iron",
 		"dirty_slurry": "mekanism:dirty_iron",
 		"dust": "mekanism:dust_iron",
-		"ingot": "mekanism:ingot_iron",
+		"ingot": "minecraft:iron_ingot",
 		"ore_tag": "forge:ores/iron",
+		"raw_ore": "minecraft:raw_iron",
 		"shard": "mekanism:shard_iron",
-	},
-	
-	"coal": {
-		"clean_slurry": "mekanism:clean_coal",
-		"clump": "mekanism:clump_coal",
-		"crystal": "mekanism:crystal_coal",
-		"dirty_slurry": "mekanism:dirty_coal",
-		"dust": "mekanism:dust_coal",
-		"ingot": "mekanism:ingot_coal",
-		"ore_tag": "forge:ores/coal",
-		"shard": "mekanism:shard_coal",
 	},
 	
 	"lead": {
@@ -59,18 +52,8 @@ metals = {
 		"dust": "mekanism:dust_lead",
 		"ingot": "mekanism:ingot_lead",
 		"ore_tag": "forge:ores/lead",
+		"raw_ore": "mekanism:raw_lead",
 		"shard": "mekanism:shard_lead",
-	},
-	
-	"netherite": {
-		"clean_slurry": "mekanism:clean_netherite",
-		"clump": "mekanism:clump_netherite",
-		"crystal": "mekanism:crystal_netherite",
-		"dirty_slurry": "mekanism:dirty_netherite",
-		"dust": "mekanism:dust_netherite",
-		"ingot": "mekanism:ingot_netherite",
-		"ore_tag": "forge:ores/netherite",
-		"shard": "mekanism:shard_netherite",
 	},
 	
 	"osmium": {
@@ -81,6 +64,7 @@ metals = {
 		"dust": "mekanism:dust_osmium",
 		"ingot": "mekanism:ingot_osmium",
 		"ore_tag": "forge:ores/osmium",
+		"raw_ore": "mekanism:raw_osmium",
 		"shard": "mekanism:shard_osmium",
 	},
 	
@@ -92,6 +76,7 @@ metals = {
 		"dust": "mekanism:dust_tin",
 		"ingot": "mekanism:ingot_tin",
 		"ore_tag": "forge:ores/tin",
+		"raw_ore": "mekanism:raw_tin",
 		"shard": "mekanism:shard_tin",
 	},
 	
@@ -103,6 +88,7 @@ metals = {
 		"dust": "mekanism:dust_uranium",
 		"ingot": "mekanism:ingot_uranium",
 		"ore_tag": "forge:ores/uranium",
+		"raw_ore": "mekanism:raw_uranium",
 		"shard": "mekanism:shard_uranium",
 	},
 }
@@ -117,9 +103,11 @@ raws = {
 	"redstone": []
 }
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 #convert ore to raw
 for metal in metals:
-	path = "processing/" + metal + "/dust"
+	path = "processing/" + metal + "/"
 	
 	convert_to_raw = {
 		"type": "mekanism:enriching",
@@ -129,3 +117,10 @@ for metal in metals:
 			"count": 2
 		}
 	}
+	
+	os.makedirs(path + "dust", 0o777, True)
+	
+	dust_from_ore = open(path + "dust/from_ore.json", "w")
+	dust_from_ore.write(json.dumps(ban_recipe))
+	dust_from_ore.close()
+	
