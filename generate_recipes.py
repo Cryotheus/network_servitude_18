@@ -1,6 +1,16 @@
 import json
 import os
 
+'''
+Generates similar recipes so we don't have to write them by hand.
+Currently creates recipes for ore unification and bans some items that are useless to the pack.
+
+Currently affects:
+- Extended Crafting
+- JAOPCA
+- Mekanism
+'''
+
 data_path = "overrides/kubejs/data/"
 extended_crafting_path = data_path + "extendedcrafting/recipes/"
 kubejs_path = data_path + "kubejs/recipes/"
