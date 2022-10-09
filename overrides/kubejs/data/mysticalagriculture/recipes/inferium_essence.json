@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:bone_meal"
+        },
+        {
+            "tag": "minecraft:flowers"
+        }
+    ],
+    "result": {
+        "item": "mysticalagriculture:inferium_essence",
+        "count": 2
+    }
+}
