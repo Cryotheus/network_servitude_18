@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": ["abc"],
+	
+	"key": {
+		"a": {"tag": "ae2:all_nether_quartz"},
+		"b": {"tag": "forge:dusts/fluix"},
+		"c": {"item": "ae2:logic_processor"}
+	},
+	
+	"result": {
+		"item": "ae2:annihilation_core",
+		"count": 8
+	}
+}
