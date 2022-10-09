@@ -1,11 +1,11 @@
 import json
 import os
 
-ban_recipe = {
+ban_recipe = json.dumps({
 	"type": "crafting_shapeless",
 	"ingredients": [{"item": "minecraft:barrier"}],
 	"result": {"item": "minecraft:barrier"}
-}
+})
 
 metals = {
 	"copper": {
@@ -103,24 +103,68 @@ raws = {
 	"redstone": []
 }
 
+#simple function for the sole purpose of writing a json file
+def write_json(file_path, object):
+	him = open(file_path, "w")
+	him.write(json.dumps(object))
+	him.close()
+
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-#convert ore to raw
 for metal in metals:
+	info = metals[metal]
 	path = "processing/" + metal + "/"
 	
-	convert_to_raw = {
+	clean_slurry = info["clean_slurry"]
+	clump = info["clump"]
+	crystal = info["crystal"]
+	dirty_slurry = info["dirty_slurry"]
+	dust = info["dust"]
+	ingot = info["ingot"]
+	ore_tag = info["ore_tag"]
+	raw_ore = info["raw_ore"]
+	shard = info["shard"]
+	
+	os.makedirs(path + "clump", 0o777, True)
+	os.makedirs(path + "dust", 0o777, True)
+	os.makedirs(path + "ore", 0o777, True)
+	
+	#replace recipe for ore to dust with ore to raw ore
+	write_json(path + "dust/from_ore.json", {
 		"type": "mekanism:enriching",
-		"input": {"ingredient": {"tag": "forge:ores/" + metal}},
+		"input": {"ingredient": {"tag": ore_tag}},
 		"output": {
-			"item": "mekanism:dust_copper",
+			"item": raw_ore,
 			"count": 2
 		}
-	}
+	})
 	
-	os.makedirs(path + "dust", 0o777, True)
+	#modify the count for raw ore to dust
+	#{"type":"mekanism:enriching","input":{"amount":3,"ingredient":{"tag":"forge:raw_materials/copper"}},"output":{"item":"mekanism:dust_copper","count":4}}
+	write_json(path + "dust/from_raw_ore.json", {
+		"type": "mekanism:enriching",
+		"input": {"ingredient": {"item": raw_ore}},
+		"output": {
+			"item": info["dust"],
+			"count": 4
+		}
+	})
 	
-	dust_from_ore = open(path + "dust/from_ore.json", "w")
-	dust_from_ore.write(json.dumps(ban_recipe))
-	dust_from_ore.close()
+	#write_json(path + "clump/from_raw_ore.json", {"type":"mekanism:purifying","itemInput":{"ingredient":{"tag":"forge:raw_materials/copper"}},"chemicalInput":{"amount":1,"gas":"mekanism:oxygen"},"output":{"item":"mekanism:clump_copper","count":2}}
+	#
+	write_json(path + "clump/from_raw_ore.json", {
+		"type": "mekanism:purifying",
+		"itemInput": {"ingredient": {"tag": raw_ore}},
+		"chemicalInput": {"amount": 1, "gas": "mekanism:oxygen"},
+		"output": {
+			"item": clump,
+			"count": 3
+		}
+	})
 	
+	#ban these recipes
+	write_json(path + "clump/from_ore.json", ban_recipe)
+	write_json(path + "clump/from_raw_block.json", ban_recipe)
+	write_json(path + "dust/from_raw_block.json", ban_recipe)
+	write_json(path + "ore/deepslate_from_raw.json", ban_recipe)
+	write_json(path + "ore/from_raw.json", ban_recipe)
