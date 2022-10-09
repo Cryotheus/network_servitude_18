@@ -1,1 +1,0 @@
-{"type": "mekanism:dissolution", "itemInput": {"ingredient": {"item": "minecraft:raw_copper"}}, "gasInput": {"amount": 1, "gas": "mekanism:sulfuric_acid"}, "output": {"amount": 1000, "chemicalType": "slurry", "slurry": "mekanism:dirty_copper"}}

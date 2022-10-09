@@ -1,15 +1,14 @@
 import json
 import os
 
-data_path = "overrides/kubejs/"
+data_path = "overrides/kubejs/data/"
 mekanism_path = data_path + "mekanism/recipes/"
 
-
-ban_recipe = json.dumps({
+ban_recipe = json.dump({
 	"type": "crafting_shapeless",
 	"ingredients": [{"item": "minecraft:barrier"}],
 	"result": {"item": "minecraft:barrier"}
-})
+}, separators=(',', ':'))
 
 metals = {
 	"copper": {
@@ -110,7 +109,8 @@ raws = {
 #simple function for the sole purpose of writing a json file
 def write_json(file_path, object):
 	recipe = open(file_path, "w")
-	recipe.write(json.dumps(object))
+	
+	recipe.write(json.dump(object, separators=(',', ':')))
 	recipe.close()
 
 #sets the current working directory to the parent folder of the script
