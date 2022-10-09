@@ -203,7 +203,7 @@ key_quark.keybind.lock_rotation:key.keyboard.k:NONE
 key_quark.keybind.transfer_insert:key.keyboard.unknown:NONE
 key_quark.keybind.transfer_extract:key.keyboard.unknown:NONE
 key_quark.keybind.shift_lock:key.keyboard.unknown:NONE
-key_quark.keybind.change_hotbar:key.keyboard.b:NONE
+key_quark.keybind.change_hotbar:key.unknown:NONE
 key_quark.keybind.sort_player:key.keyboard.unknown:NONE
 key_quark.keybind.sort_container:key.mouse.middle
 key_quark.keybind.back:key.mouse.4:NONE
