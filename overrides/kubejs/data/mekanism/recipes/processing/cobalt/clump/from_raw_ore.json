@@ -1,0 +1,1 @@
+{"type":"mekanism:purifying","itemInput":{"ingredient":{"item":"tconstruct:raw_cobalt"}},"chemicalInput":{"amount":1,"gas":"mekanism:oxygen"},"output":{"item":"jaopca:mekanism_clumps.cobalt","count":3}}

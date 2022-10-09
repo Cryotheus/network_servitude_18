@@ -2,6 +2,7 @@ import json
 import os
 
 data_path = "overrides/kubejs/data/"
+kubejs_path = data_path + "kubejs/recipes/"
 mekanism_path = data_path + "mekanism/recipes/"
 
 ban_recipe = {
@@ -11,6 +12,20 @@ ban_recipe = {
 }
 
 metals = {
+	"cobalt": {
+		"clean_slurry": "jaopca:mekanism_clean.cobalt",
+		"clump": "jaopca:mekanism_clumps.cobalt",
+		"crystal": "jaopca:mekanism_crystals.cobalt",
+		"dirty_slurry": "jaopca:mekanism_dirty.cobalt",
+		"dust": "jaopca:mekanism_dusts.cobalt",
+		"ingot": "tconstruct:cobalt_ingot",
+		"ore_tag": "forge:ores/cobalt",
+		"raw_ore": "tconstruct:raw_cobalt",
+		"shard": "jaopca:mekanism_shards.cobalt",
+		
+		"write_kubejs": True
+	},
+	
 	"copper": {
 		"clean_slurry": "mekanism:clean_copper",
 		"clump": "mekanism:clump_copper",
@@ -59,6 +74,20 @@ metals = {
 		"shard": "mekanism:shard_lead",
 	},
 	
+	"nickel": {
+		"clean_slurry": "jaopca:mekanism_clean.nickel",
+		"clump": "jaopca:mekanism_clumps.nickel",
+		"crystal": "jaopca:mekanism_crystals.nickel",
+		"dirty_slurry": "jaopca:mekanism_dirty.nickel",
+		"dust": "thermal:nickel_dust",
+		"ingot": "thermal:nickel_ingot",
+		"ore_tag": "forge:ores/nickel",
+		"raw_ore": "thermal:raw_nickel",
+		"shard": "jaopca:mekanism_shards.nickel",
+		
+		"write_kubejs": True
+	},
+	
 	"osmium": {
 		"clean_slurry": "mekanism:clean_osmium",
 		"clump": "mekanism:clump_osmium",
@@ -69,6 +98,20 @@ metals = {
 		"ore_tag": "forge:ores/osmium",
 		"raw_ore": "mekanism:raw_osmium",
 		"shard": "mekanism:shard_osmium",
+	},
+	
+	"silver": {
+		"clean_slurry": "jaopca:mekanism_clean.silver",
+		"clump": "jaopca:mekanism_clumps.silver",
+		"crystal": "jaopca:mekanism_crystals.silver",
+		"dirty_slurry": "jaopca:mekanism_dirty.silver",
+		"dust": "thermal:silver_dust",
+		"ingot": "thermal:silver_ingot",
+		"ore_tag": "forge:ores/silver",
+		"raw_ore": "thermal:raw_silver",
+		"shard": "jaopca:mekanism_shards.silver",
+		
+		"write_kubejs": True
 	},
 	
 	"tin": {
@@ -125,7 +168,10 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 for metal in metals:
 	info = metals[metal]
-	mekanis_processing_path = mekanism_path + "processing/" + metal + "/"
+	processing_path = mekanism_path + "processing/" + metal + "/"
+	
+	#if info.has_key("write_kubejs"): processing_path = kubejs_path + "processing/" + metal + "/"
+	#else: processing_path = mekanism_path + "processing/" + metal + "/"
 	
 	print("Building metal files " + metal + "...")
 	
@@ -139,14 +185,14 @@ for metal in metals:
 	raw_ore = info["raw_ore"]
 	shard = info["shard"]
 	
-	os.makedirs(mekanis_processing_path + "clump", 0o777, True)
-	os.makedirs(mekanis_processing_path + "shard", 0o777, True)
-	os.makedirs(mekanis_processing_path + "slurry/dirty", 0o777, True)
-	os.makedirs(mekanis_processing_path + "dust", 0o777, True)
-	os.makedirs(mekanis_processing_path + "ore", 0o777, True)
+	os.makedirs(processing_path + "clump", 0o777, True)
+	os.makedirs(processing_path + "shard", 0o777, True)
+	os.makedirs(processing_path + "slurry/dirty", 0o777, True)
+	os.makedirs(processing_path + "dust", 0o777, True)
+	os.makedirs(processing_path + "ore", 0o777, True)
 	
 	#replace recipe for ore to dust with ore to raw ore
-	write_json(mekanis_processing_path + "dust/from_ore.json", {
+	write_json(processing_path + "dust/from_ore.json", {
 		"type": "mekanism:enriching",
 		"input": {"ingredient": {"tag": ore_tag}},
 		"output": {
@@ -156,7 +202,7 @@ for metal in metals:
 	})
 	
 	#modify the count for the output of raw ore crafts
-	write_json(mekanis_processing_path + "clump/from_raw_ore.json", {
+	write_json(processing_path + "clump/from_raw_ore.json", {
 		"type": "mekanism:purifying",
 		"itemInput": {"ingredient": {"item": raw_ore}},
 		"chemicalInput": {"amount": 1, "gas": "mekanism:oxygen"},
@@ -166,7 +212,7 @@ for metal in metals:
 		}
 	})
 	
-	write_json(mekanis_processing_path + "dust/from_raw_ore.json", {
+	write_json(processing_path + "dust/from_raw_ore.json", {
 		"type": "mekanism:enriching",
 		"input": {"ingredient": {"item": raw_ore}},
 		"output": {
@@ -175,7 +221,7 @@ for metal in metals:
 		}
 	})
 	
-	write_json(mekanis_processing_path + "shard/from_raw_ore.json", {
+	write_json(processing_path + "shard/from_raw_ore.json", {
 		"type": "mekanism:injecting",
 		"itemInput": {"ingredient": {"item": raw_ore}},
 		"chemicalInput": {
@@ -189,7 +235,7 @@ for metal in metals:
 		}
 	})
 	
-	write_json(mekanis_processing_path + "slurry/dirty/from_raw_ore.json", {
+	write_json(processing_path + "slurry/dirty/from_raw_ore.json", {
 		"type": "mekanism:dissolution",
 		"itemInput": {"ingredient": {"item": raw_ore}},
 		"gasInput": {
@@ -205,14 +251,14 @@ for metal in metals:
 	})
 	
 	#ban these recipes
-	write_ban(mekanis_processing_path + "clump/from_ore.json")
-	write_ban(mekanis_processing_path + "clump/from_raw_block.json")
-	write_ban(mekanis_processing_path + "dust/from_raw_block.json")
-	write_ban(mekanis_processing_path + "ore/deepslate_from_raw.json")
-	write_ban(mekanis_processing_path + "ore/from_raw.json")
-	write_ban(mekanis_processing_path + "shard/from_ore.json")
-	write_ban(mekanis_processing_path + "shard/from_raw_block.json")
-	write_ban(mekanis_processing_path + "slurry/dirty/from_ore.json")
-	write_ban(mekanis_processing_path + "slurry/dirty/from_raw_block.json")
+	write_ban(processing_path + "clump/from_ore.json")
+	write_ban(processing_path + "clump/from_raw_block.json")
+	write_ban(processing_path + "dust/from_raw_block.json")
+	write_ban(processing_path + "ore/deepslate_from_raw.json")
+	write_ban(processing_path + "ore/from_raw.json")
+	write_ban(processing_path + "shard/from_ore.json")
+	write_ban(processing_path + "shard/from_raw_block.json")
+	write_ban(processing_path + "slurry/dirty/from_ore.json")
+	write_ban(processing_path + "slurry/dirty/from_raw_block.json")
 
 print("Completed!")

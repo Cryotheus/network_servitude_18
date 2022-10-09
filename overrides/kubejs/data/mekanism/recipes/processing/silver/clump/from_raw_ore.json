@@ -1,0 +1,1 @@
+{"type":"mekanism:purifying","itemInput":{"ingredient":{"item":"thermal:raw_silver"}},"chemicalInput":{"amount":1,"gas":"mekanism:oxygen"},"output":{"item":"jaopca:mekanism_clumps.silver","count":3}}

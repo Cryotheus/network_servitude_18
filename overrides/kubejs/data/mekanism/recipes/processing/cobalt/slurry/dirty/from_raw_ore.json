@@ -1,0 +1,1 @@
+{"type":"mekanism:dissolution","itemInput":{"ingredient":{"item":"tconstruct:raw_cobalt"}},"gasInput":{"amount":1,"gas":"mekanism:sulfuric_acid"},"output":{"amount":1000,"chemicalType":"slurry","slurry":"jaopca:mekanism_dirty.cobalt"}}

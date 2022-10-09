@@ -1,0 +1,1 @@
+{"type":"mekanism:injecting","itemInput":{"ingredient":{"item":"tconstruct:raw_cobalt"}},"chemicalInput":{"amount":1,"gas":"mekanism:hydrogen_chloride"},"output":{"item":"jaopca:mekanism_shards.cobalt","count":4}}
