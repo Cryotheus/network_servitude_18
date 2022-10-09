@@ -1,0 +1,25 @@
+{
+	"type": "crafting_shaped",
+	
+	"conditions": [
+		{
+			"type": "cucumber:enabled",
+			"item": "extendedcrafting:compressor"
+		}
+	],
+	
+	"pattern": [
+		"CEC",
+		"EIE",
+		"CSC"
+	],
+	
+	"key": {
+		"C": {"item": "extendedcrafting:black_iron_ingot"},
+		"E": {"tag": "forge:gems/emerald"},
+		"I": {"item": "extendedcrafting:frame"},
+		"S": {"item": "extendedcrafting:black_iron_slate"}
+	},
+	
+	"result": {"item": "extendedcrafting:compressor"}
+}

@@ -2,6 +2,7 @@ import json
 import os
 
 data_path = "overrides/kubejs/data/"
+extended_crafting_path = data_path + "extendedcrafting/recipes/"
 kubejs_path = data_path + "kubejs/recipes/"
 mekanism_path = data_path + "mekanism/recipes/"
 
@@ -10,6 +11,8 @@ ban_recipe = {
 	"ingredients": [{"item": "minecraft:barrier"}],
 	"result": {"item": "minecraft:barrier"}
 }
+
+extended_crafting_tiers = ["advanced", "basic", "elite"]
 
 metals = {
 	"cobalt": {
@@ -165,8 +168,9 @@ def write_json(file_path, object):
 
 #sets the current working directory to the parent folder of the script
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
+os.makedirs("extended_crafting_path", 0o777, True)
 
-for metal in metals:
+for metal in metals: #Mekanism and JAOPCA
 	info = metals[metal]
 	processing_path = mekanism_path + "processing/" + metal + "/"
 	
@@ -260,5 +264,15 @@ for metal in metals:
 	write_ban(processing_path + "shard/from_raw_block.json")
 	write_ban(processing_path + "slurry/dirty/from_ore.json")
 	write_ban(processing_path + "slurry/dirty/from_raw_block.json")
+
+for tier in extended_crafting_tiers: #Extended Crafting
+	tier_path = extended_crafting_path + tier
+	
+	print("Building Extended Crafting tier files " + tier + "...")
+	
+	write_ban(tier_path + "_auto_table.json")
+	write_ban(tier_path + "_catalyst.json")
+	write_ban(tier_path + "_component.json")
+	write_ban(tier_path + "_table.json")
 
 print("Completed!")
