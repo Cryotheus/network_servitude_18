@@ -4,11 +4,11 @@ import os
 data_path = "overrides/kubejs/data/"
 mekanism_path = data_path + "mekanism/recipes/"
 
-ban_recipe = json.dump({
+ban_recipe = {
 	"type": "crafting_shapeless",
 	"ingredients": [{"item": "minecraft:barrier"}],
 	"result": {"item": "minecraft:barrier"}
-}, separators=(',', ':'))
+}
 
 metals = {
 	"copper": {
@@ -106,11 +106,18 @@ raws = {
 	"redstone": []
 }
 
+#simple function for the sole purpose of writing ban_recipe to a json file
+def write_ban(file_path):
+	recipe = open(file_path, "w")
+	
+	json.dump(ban_recipe, recipe, separators=(',', ':'))
+	recipe.close()
+
 #simple function for the sole purpose of writing a json file
 def write_json(file_path, object):
 	recipe = open(file_path, "w")
 	
-	recipe.write(json.dump(object, separators=(',', ':')))
+	json.dump(object, recipe, separators=(',', ':'))
 	recipe.close()
 
 #sets the current working directory to the parent folder of the script
@@ -198,14 +205,14 @@ for metal in metals:
 	})
 	
 	#ban these recipes
-	write_json(mekanis_processing_path + "clump/from_ore.json", ban_recipe)
-	write_json(mekanis_processing_path + "clump/from_raw_block.json", ban_recipe)
-	write_json(mekanis_processing_path + "dust/from_raw_block.json", ban_recipe)
-	write_json(mekanis_processing_path + "ore/deepslate_from_raw.json", ban_recipe)
-	write_json(mekanis_processing_path + "ore/from_raw.json", ban_recipe)
-	write_json(mekanis_processing_path + "shard/from_ore.json", ban_recipe)
-	write_json(mekanis_processing_path + "shard/from_raw_block.json", ban_recipe)
-	write_json(mekanis_processing_path + "slurry/dirty/from_ore.json", ban_recipe)
-	write_json(mekanis_processing_path + "slurry/dirty/from_raw_block.json", ban_recipe)
+	write_ban(mekanis_processing_path + "clump/from_ore.json")
+	write_ban(mekanis_processing_path + "clump/from_raw_block.json")
+	write_ban(mekanis_processing_path + "dust/from_raw_block.json")
+	write_ban(mekanis_processing_path + "ore/deepslate_from_raw.json")
+	write_ban(mekanis_processing_path + "ore/from_raw.json")
+	write_ban(mekanis_processing_path + "shard/from_ore.json")
+	write_ban(mekanis_processing_path + "shard/from_raw_block.json")
+	write_ban(mekanis_processing_path + "slurry/dirty/from_ore.json")
+	write_ban(mekanis_processing_path + "slurry/dirty/from_raw_block.json")
 
 print("Completed!")
