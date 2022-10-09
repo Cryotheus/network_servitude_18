@@ -1,8 +1,6 @@
 var disabled_initial_spawns = [
-	//'enigmaticlegacy:cursed_ring',
-	//'enigmaticlegacy:enigmatic_amulet'
-	//'patchouli:guide_book',
-	//'tconstruct:materials_and_you'
+	'tconstruct:materials_and_you',
+	'byg:biomepedia',
 ]
 
 var disabled_count = disabled_initial_spawns.length
