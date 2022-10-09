@@ -16,7 +16,7 @@
             "tag": "forge:gems/emerald"
         },
         "C": {
-            "item": "forge:workbenches"
+            "tag": "forge:workbenches"
         },
         "B": {
             "item": "extendedcrafting:black_iron_ingot"
