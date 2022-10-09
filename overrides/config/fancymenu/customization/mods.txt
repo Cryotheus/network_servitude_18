@@ -14,18 +14,31 @@ customization {
 }
 
 customization {
+  identifier = %id=140973%
+  orientation = bottom-left
+  x = 141
+  action = movebutton
+  y = -27
+}
+
+customization {
+  identifier = %id=10973%
+  action = hidebutton
+}
+
+customization {
   orientation = bottom-left
   restartbackgroundanimations = true
-  buttonaction = openlink
+  buttonaction = opengui
   label = Back (Menu)
   vr:showif:worldloaded = false
   loopbackgroundanimations = true
   x = 10
-  width = 127
+  width = 107
   actionid = 10297153-3c1a-4fb8-8eaf-76ae90ac08e31665272574952
   action = addbutton
   y = -27
-  value = 
+  value = net.minecraft.client.gui.screens.TitleScreen
   height = 20
 }
 
@@ -37,7 +50,7 @@ customization {
   vr:showif:worldloaded = true
   loopbackgroundanimations = true
   x = 10
-  width = 127
+  width = 129
   actionid = a940791f-6385-4ad0-87b1-6a6b3a384ab21665272615009
   action = addbutton
   y = 310
@@ -46,15 +59,18 @@ customization {
 }
 
 customization {
-  identifier = %id=140973%
   orientation = bottom-left
-  x = 141
-  action = movebutton
+  restartbackgroundanimations = true
+  buttonaction = opengui
+  label = q
+  vr:showif:worldloaded = false
+  loopbackgroundanimations = true
+  x = 119
+  width = 20
+  actionid = e583fb9e-833f-46bb-aa36-c3e9ef36866d1665274940791
+  action = addbutton
   y = -27
-}
-
-customization {
-  identifier = %id=10973%
-  action = hidebutton
+  value = vazkii.quark.base.client.config.screen.QuarkConfigHomeScreen
+  height = 20
 }
 
