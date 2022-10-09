@@ -1,6 +1,10 @@
 import json
 import os
 
+data_path = "overrides/kubejs/"
+mekanism_path = data_path + "mekanism/recipes/"
+
+
 ban_recipe = json.dumps({
 	"type": "crafting_shapeless",
 	"ingredients": [{"item": "minecraft:barrier"}],
@@ -105,16 +109,16 @@ raws = {
 
 #simple function for the sole purpose of writing a json file
 def write_json(file_path, object):
-	him = open(file_path, "w")
-	him.write(json.dumps(object))
-	him.close()
+	recipe = open(file_path, "w")
+	recipe.write(json.dumps(object))
+	recipe.close()
 
 #sets the current working directory to the parent folder of the script
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 for metal in metals:
 	info = metals[metal]
-	path = "processing/" + metal + "/"
+	mekanis_processing_path = mekanism_path + "processing/" + metal + "/"
 	
 	print("Building metal files " + metal + "...")
 	
@@ -128,14 +132,14 @@ for metal in metals:
 	raw_ore = info["raw_ore"]
 	shard = info["shard"]
 	
-	os.makedirs(path + "clump", 0o777, True)
-	os.makedirs(path + "shard", 0o777, True)
-	os.makedirs(path + "slurry/dirty", 0o777, True)
-	os.makedirs(path + "dust", 0o777, True)
-	os.makedirs(path + "ore", 0o777, True)
+	os.makedirs(mekanis_processing_path + "clump", 0o777, True)
+	os.makedirs(mekanis_processing_path + "shard", 0o777, True)
+	os.makedirs(mekanis_processing_path + "slurry/dirty", 0o777, True)
+	os.makedirs(mekanis_processing_path + "dust", 0o777, True)
+	os.makedirs(mekanis_processing_path + "ore", 0o777, True)
 	
 	#replace recipe for ore to dust with ore to raw ore
-	write_json(path + "dust/from_ore.json", {
+	write_json(mekanis_processing_path + "dust/from_ore.json", {
 		"type": "mekanism:enriching",
 		"input": {"ingredient": {"tag": ore_tag}},
 		"output": {
@@ -145,7 +149,7 @@ for metal in metals:
 	})
 	
 	#modify the count for the output of raw ore crafts
-	write_json(path + "clump/from_raw_ore.json", {
+	write_json(mekanis_processing_path + "clump/from_raw_ore.json", {
 		"type": "mekanism:purifying",
 		"itemInput": {"ingredient": {"item": raw_ore}},
 		"chemicalInput": {"amount": 1, "gas": "mekanism:oxygen"},
@@ -155,7 +159,7 @@ for metal in metals:
 		}
 	})
 	
-	write_json(path + "dust/from_raw_ore.json", {
+	write_json(mekanis_processing_path + "dust/from_raw_ore.json", {
 		"type": "mekanism:enriching",
 		"input": {"ingredient": {"item": raw_ore}},
 		"output": {
@@ -164,7 +168,7 @@ for metal in metals:
 		}
 	})
 	
-	write_json(path + "shard/from_raw_ore.json", {
+	write_json(mekanis_processing_path + "shard/from_raw_ore.json", {
 		"type": "mekanism:injecting",
 		"itemInput": {"ingredient": {"item": raw_ore}},
 		"chemicalInput": {
@@ -178,7 +182,7 @@ for metal in metals:
 		}
 	})
 	
-	write_json(path + "slurry/dirty/from_raw_ore.json", {
+	write_json(mekanis_processing_path + "slurry/dirty/from_raw_ore.json", {
 		"type": "mekanism:dissolution",
 		"itemInput": {"ingredient": {"item": raw_ore}},
 		"gasInput": {
@@ -194,14 +198,14 @@ for metal in metals:
 	})
 	
 	#ban these recipes
-	write_json(path + "clump/from_ore.json", ban_recipe)
-	write_json(path + "clump/from_raw_block.json", ban_recipe)
-	write_json(path + "dust/from_raw_block.json", ban_recipe)
-	write_json(path + "ore/deepslate_from_raw.json", ban_recipe)
-	write_json(path + "ore/from_raw.json", ban_recipe)
-	write_json(path + "shard/from_ore.json", ban_recipe)
-	write_json(path + "shard/from_raw_block.json", ban_recipe)
-	write_json(path + "slurry/dirty/from_ore.json", ban_recipe)
-	write_json(path + "slurry/dirty/from_raw_block.json", ban_recipe)
+	write_json(mekanis_processing_path + "clump/from_ore.json", ban_recipe)
+	write_json(mekanis_processing_path + "clump/from_raw_block.json", ban_recipe)
+	write_json(mekanis_processing_path + "dust/from_raw_block.json", ban_recipe)
+	write_json(mekanis_processing_path + "ore/deepslate_from_raw.json", ban_recipe)
+	write_json(mekanis_processing_path + "ore/from_raw.json", ban_recipe)
+	write_json(mekanis_processing_path + "shard/from_ore.json", ban_recipe)
+	write_json(mekanis_processing_path + "shard/from_raw_block.json", ban_recipe)
+	write_json(mekanis_processing_path + "slurry/dirty/from_ore.json", ban_recipe)
+	write_json(mekanis_processing_path + "slurry/dirty/from_raw_block.json", ban_recipe)
 
 print("Completed!")
