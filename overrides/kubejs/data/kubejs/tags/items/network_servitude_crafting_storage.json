@@ -1,0 +1,16 @@
+{
+	"replace": false,
+	
+	"values": [
+		"ae2:1k_crafting_storage",
+		"ae2:4k_crafting_storage",
+		"ae2:16k_crafting_storage",
+		"ae2:64k_crafting_storage",
+		"ae2:256k_crafting_storage",
+		"megacells:1m_crafting_storage",
+		"megacells:4m_crafting_storage",
+		"megacells:16m_crafting_storage",
+		"megacells:64m_crafting_storage",
+		"megacells:256m_crafting_storage"
+	]
+}
