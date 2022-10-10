@@ -1,0 +1,8 @@
+{
+	"replace": false,
+	
+	"values": [
+		"#forge:dusts/certus_quartz",
+		"#forge:dusts/quartz"
+	]
+}

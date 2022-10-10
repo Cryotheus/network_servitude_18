@@ -178,7 +178,7 @@ def write_json(file_path, object):
 
 #sets the current working directory to the parent folder of the script
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-os.makedirs("extended_crafting_path", 0o777, True)
+os.makedirs(extended_crafting_path, 0o777, True)
 
 for metal in metals: #Mekanism and JAOPCA
 	info = metals[metal]
