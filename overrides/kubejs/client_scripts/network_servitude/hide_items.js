@@ -17,6 +17,9 @@ onEvent("jei.hide.items", event => {
 	//chisel & bits
 	event.hide(/^chiselsandbits:block_bit/)
 	
+	//cyclic
+	event.hide("cyclic:sleeping_mat")
+	
 	//extendedcrafting
 	event.hide(/^extendedcrafting:advanced/)
 	event.hide(/^extendedcrafting:basic/)
