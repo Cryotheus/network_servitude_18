@@ -54,7 +54,7 @@
 		level4_entries = ["sea_lantern", "heart_of_the_sea", "%Prismarine", "conduit", "nautilus_shell", "kelp", "seagrass", "sea_pickle", "%Coral"]
 		level5_entries = ["$minecraft:small_flowers", "$minecraft:flowers", "$minecraft:leaves", "$minecraft:saplings", "$minecraft:tall_flowers", "%Azalea", "%Dripleaf",
 							"%Vines", "bamboo", "%Root", "%Moss", "%Farmland", "%Blossom", "sugar_cane", "%Mushroom", "%Fern", "%Grass", "%Lily",
-							"telepastries:overworld_cake", "telepastries:twilight_cake"]
+							"telepastries:overworld_cake", "telepastries:twilight_cake", "%Bush"]
 		level6_entries = ["%Skull", "wither_rose", "%Obsidian", "respawn_anchor", "%Soul"]
 		level7_entries = ["iron_door", "iron_trapdoor", "iron_block", "%Anvil", "%Minecart", "%Rail", "hopper", "observer", "dispenser", "dropper", "%Piston", "%Factory",
 							"%Chain"]
