@@ -1,0 +1,854 @@
+{
+	id: "2A53B1BFF8397650"
+	group: ""
+	order_index: 0
+	filename: "our_benefactor"
+	title: "Our Benefactor"
+	icon: "ae2:controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: 7.5d
+		y: -3.5d
+		width: 10.0d
+		height: 10.0d
+		rotation: 0.0d
+		image: "legendarytooltips:textures/gui/tooltip_borders.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "Jesse!"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Where is all starts."
+			description: ["Throw all three together into water."]
+			id: "7197724A4AB64179"
+			tasks: [
+				{
+					id: "32544024067B0EE2"
+					type: "item"
+					title: "Any #forge:gems/certus_quartz"
+					disable_toast: true
+					item: "ae2:charged_certus_quartz_crystal"
+				}
+				{
+					id: "141A464C762F1FAC"
+					type: "item"
+					title: "Any #forge:dusts/redstone"
+					disable_toast: true
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:dusts/redstone"
+						}
+					}
+				}
+				{
+					id: "5C2D208A475D7488"
+					type: "item"
+					title: "Any #forge:gems/quartz"
+					disable_toast: true
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:gems/quartz"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "We Need to Cook!"
+			icon: "ae2:fluix_dust"
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["7197724A4AB64179"]
+			id: "3A0CE8C56581A97E"
+			tasks: [
+				{
+					id: "6C74742E21FB33A7"
+					type: "item"
+					disable_toast: true
+					item: "ae2:fluix_dust"
+				}
+				{
+					id: "71DC2705A29E8927"
+					type: "item"
+					disable_toast: true
+					item: "ae2:fluix_crystal_seed"
+				}
+			]
+		}
+		{
+			title: "Should've Been Blue..."
+			x: -1.0d
+			y: 0.0d
+			dependencies: ["3A0CE8C56581A97E"]
+			id: "43E7137742F7D890"
+			tasks: [{
+				id: "09A7B4302092D95B"
+				type: "item"
+				item: "ae2:fluix_crystal"
+			}]
+		}
+		{
+			title: "Do NOT Inhale"
+			x: -1.0d
+			y: 1.0d
+			subtitle: "These are NOT drugs, Silicosis and Mesothelioma are not a joke."
+			dependencies: ["7197724A4AB64179"]
+			id: "7D4D3BF655831150"
+			tasks: [{
+				id: "360B1198BAC09A0C"
+				type: "item"
+				title: "Any #forge:dusts/quartz"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "ae2:all_quartz_dust"
+					}
+				}
+			}]
+		}
+		{
+			title: "Discounted Cable"
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["7D4D3BF655831150"]
+			id: "3BD92744DD71756F"
+			tasks: [{
+				id: "322CD5B1B5D26365"
+				type: "item"
+				item: "ae2:quartz_fiber"
+			}]
+		}
+		{
+			title: "Fragile \"Cables\""
+			x: -2.0d
+			y: 1.0d
+			subtitle: "Those glass splinters get everywher! In your fingers, eyes, lungs, I even found some in my wife's forearm, and she doesn't even go to work!"
+			dependencies: [
+				"3BD92744DD71756F"
+				"43E7137742F7D890"
+			]
+			id: "7D0B5D7724237015"
+			tasks: [{
+				id: "22E4A82C34B430ED"
+				type: "item"
+				item: "ae2:fluix_glass_cable"
+			}]
+		}
+		{
+			title: "Keep Them Warm!"
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["7D0B5D7724237015"]
+			id: "395B4A00BC7154A5"
+			tasks: [{
+				id: "2AFDFE75C631DE8B"
+				type: "item"
+				item: "ae2:fluix_covered_cable"
+			}]
+		}
+		{
+			title: "Fatten Them Up!"
+			x: -4.0d
+			y: 0.0d
+			dependencies: ["395B4A00BC7154A5"]
+			id: "780942112A4BB5F1"
+			tasks: [{
+				id: "5620B8A37E3797D0"
+				type: "item"
+				item: "ae2:fluix_covered_dense_cable"
+			}]
+		}
+		{
+			title: "Educate Them Well!"
+			x: -5.0d
+			y: -1.0d
+			dependencies: ["780942112A4BB5F1"]
+			id: "5E7F25DE206473F8"
+			tasks: [{
+				id: "56C5014F2542E955"
+				type: "item"
+				item: "ae2:fluix_smart_dense_cable"
+			}]
+		}
+		{
+			title: "Make Them Into Athletes!"
+			x: -4.0d
+			y: -1.0d
+			dependencies: ["395B4A00BC7154A5"]
+			id: "245A02867CD35BD5"
+			tasks: [{
+				id: "1659DF7305BDF4D2"
+				type: "item"
+				item: "ae2:fluix_smart_cable"
+			}]
+		}
+		{
+			title: "Data Center: Origins"
+			x: 0.0d
+			y: 3.0d
+			subtitle: "Legacy SATA support."
+			dependencies: [
+				"7D0B5D7724237015"
+				"6226C69E82FB0819"
+			]
+			id: "56E084F7037171F1"
+			tasks: [{
+				id: "54A9977BD78CDACB"
+				type: "item"
+				item: "ae2:drive"
+			}]
+		}
+		{
+			title: "Do Not Eat"
+			x: -3.0d
+			y: 3.0d
+			subtitle: "Even if it's irresistible."
+			dependencies: ["7D4D3BF655831150"]
+			id: "77EBE4ADDB398754"
+			tasks: [{
+				id: "174BCB67F8B4DDE1"
+				type: "item"
+				disable_toast: true
+				item: "ae2:silicon"
+			}]
+		}
+		{
+			title: "Thermal Nightmare"
+			x: 0.0d
+			y: 5.0d
+			dependencies: [
+				"27E0A6717CC22485"
+				"4F2E0D9BFD9DCE4D"
+			]
+			id: "6226C69E82FB0819"
+			tasks: [{
+				id: "68E6D1657ADD4899"
+				type: "item"
+				item: "ae2:engineering_processor"
+			}]
+		}
+		{
+			title: "Gilded Computing"
+			x: -2.0d
+			y: 5.0d
+			subtitle: "QUARTER BIT!!!"
+			dependencies: [
+				"27E0A6717CC22485"
+				"4F2E0D9BFD9DCE4D"
+			]
+			id: "7246AB15370CAF7B"
+			tasks: [{
+				id: "73459EEE2B4FF66E"
+				type: "item"
+				item: "ae2:logic_processor"
+			}]
+		}
+		{
+			title: "Should've Been a Microphone"
+			x: -2.0d
+			y: 6.0d
+			dependencies: [
+				"27E0A6717CC22485"
+				"4F2E0D9BFD9DCE4D"
+			]
+			id: "2F1D32B693D3DB99"
+			tasks: [{
+				id: "3BA86A3FCB952A08"
+				type: "item"
+				item: "ae2:calculation_processor"
+			}]
+		}
+		{
+			title: "Hydraulic Press Tube"
+			x: -1.0d
+			y: 6.0d
+			id: "27E0A6717CC22485"
+			tasks: [{
+				id: "582E7B06F579A356"
+				type: "item"
+				item: "ae2:inscriber"
+			}]
+		}
+		{
+			title: "Still Not Edible"
+			x: -1.0d
+			y: 5.0d
+			subtitle: "THE, WRIST, GAAAAAAME!!!"
+			dependencies: ["77EBE4ADDB398754"]
+			id: "4F2E0D9BFD9DCE4D"
+			tasks: [{
+				id: "3205C35D90239F19"
+				type: "item"
+				item: "ae2:printed_silicon"
+			}]
+		}
+		{
+			title: "Skynet Online"
+			x: 2.0d
+			y: 3.0d
+			subtitle: "Where it feels like it starts."
+			dependencies: [
+				"43E7137742F7D890"
+				"6226C69E82FB0819"
+			]
+			size: 2.0d
+			id: "6EB47684DF1A1168"
+			tasks: [{
+				id: "507D21D0719B2732"
+				type: "item"
+				item: "ae2:controller"
+			}]
+		}
+		{
+			title: "Take This, Intel!"
+			x: -1.0d
+			y: 7.0d
+			dependencies: [
+				"27E0A6717CC22485"
+				"56BB4984545AE7C5"
+			]
+			id: "56C2B0672AD77541"
+			tasks: [{
+				id: "497C123339931E4E"
+				type: "item"
+				item: "lazierae2:etcher"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			dependencies: ["6226C69E82FB0819"]
+			id: "56BB4984545AE7C5"
+			tasks: [{
+				id: "6EB084574FC6358A"
+				type: "item"
+				item: "lazierae2:infuser"
+			}]
+		}
+		{
+			title: "Internet Proxy!"
+			x: -1.0d
+			y: 4.0d
+			dependencies: ["6226C69E82FB0819"]
+			id: "21D85736FA33ACE0"
+			tasks: [{
+				id: "271D8D6F8FF3817E"
+				type: "item"
+				item: "ae2:me_p2p_tunnel"
+			}]
+		}
+		{
+			title: "Storage Renovation Station"
+			x: -2.0d
+			y: 3.0d
+			dependencies: [
+				"7246AB15370CAF7B"
+				"56E084F7037171F1"
+			]
+			id: "66F2A0FA23445094"
+			tasks: [{
+				id: "17D7E0BA40C96E14"
+				type: "item"
+				item: "ae2:io_port"
+			}]
+		}
+		{
+			title: "This Seems... Dangerous..."
+			x: -4.0d
+			y: 1.0d
+			subtitle: "Easy way to accidentally lose thousands of blocks."
+			dependencies: [
+				"66F2A0FA23445094"
+				"37A682D6D66278CB"
+			]
+			optional: true
+			id: "2E68F0FFFE9B016A"
+			tasks: [{
+				id: "119D2F14CD56C69C"
+				type: "item"
+				item: "ae2:spatial_io_port"
+			}]
+		}
+		{
+			title: "1 BIT"
+			x: -3.0d
+			y: 6.0d
+			subtitle: "HALF BIT!"
+			dependencies: ["7246AB15370CAF7B"]
+			id: "7CC1C4AA92BF64EE"
+			tasks: [{
+				id: "05F67610A321E9C8"
+				type: "item"
+				item: "ae2:cell_component_1k"
+			}]
+		}
+		{
+			title: "4 Bits"
+			x: -2.0d
+			y: 7.0d
+			subtitle: "2 BITS"
+			dependencies: [
+				"7CC1C4AA92BF64EE"
+				"2F1D32B693D3DB99"
+			]
+			id: "363969EC5EA5BAC2"
+			tasks: [{
+				id: "0E0A15BE9A5E54FA"
+				type: "item"
+				item: "ae2:cell_component_4k"
+			}]
+		}
+		{
+			title: "16 Bits"
+			x: -1.0d
+			y: 8.0d
+			subtitle: "8 Bits"
+			dependencies: ["363969EC5EA5BAC2"]
+			id: "4AB6D1E86D5BE469"
+			tasks: [{
+				id: "4A8F6174EFC84D59"
+				type: "item"
+				item: "ae2:cell_component_16k"
+			}]
+		}
+		{
+			title: "64 Bits"
+			x: 1.0d
+			y: 8.0d
+			subtitle: "32 Bits"
+			dependencies: [
+				"4AB6D1E86D5BE469"
+				"5E95386F00C4773A"
+			]
+			id: "149796284121699E"
+			tasks: [{
+				id: "1691B3F87174A3BB"
+				type: "item"
+				item: "ae2:cell_component_64k"
+			}]
+		}
+		{
+			title: "256 Bits?"
+			x: 1.0d
+			y: 9.0d
+			subtitle: "Has gaming gone too far?"
+			dependencies: ["149796284121699E"]
+			id: "6E24E1CFE917F988"
+			tasks: [{
+				id: "62545B12EEDEA9E5"
+				type: "item"
+				item: "ae2:cell_component_256k"
+			}]
+		}
+		{
+			title: "Need More Types?"
+			x: 0.0d
+			y: 9.0d
+			subtitle: "Store all those pesky swords!"
+			description: ["This drive is not limited by types, only bytes."]
+			dependencies: ["149796284121699E"]
+			id: "48DBEC036DCAAB58"
+			tasks: [{
+				id: "5DE4984DF3B2AFB5"
+				type: "item"
+				item: {
+					id: "ae2things:disk_drive_64k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Basically: The Matrix"
+			x: 2.0d
+			y: 9.0d
+			subtitle: "Finally, enough space to store your \"Homework\""
+			dependencies: ["6E24E1CFE917F988"]
+			id: "4E695B5AAA801E9C"
+			tasks: [{
+				id: "5D7615C70A92EB93"
+				type: "item"
+				item: "megacells:cell_component_1m"
+			}]
+		}
+		{
+			title: "Useful Trash Can"
+			x: 1.0d
+			y: 1.0d
+			dependencies: ["3A0CE8C56581A97E"]
+			id: "5E95386F00C4773A"
+			tasks: [{
+				id: "569469D042BF7DF3"
+				type: "item"
+				item: "ae2:condenser"
+			}]
+		}
+		{
+			title: "Need More Bytes?"
+			x: 3.0d
+			y: 8.0d
+			subtitle: "Store all those pesky diamonds!"
+			description: ["Only has one type, but effectively limitless bytes. The best method for choosing which item it stores is to use an ME Chest."]
+			dependencies: [
+				"4E695B5AAA801E9C"
+				"658137F4C4A95BA0"
+				"6226C69E82FB0819"
+			]
+			id: "0919968CD952F0C6"
+			tasks: [{
+				id: "5C52C1AB487E3EC6"
+				type: "item"
+				item: "megacells:bulk_cell_component"
+			}]
+		}
+		{
+			title: "DO NOT EAT"
+			x: 2.0d
+			y: 8.0d
+			subtitle: "I know I said the same thing with the silicon, but in all seriousness, don't. It's so heavy, it WILL rip a hole through your stomach lining."
+			dependencies: ["149796284121699E"]
+			id: "658137F4C4A95BA0"
+			tasks: [{
+				id: "0484F494C52D6E33"
+				type: "item"
+				item: "ae2:singularity"
+			}]
+		}
+		{
+			title: "No More Chest Spam"
+			x: -5.0d
+			y: 6.0d
+			subtitle: "Like a centralized chest."
+			description: ["The perfect place for everyone to dump their inventory."]
+			dependencies: ["32B155DD04AC18F1"]
+			id: "79377BD25C23EC11"
+			tasks: [{
+				id: "6F484304BB043C86"
+				type: "item"
+				item: "ae2:terminal"
+			}]
+		}
+		{
+			title: "Conservation of Mass"
+			x: -4.0d
+			y: 5.0d
+			dependencies: ["7246AB15370CAF7B"]
+			id: "32B155DD04AC18F1"
+			tasks: [
+				{
+					id: "01C24634D93F5D68"
+					type: "item"
+					disable_toast: true
+					item: "ae2:formation_core"
+				}
+				{
+					id: "6D55E382977CED06"
+					type: "item"
+					disable_toast: true
+					item: "ae2:annihilation_core"
+				}
+			]
+		}
+		{
+			title: "Automation Love Life"
+			x: -5.0d
+			y: 5.0d
+			description: ["Use in conjunction with the ME Pattern Encoding Terminal to specify what inventories items need to be inserted into to get the result of a currently queued craft."]
+			dependencies: ["32B155DD04AC18F1"]
+			id: "2E60D3E116A71A50"
+			tasks: [{
+				id: "3CDB5128D6094B2A"
+				type: "item"
+				item: "ae2:interface"
+			}]
+		}
+		{
+			title: "You're My Friend Now!"
+			x: -3.0d
+			y: 4.0d
+			subtitle: "We're having soft tacos later!"
+			description: ["Puts items from the attached inventory into the ME system."]
+			dependencies: ["32B155DD04AC18F1"]
+			id: "47B225B232C067C7"
+			tasks: [{
+				id: "4450A45175D1E63D"
+				type: "item"
+				item: "ae2:import_bus"
+			}]
+			rewards: [{
+				id: "32B4D7006FD29D81"
+				type: "item"
+				item: "pamhc2foodextended:tacoitem"
+				count: 2
+			}]
+		}
+		{
+			title: "RAVE, AGAINST, THE SYSTEM."
+			x: -4.0d
+			y: 4.0d
+			subtitle: "WE WON'T STOP; WE CAN'T STOP"
+			description: ["Pulls the filtered items out of the ME system."]
+			dependencies: ["32B155DD04AC18F1"]
+			id: "268987735E34BB6B"
+			tasks: [{
+				id: "409BAEAD515F5881"
+				type: "item"
+				item: "ae2:export_bus"
+			}]
+		}
+		{
+			title: "Superior Crafting Table"
+			x: -6.0d
+			y: 6.0d
+			dependencies: ["79377BD25C23EC11"]
+			id: "6C75AD13700B69A3"
+			tasks: [{
+				id: "275F7BE2919C36C7"
+				type: "item"
+				item: "ae2:crafting_terminal"
+			}]
+		}
+		{
+			title: "Superior Crafting Table: Pocket Edition"
+			x: -6.0d
+			y: 7.0d
+			dependencies: [
+				"6C75AD13700B69A3"
+				"07FA6541FE33BEF6"
+				"798C9D7D5F404A4B"
+			]
+			id: "206DD888B3A25B09"
+			tasks: [{
+				id: "727EA68F52104F33"
+				type: "item"
+				item: "ae2:wireless_crafting_terminal"
+			}]
+		}
+		{
+			title: "'Curity Camera"
+			x: -7.0d
+			y: 6.0d
+			dependencies: ["5B2835CED37005AD"]
+			id: "07FA6541FE33BEF6"
+			tasks: [{
+				id: "09E2D3183C2E6DEC"
+				type: "item"
+				item: "ae2:security_station"
+			}]
+		}
+		{
+			title: "Cell Inspector"
+			x: -6.0d
+			y: 5.0d
+			dependencies: [
+				"79377BD25C23EC11"
+				"7D0B5D7724237015"
+			]
+			id: "5B2835CED37005AD"
+			tasks: [{
+				id: "7C272DB50096C31F"
+				type: "item"
+				item: "ae2:chest"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 7.0d
+			dependencies: ["2F1D32B693D3DB99"]
+			id: "798C9D7D5F404A4B"
+			tasks: [{
+				id: "20D6CEF6A180908C"
+				type: "item"
+				item: "ae2:wireless_access_point"
+			}]
+		}
+		{
+			title: "\"Accelerator\" is a Severe Understatement"
+			x: -3.0d
+			y: -1.0d
+			dependencies: ["351EEFF93ECEBD77"]
+			id: "5A6F9F3C6324C641"
+			tasks: [{
+				id: "36268DC729D0F9CD"
+				type: "item"
+				item: "ae2:quartz_growth_accelerator"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			dependencies: ["43E7137742F7D890"]
+			id: "351EEFF93ECEBD77"
+			tasks: [{
+				id: "0A8875216DFB0D66"
+				type: "item"
+				item: "ae2:fluix_block"
+			}]
+		}
+		{
+			title: "Crystal Crafting"
+			x: -4.0d
+			y: -2.0d
+			description: ["Use to craft Fluix Dust and Fluix Crystals without dropping items!"]
+			dependencies: ["5A6F9F3C6324C641"]
+			id: "2949F124F250DD7D"
+			tasks: [{
+				id: "18775993204BD292"
+				type: "item"
+				item: "lazierae2:aggregator"
+			}]
+		}
+		{
+			title: "Everywhere at the End of Time"
+			x: -5.0d
+			y: 1.0d
+			subtitle: "Oops..."
+			dependencies: ["2E68F0FFFE9B016A"]
+			optional: true
+			secret: true
+			id: "796171440001B7EC"
+			tasks: [{
+				id: "3F3B358D69DA1838"
+				type: "dimension"
+				icon: "minecraft:black_concrete"
+				dimension: "ae2:spatial_storage"
+			}]
+		}
+		{
+			title: "They're in the Walls!"
+			icon: {
+				id: "ae2:facade"
+				Count: 1b
+				tag: {
+					item: "minecraft:stone"
+				}
+			}
+			x: 1.0d
+			y: -1.0d
+			description: ["Make your walls three blocks thick, and cable management becomes much easier!"]
+			optional: true
+			id: "7DF08648AB7F3C90"
+			tasks: [
+				{
+					id: "28A3EFC138DE157E"
+					type: "item"
+					disable_toast: true
+					item: "ae2:cable_anchor"
+					consume_items: true
+				}
+				{
+					id: "4FF5017A9BE5C2F9"
+					type: "item"
+					icon: {
+						id: "ae2:facade"
+						Count: 1b
+						tag: {
+							item: "minecraft:stone"
+						}
+					}
+					disable_toast: true
+					item: {
+						id: "ae2:facade"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "Peaceful Bifurcation"
+			x: 3.0d
+			y: 7.0d
+			subtitle: "How did this not end horribly?!?"
+			description: ["If you lose one, the other becomes useless. So... don't do that..."]
+			dependencies: ["658137F4C4A95BA0"]
+			id: "725E9EA3981CC990"
+			tasks: [{
+				id: "0414F5FECDB75BB2"
+				type: "item"
+				item: "ae2:quantum_entangled_singularity"
+			}]
+		}
+		{
+			title: "Link, START!"
+			x: 4.0d
+			y: 6.0d
+			dependencies: ["725E9EA3981CC990"]
+			id: "25A8F8D9218A0F4F"
+			tasks: [
+				{
+					id: "587778D37F7105F9"
+					type: "item"
+					item: "ae2:quantum_link"
+				}
+				{
+					id: "5BD820BA3ACA7081"
+					type: "item"
+					item: "ae2:quantum_ring"
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Ominous Frame"
+			x: -3.0d
+			y: 1.0d
+			subtitle: "I've got a BAAAAAD feeling about this one Scoobs..."
+			dependencies: ["7D0B5D7724237015"]
+			optional: true
+			id: "37A682D6D66278CB"
+			tasks: [{
+				id: "1E9704322EED5251"
+				type: "item"
+				item: "ae2:spatial_pylon"
+			}]
+		}
+		{
+			title: "Always Stocked"
+			x: -6.0d
+			y: 4.0d
+			description: ["If you alternatively always need an inventory to have an item and want it crafted when the ME system runs out, use and ME Export Bus with a Crafting Card."]
+			dependencies: ["2E60D3E116A71A50"]
+			optional: true
+			id: "28D2D40442493F49"
+			tasks: [{
+				id: "31BB34A392DAACB5"
+				type: "item"
+				item: "lazierae2:requester"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 5.0d
+			dependencies: ["6226C69E82FB0819"]
+			id: "53958BDF9D3769E4"
+			tasks: [{
+				id: "47468FD716CCE7F7"
+				type: "item"
+				item: "ae2:crafting_accelerator"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 7.0d
+			dependencies: ["6C75AD13700B69A3"]
+			id: "77FC3C5FDE26FAC7"
+			tasks: [{
+				id: "1E755D2D4DE02FE3"
+				type: "item"
+				item: "ae2:pattern_encoding_terminal"
+			}]
+		}
+	]
+}
