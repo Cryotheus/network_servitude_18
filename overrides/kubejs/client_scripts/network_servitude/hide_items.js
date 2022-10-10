@@ -1,4 +1,11 @@
 onEvent("jei.hide.items", event => {
+	//ae2 things
+	event.hide("ae2things:advanced_inscriber")
+	event.hide("ae2things:crystal_growth")
+	
+	//chisel & bits
+	event.hide("chiselsandbits:block_bit")
+	
 	//extendedcrafting
 	event.hide(/^extendedcrafting:advanced/)
 	event.hide(/^extendedcrafting:basic/)
