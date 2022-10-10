@@ -1,0 +1,49 @@
+{
+	id: "15A0BB305230C21B"
+	group: ""
+	order_index: 0
+	filename: "hidden_quests"
+	title: "Hidden Quests"
+	icon: {
+		id: "extendedcrafting:ultimate_singularity"
+		Count: 1b
+		tag: {
+			"quark:RuneAttached": 1b
+			"quark:RuneColor": {
+				Count: 1b
+				id: "quark:blank_rune"
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Just Plain Unfair!"
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["7C22BB160C8F3E02"]
+			hide: true
+			secret: true
+			id: "04857FC9885DFDFB"
+			tasks: [{
+				id: "362ACE7D943ADA1F"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			dependencies: ["7C22BB160C8F3E02"]
+			hide: true
+			secret: true
+			id: "03F5FD8F58F4BD8F"
+			tasks: [{
+				id: "33CDA17F23323439"
+				type: "item"
+				item: "quark:diamond_heart"
+			}]
+		}
+	]
+}

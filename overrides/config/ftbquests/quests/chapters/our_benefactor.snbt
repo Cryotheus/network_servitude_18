@@ -1,24 +1,12 @@
 {
 	id: "2A53B1BFF8397650"
 	group: ""
-	order_index: 0
+	order_index: 2
 	filename: "our_benefactor"
 	title: "Our Benefactor"
 	icon: "ae2:controller"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: 7.5d
-		y: -3.5d
-		width: 10.0d
-		height: 10.0d
-		rotation: 0.0d
-		image: "legendarytooltips:textures/gui/tooltip_borders.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
 	quests: [
 		{
 			title: "Jesse!"
@@ -26,6 +14,8 @@
 			y: 2.0d
 			subtitle: "Where is all starts."
 			description: ["Throw all three together into water."]
+			dependencies: ["7C22BB160C8F3E02"]
+			hide: true
 			id: "7197724A4AB64179"
 			tasks: [
 				{
@@ -273,6 +263,8 @@
 			title: "Hydraulic Press Tube"
 			x: -1.0d
 			y: 6.0d
+			dependencies: ["7C22BB160C8F3E02"]
+			hide: true
 			id: "27E0A6717CC22485"
 			tasks: [{
 				id: "582E7B06F579A356"
@@ -737,6 +729,7 @@
 			x: 1.0d
 			y: -1.0d
 			description: ["Make your walls three blocks thick, and cable management becomes much easier!"]
+			dependencies: ["3AA84C8B1D288324"]
 			optional: true
 			id: "7DF08648AB7F3C90"
 			tasks: [
@@ -784,6 +777,7 @@
 			title: "Link, START!"
 			x: 4.0d
 			y: 6.0d
+			description: ["Like a portal, but for your ME system! The sides of the ring are the media to pass your channels through."]
 			dependencies: ["725E9EA3981CC990"]
 			id: "25A8F8D9218A0F4F"
 			tasks: [
@@ -791,12 +785,13 @@
 					id: "587778D37F7105F9"
 					type: "item"
 					item: "ae2:quantum_link"
+					count: 2L
 				}
 				{
 					id: "5BD820BA3ACA7081"
 					type: "item"
 					item: "ae2:quantum_ring"
-					count: 8L
+					count: 16L
 				}
 			]
 		}
@@ -848,6 +843,21 @@
 				id: "1E755D2D4DE02FE3"
 				type: "item"
 				item: "ae2:pattern_encoding_terminal"
+			}]
+		}
+		{
+			title: "Clean Cables"
+			x: 1.0d
+			y: 0.0d
+			description: ["Cable anchors can be placed on the side of a cable or network part that you do not want attached to another cable. If you need to run two cables next to each other, just use cables of different colors."]
+			dependencies: ["7C22BB160C8F3E02"]
+			hide: true
+			optional: true
+			id: "3AA84C8B1D288324"
+			tasks: [{
+				id: "3D243B22E88633C6"
+				type: "item"
+				item: "ae2:cable_anchor"
 			}]
 		}
 	]

@@ -1,0 +1,187 @@
+{
+	id: "79FA0B9C1817887E"
+	group: ""
+	order_index: 1
+	filename: "initialization"
+	title: "Initialization"
+	icon: {
+		id: "sophisticatedstorage:crafting_upgrade"
+		Count: 1b
+		ForgeCaps: {
+			"polymorph:stack_recipe_data": { }
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: {
+				id: "tconstruct:crafting_station"
+				Count: 1b
+				tag: {
+					texture: "minecraft:oak_log"
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			size: 2.0d
+			id: "1A68FA9C6DD432C8"
+			tasks: [
+				{
+					id: "12EEB78495D6A730"
+					type: "item"
+					icon: {
+						id: "tconstruct:crafting_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_log"
+						}
+					}
+					item: {
+						id: "tconstruct:crafting_station"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "7C22BB160C8F3E02"
+					type: "gamestage"
+					title: "Join a game"
+					icon: {
+						id: "twilightforest:player_skull_candle"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								CandleColor: 0
+								CandleAmount: 1
+							}
+						}
+					}
+					secret: true
+					stage: "network_servitude_initial_items"
+				}
+			]
+		}
+		{
+			title: "Quest Implies Tasks"
+			x: 0.0d
+			y: -1.5d
+			id: "3E42C3CC0FCB3654"
+			tasks: [{
+				id: "3279FBE8C8E51D06"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: [
+				"1A68FA9C6DD432C8"
+				"7C22BB160C8F3E02"
+			]
+			hide: true
+			id: "222AFFAAB3B3C938"
+			tasks: [{
+				id: "6777215D332687AD"
+				type: "item"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_1"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			dependencies: ["222AFFAAB3B3C938"]
+			id: "3B333E1F59BDE681"
+			tasks: [{
+				id: "1C0F2F0ADDF8E56B"
+				type: "item"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_2"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			dependencies: ["3B333E1F59BDE681"]
+			id: "67AB6AA142AF62EB"
+			tasks: [{
+				id: "1D84C81CC5092892"
+				type: "item"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_3"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			dependencies: ["67AB6AA142AF62EB"]
+			id: "221A28E9904D3971"
+			tasks: [{
+				id: "479BE5F7DF4E8F8A"
+				type: "item"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_4"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			dependencies: [
+				"1A68FA9C6DD432C8"
+				"7C22BB160C8F3E02"
+			]
+			hide: true
+			id: "26FD2F5057A89993"
+			tasks: [{
+				id: "381CB0B58A8845A9"
+				type: "item"
+				item: "sophisticatedbackpacks:iron_backpack"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			dependencies: ["26FD2F5057A89993"]
+			id: "25234C5508FA5727"
+			tasks: [{
+				id: "57305F92B41D39FC"
+				type: "item"
+				item: "sophisticatedbackpacks:gold_backpack"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			dependencies: ["25234C5508FA5727"]
+			id: "364E58829C936D06"
+			tasks: [{
+				id: "582B66A63707933F"
+				type: "item"
+				item: "sophisticatedbackpacks:diamond_backpack"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			dependencies: ["364E58829C936D06"]
+			id: "77612C304B0A6C1A"
+			tasks: [{
+				id: "65C62C665D61C38D"
+				type: "item"
+				item: "sophisticatedbackpacks:netherite_backpack"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			dependencies: ["1A68FA9C6DD432C8"]
+			hide: true
+			id: "64D10D9A46C4C445"
+			tasks: [{
+				id: "1C30E99E5146A17C"
+				type: "item"
+				item: "comforts:sleeping_bag_red"
+			}]
+		}
+	]
+}
