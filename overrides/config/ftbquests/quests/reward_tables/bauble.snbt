@@ -1,0 +1,532 @@
+{
+	id: "2028AB7A39F3D0AE"
+	order_index: 1
+	title: "Bauble"
+	icon: "enigmaticlegacy:gem_ring"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "minecraft:elytra"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "minecraft:totem_of_undying" }
+		{
+			item: {
+				id: "ae2:wireless_terminal"
+				Count: 1b
+				tag: {
+					internalCurrentPower: 1600000.0d
+				}
+			}
+		}
+		{
+			item: {
+				id: "ae2:wireless_crafting_terminal"
+				Count: 1b
+				tag: {
+					internalCurrentPower: 1600000.0d
+				}
+			}
+		}
+		{
+			item: {
+				id: "mythicbotany:mana_ring_greatest"
+				Count: 1b
+				tag: {
+					mana: 4000000
+				}
+			}
+		}
+		{ item: "mythicbotany:aura_ring_greatest" }
+		{
+			item: {
+				id: "advancedperipherals:ar_goggles"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:soulstone"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "ae2wtlib:wireless_pattern_encoding_terminal"
+				Count: 1b
+				tag: {
+					internalCurrentPower: 1600000.0d
+				}
+			}
+		}
+		{
+			item: {
+				id: "ae2wtlib:wireless_pattern_access_terminal"
+				Count: 1b
+				tag: {
+					internalCurrentPower: 1600000.0d
+				}
+			}
+		}
+		{
+			item: {
+				id: "ae2wtlib:wireless_universal_terminal"
+				Count: 1b
+				tag: {
+					internalCurrentPower: 1600000.0d
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:mana_ring"
+				Count: 1b
+				tag: {
+					mana: 500000
+				}
+			}
+		}
+		{
+			item: {
+				id: "botania:mana_ring_greater"
+				Count: 1b
+				tag: {
+					mana: 2000000
+				}
+			}
+		}
+		{ item: "botania:aura_ring" }
+		{ item: "botania:aura_ring_greater" }
+		{ item: "botania:magnet_ring" }
+		{ item: "botania:magnet_ring_greater" }
+		{ item: "botania:water_ring" }
+		{ item: "botania:swap_ring" }
+		{ item: "botania:dodge_ring" }
+		{ item: "botania:mining_ring" }
+		{ item: id: "botania:pixie_ring" }
+		{ item: "botania:reach_ring" }
+		{ item: "botania:travel_belt" }
+		{ item: "botania:super_travel_belt" }
+		{ item: "botania:speed_up_belt" }
+		{ item: id: "botania:knockback_belt" }
+		{ item: "botania:ice_pendant" }
+		{ item: "botania:lava_pendant" }
+		{ item: "botania:super_lava_pendant" }
+		{ item: "botania:cloud_pendant" }
+		{ item: "botania:super_cloud_pendant" }
+		{ item: "botania:holy_cloak" }
+		{ item: "botania:unholy_cloak" }
+		{ item: "botania:balance_cloak" }
+		{ item: "botania:invisibility_cloak" }
+		{ item: "botania:third_eye" }
+		{ item: "botania:monocle" }
+		{ item: "botania:tiny_planet" }
+		{ item: "botania:goddess_charm" }
+		{ item: "botania:diva_charm" }
+		{ item: "botania:itemfinder" }
+		{
+			item: {
+				id: "enigmaticlegacy:ascension_amulet"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{
+			item: {
+				id: "enigmaticlegacy:enigmatic_elytra"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "enigmaticlegacy:architect_eye"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{
+			item: {
+				id: "enigmaticlegacy:insignia"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{
+			item: {
+				id: "cyclic:glowing_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_longfall"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_creeper"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_stone"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_antipotion"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "darkutils:charm_portal" }
+		{ item: "darkutils:charm_sleep" }
+		{ item: "darkutils:charm_warding" }
+		{ item: "enigmaticlegacy:enigmatic_item" }
+		{ item: "enigmaticlegacy:golem_heart" }
+		{ item: "enigmaticlegacy:angel_blessing" }
+		{ item: "enigmaticlegacy:ocean_stone" }
+		{ item: "enigmaticlegacy:magma_heart" }
+		{ item: "enigmaticlegacy:eye_of_nebula" }
+		{ item: "enigmaticlegacy:void_pearl" }
+		{ item: "enigmaticlegacy:iron_ring" }
+		{
+			item: {
+				id: "enigmaticlegacy:xp_scroll"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{ item: "enigmaticlegacy:escape_scroll" }
+		{ item: "enigmaticlegacy:heaven_scroll" }
+		{ item: "enigmaticlegacy:magnet_ring" }
+		{ item: "enigmaticlegacy:super_magnet_ring" }
+		{ item: "enigmaticlegacy:ender_ring" }
+		{ item: "enigmaticlegacy:monster_charm" }
+		{
+			item: {
+				id: "enigmaticlegacy:mining_charm"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{ item: "enigmaticlegacy:mega_sponge" }
+		{ item: "enigmaticlegacy:fabulous_scroll" }
+		{ item: "enigmaticlegacy:gem_ring" }
+		{ item: "enigmaticlegacy:the_cube" }
+		{
+			item: {
+				id: "botania:flight_tiara"
+				Count: 1b
+				tag: {
+					variant: 0
+				}
+			}
+		}
+		{ item: "botania:thor_ring" }
+		{ item: "botania:odin_ring" }
+		{ item: "botania:loki_ring" }
+		{ item: "twilightforest:charm_of_life_2" }
+		{ item: "twilightforest:charm_of_keeping_1" }
+		{ item: "twilightforest:charm_of_keeping_2" }
+		{ item: "twilightforest:charm_of_keeping_3" }
+		{
+			item: {
+				id: "thermal:flux_capacitor"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{
+			item: {
+				id: "thermal:flux_magnet"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{
+			item: {
+				id: "thermal:fluid_reservoir"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{
+			item: {
+				id: "thermal:potion_infuser"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{
+			item: {
+				id: "thermal:potion_infuser"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{
+			item: {
+				id: "thermal:potion_quiver"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{ item: "mythicbotany:fire_ring" }
+		{ item: "mythicbotany:ice_ring" }
+		{
+			item: {
+				id: "mythicbotany:andwari_ring"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "mythicbotany:cursed_andwari_ring" }
+		{ item: "twilightforest:charm_of_life_1" }
+		{ item: "cyclic:charm_stealthpotion" }
+		{
+			item: {
+				id: "cyclic:charm_boostpotion"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_crit"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_crit"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:quiver_damage"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:quiver_lightning"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_invisible"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_magicdefense"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_starvation"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_venom"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_water"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_speed"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:antigravity"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_void"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_antidote"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_fire"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_wither"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_ultimate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_torch"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "cyclic:charm_torch_cave"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "reliquary:fortune_coin" }
+		{ item: "reliquary:mob_charm_belt" }
+		{ item: "reliquary:twilight_cloak" }
+		{ item: "artifacts:umbrella" }
+		{ item: "artifacts:everlasting_beef" }
+		{ item: "artifacts:eternal_steak" }
+		{ item: "artifacts:plastic_drinking_hat" }
+		{ item: "artifacts:novelty_drinking_hat" }
+		{ item: "artifacts:snorkel" }
+		{ item: "artifacts:night_vision_goggles" }
+		{ item: "artifacts:villager_hat" }
+		{ item: "artifacts:superstitious_hat" }
+		{ item: "artifacts:lucky_scarf" }
+		{ item: "artifacts:scarf_of_invisibility" }
+		{ item: "artifacts:cross_necklace" }
+		{ item: "artifacts:panic_necklace" }
+		{ item: "artifacts:shock_pendant" }
+		{ item: "artifacts:flame_pendant" }
+		{ item: "artifacts:thorn_pendant" }
+		{ item: "artifacts:charm_of_sinking" }
+		{ item: "artifacts:cloud_in_a_bottle" }
+		{ item: "artifacts:obsidian_skull" }
+		{ item: "artifacts:antidote_vessel" }
+		{ item: "artifacts:universal_attractor" }
+		{ item: "artifacts:crystal_heart" }
+		{ item: "artifacts:helium_flamingo" }
+		{ item: "artifacts:digging_claws" }
+		{ item: "artifacts:feral_claws" }
+		{ item: "artifacts:power_glove" }
+		{ item: "artifacts:fire_gauntlet" }
+		{ item: "artifacts:pocket_piston" }
+		{ item: "artifacts:vampiric_glove" }
+		{ item: "artifacts:golden_hook" }
+		{ item: "artifacts:aqua_dashers" }
+		{ item: "artifacts:bunny_hoppers" }
+		{ item: "artifacts:kitty_slippers" }
+		{ item: "artifacts:running_shoes" }
+		{ item: "artifacts:steadfast_spikes" }
+		{ item: "artifacts:flippers" }
+		{ item: "artifacts:whoopee_cushion" }
+	]
+}
