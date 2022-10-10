@@ -1,7 +1,7 @@
 {
 	id: "79FA0B9C1817887E"
-	group: ""
-	order_index: 1
+	group: "04A8F70BFF039A12"
+	order_index: 0
 	filename: "initialization"
 	title: "Initialization"
 	icon: {
@@ -13,6 +13,19 @@
 	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	images: [{
+		x: -5.0d
+		y: -1.5d
+		width: 4.0d
+		height: 4.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/heart_of_diamond.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+		dependency: "3AF9860979AC8FAD"
+	}]
 	quests: [
 		{
 			icon: {
@@ -24,50 +37,38 @@
 			}
 			x: 0.0d
 			y: 0.0d
+			subtitle: "Superior crafting!"
+			description: ["Keeps its inventory when you're crafting, and will even display adjacent inventories."]
 			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
 			size: 2.0d
 			id: "1A68FA9C6DD432C8"
-			tasks: [
-				{
-					id: "12EEB78495D6A730"
-					type: "item"
-					icon: {
-						id: "tconstruct:crafting_station"
-						Count: 1b
-						tag: {
-							texture: "minecraft:oak_log"
-						}
-					}
-					item: {
-						id: "tconstruct:crafting_station"
-						Count: 1b
-						tag: { }
+			tasks: [{
+				id: "12EEB78495D6A730"
+				type: "item"
+				icon: {
+					id: "tconstruct:crafting_station"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_log"
 					}
 				}
-				{
-					id: "7C22BB160C8F3E02"
-					type: "gamestage"
-					title: "Join a game"
-					icon: {
-						id: "twilightforest:player_skull_candle"
-						Count: 1b
-						tag: {
-							BlockEntityTag: {
-								CandleColor: 0
-								CandleAmount: 1
-							}
-						}
-					}
-					secret: true
-					stage: "network_servitude_initial_items"
+				item: {
+					id: "tconstruct:crafting_station"
+					Count: 1b
+					tag: { }
 				}
-			]
+			}]
 		}
 		{
-			title: "Quest Implies Tasks"
+			title: "The Quest-Task Implication"
 			x: 0.0d
 			y: -1.5d
+			description: [
+				"Although this pack has a quest book, it is entirely optional."
+				""
+				"Quests in this pack are roughtly structured around a tutorial-like process. The intent is to help guide players in discovering and understanding the usage of various mods."
+			]
 			id: "3E42C3CC0FCB3654"
 			tasks: [{
 				id: "3279FBE8C8E51D06"
@@ -78,10 +79,8 @@
 		{
 			x: -1.5d
 			y: 0.0d
-			dependencies: [
-				"1A68FA9C6DD432C8"
-				"7C22BB160C8F3E02"
-			]
+			description: ["Increases the amount of stacks each slot can hold in your backpack."]
+			dependencies: ["1A68FA9C6DD432C8"]
 			hide: true
 			id: "222AFFAAB3B3C938"
 			tasks: [{
@@ -124,12 +123,12 @@
 			}]
 		}
 		{
+			title: "More Slots!"
 			x: -1.0d
 			y: -1.0d
-			dependencies: [
-				"1A68FA9C6DD432C8"
-				"7C22BB160C8F3E02"
-			]
+			subtitle: "You could also just stop hoarding..."
+			description: ["Surround your backpack with iron in a crafting grid to increase its slot count."]
+			dependencies: ["1A68FA9C6DD432C8"]
 			hide: true
 			id: "26FD2F5057A89993"
 			tasks: [{
@@ -172,8 +171,9 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -0.5d
+			icon: "comforts:sleeping_bag_red"
+			x: 1.0d
+			y: -1.0d
 			dependencies: ["1A68FA9C6DD432C8"]
 			hide: true
 			id: "64D10D9A46C4C445"
@@ -181,6 +181,45 @@
 				id: "1C30E99E5146A17C"
 				type: "item"
 				item: "comforts:sleeping_bag_red"
+			}]
+		}
+		{
+			icon: "comforts:hammock_red"
+			x: 1.0d
+			y: -2.0d
+			dependencies: ["64D10D9A46C4C445"]
+			id: "498ACB3C75F60CE6"
+			tasks: [
+				{
+					id: "53BB5CB249747420"
+					type: "item"
+					item: "comforts:hammock_red"
+				}
+				{
+					id: "697D90F1A9EFFC02"
+					type: "item"
+					item: "comforts:rope_and_nail"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "3DA0BB5CE345644B"
+				type: "item"
+				item: "pamhc2foodextended:pinacoladaitem"
+			}]
+		}
+		{
+			title: "Clock in a Block"
+			x: 2.0d
+			y: 0.5d
+			subtitle: "Pleasant clock ASMR"
+			dependencies: ["1A68FA9C6DD432C8"]
+			optional: true
+			id: "044564DF62C2889F"
+			tasks: [{
+				id: "33B1EB433FC5A1D4"
+				type: "item"
+				item: "supplementaries:clock_block"
 			}]
 		}
 	]

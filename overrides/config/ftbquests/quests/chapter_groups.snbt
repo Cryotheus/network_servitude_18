@@ -1,3 +1,6 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{ id: "04A8F70BFF039A12", title: "Household Arsenal" }
+		{ id: "141609C65CF7DF6F", title: "Predestined Operations" }
+	]
 }

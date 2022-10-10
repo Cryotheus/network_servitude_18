@@ -1,7 +1,7 @@
 {
 	id: "15A0BB305230C21B"
 	group: ""
-	order_index: 0
+	order_index: 1
 	filename: "hidden_quests"
 	title: "Hidden Quests"
 	icon: {
@@ -22,7 +22,7 @@
 			title: "Just Plain Unfair!"
 			x: 0.0d
 			y: 0.0d
-			dependencies: ["7C22BB160C8F3E02"]
+			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
 			secret: true
 			id: "04857FC9885DFDFB"
@@ -35,7 +35,7 @@
 		{
 			x: 0.0d
 			y: -1.0d
-			dependencies: ["7C22BB160C8F3E02"]
+			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
 			secret: true
 			id: "03F5FD8F58F4BD8F"

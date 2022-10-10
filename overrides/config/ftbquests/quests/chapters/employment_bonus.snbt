@@ -1,0 +1,82 @@
+{
+	id: "5B7CFE6FD75ECEA0"
+	group: ""
+	order_index: 0
+	filename: "employment_bonus"
+	title: "Employment Bonus"
+	icon: "reliquary:fortune_coin"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: 0.0d
+			dependencies: ["79FA0B9C1817887E"]
+			hide: true
+			id: "3AF9860979AC8FAD"
+			tasks: [{
+				id: "4546E1F02D79A753"
+				type: "gamestage"
+				title: "Complete Initialization"
+				icon: {
+					id: "sophisticatedstorage:crafting_upgrade"
+					Count: 1b
+					ForgeCaps: {
+						"polymorph:stack_recipe_data": { }
+					}
+				}
+				stage: "network_servitude_initial_items"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			dependencies: ["5B752BEC2E68A859"]
+			hide: true
+			id: "29E17ADF17666D80"
+			tasks: [{
+				id: "5B0770BCA9ADF8E6"
+				type: "gamestage"
+				title: "Complete Niche Equipment"
+				icon: {
+					id: "buildinggadgets:gadget_destruction"
+					Count: 1b
+					tag: {
+						overlay: 1b
+						fuzzy: 1b
+						energy: 1000000.0d
+					}
+				}
+				stage: ""
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			dependencies: ["2A53B1BFF8397650"]
+			hide: true
+			id: "39E15F3CFD2A2B9A"
+			tasks: [{
+				id: "53B29FD092784AEB"
+				type: "gamestage"
+				title: "Complete Our Benefactor"
+				icon: "ae2:controller"
+				stage: ""
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			dependencies: ["182D1E21C732C58C"]
+			hide: true
+			id: "577E91BCA70254CB"
+			tasks: [{
+				id: "61FF3B828817358F"
+				type: "gamestage"
+				title: "Complete Hostility Encouraged"
+				icon: "hostilenetworks:deep_learner"
+				stage: ""
+			}]
+		}
+	]
+}

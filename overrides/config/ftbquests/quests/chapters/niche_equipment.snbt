@@ -1,0 +1,103 @@
+{
+	id: "5B752BEC2E68A859"
+	group: "04A8F70BFF039A12"
+	order_index: 1
+	filename: "niche_equipment"
+	title: "Niche Equipment"
+	icon: {
+		id: "buildinggadgets:gadget_destruction"
+		Count: 1b
+		tag: {
+			overlay: 1b
+			fuzzy: 1b
+			energy: 1000000.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Biome Finder"
+			x: 0.0d
+			y: 0.0d
+			description: ["Points towards the selected biome!"]
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			id: "185CC4A32DDD7E28"
+			tasks: [{
+				id: "1FCD6F7742B9DD66"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Structure Finder"
+			x: 0.0d
+			y: 1.0d
+			description: ["Points towards the selected structure!"]
+			dependencies: [
+				"185CC4A32DDD7E28"
+				"3E42C3CC0FCB3654"
+			]
+			hide: true
+			id: "61693591787AD7D5"
+			tasks: [{
+				id: "13C31B6FCB430804"
+				type: "item"
+				item: "structures_compass:structures_compass"
+			}]
+		}
+		{
+			title: "Clock in a Block"
+			x: -1.5d
+			y: 0.0d
+			subtitle: "Clock ASMR"
+			description: ["Use a comparator to get a redstone signal which roughly represents the time of day."]
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			optional: true
+			id: "6A08E26F037079CE"
+			tasks: [{
+				id: "582C86EDFDC0A1BC"
+				type: "item"
+				item: "supplementaries:clock_block"
+			}]
+		}
+		{
+			title: "Meteorite Finder"
+			x: 0.0d
+			y: -1.0d
+			description: [
+				"Meteorites have a chest containing goodies needed for progressing in Applied Energistcs 2."
+				""
+				"If a meteorite is close by (or above you) the compass' needle will spin. If no meteorite is nearby, the needle will spin slowly. Otherwise, you can expect the compass to point towards a meteorite."
+			]
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			id: "5F0AB886903AC94F"
+			tasks: [{
+				id: "41F9E5A5AF479042"
+				type: "item"
+				item: "ae2:sky_compass"
+			}]
+		}
+		{
+			title: "The Piston's Lost Brother"
+			x: -1.5d
+			y: 1.0d
+			description: ["Launches entities, and can be recompressed during activation if impacted. Yeets entities up to 12 blocks vertically, or 10.5 due to recompression."]
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			id: "338594399DBFDC61"
+			tasks: [{
+				id: "399041B9059A0959"
+				type: "item"
+				item: "supplementaries:spring_launcher"
+			}]
+		}
+	]
+}

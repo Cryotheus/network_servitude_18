@@ -1,7 +1,7 @@
 {
 	id: "2A53B1BFF8397650"
-	group: ""
-	order_index: 2
+	group: "141609C65CF7DF6F"
+	order_index: 1
 	filename: "our_benefactor"
 	title: "Our Benefactor"
 	icon: "ae2:controller"
@@ -14,7 +14,7 @@
 			y: 2.0d
 			subtitle: "Where is all starts."
 			description: ["Throw all three together into water."]
-			dependencies: ["7C22BB160C8F3E02"]
+			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
 			id: "7197724A4AB64179"
 			tasks: [
@@ -263,7 +263,7 @@
 			title: "Hydraulic Press Tube"
 			x: -1.0d
 			y: 6.0d
-			dependencies: ["7C22BB160C8F3E02"]
+			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
 			id: "27E0A6717CC22485"
 			tasks: [{
@@ -293,6 +293,7 @@
 			dependencies: [
 				"43E7137742F7D890"
 				"6226C69E82FB0819"
+				"7B1B12E018652FD8"
 			]
 			size: 2.0d
 			id: "6EB47684DF1A1168"
@@ -850,7 +851,7 @@
 			x: 1.0d
 			y: 0.0d
 			description: ["Cable anchors can be placed on the side of a cable or network part that you do not want attached to another cable. If you need to run two cables next to each other, just use cables of different colors."]
-			dependencies: ["7C22BB160C8F3E02"]
+			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
 			optional: true
 			id: "3AA84C8B1D288324"
@@ -858,6 +859,29 @@
 				id: "3D243B22E88633C6"
 				type: "item"
 				item: "ae2:cable_anchor"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			id: "3D0BB3DD52BF427E"
+			tasks: [{
+				id: "174D50AC157E0AE7"
+				type: "item"
+				item: "ae2:sky_stone_block"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			dependencies: ["3D0BB3DD52BF427E"]
+			id: "7B1B12E018652FD8"
+			tasks: [{
+				id: "086B1D1F3E6B5447"
+				type: "item"
+				item: "ae2:smooth_sky_stone_block"
 			}]
 		}
 	]
