@@ -1,0 +1,22 @@
+{
+	"group": "tools",
+	"type": "minecraft:crafting_shaped",
+	"condition": "normal",
+	
+	"pattern": [
+		"IBI",
+		"BCB",
+		"IBI"
+	],
+	
+	"key": {
+		"B": {"tag": "minecraft:stone_bricks"},
+		"C": {"item": "naturescompass:naturescompass"},
+		"I": {"item": "extendedcrafting:black_iron_ingot"}
+	},
+	
+	"result": {
+		"item": "structures_compass:structures_compass",
+		"count": 1
+	}
+}
