@@ -31,12 +31,11 @@
 	quests: [
 		{
 			title: "Biome Finder"
-			x: 0.0d
+			x: -3.0d
 			y: 0.0d
 			description: ["Points towards the selected biome!"]
 			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
-			optional: true
 			id: "185CC4A32DDD7E28"
 			tasks: [{
 				id: "1FCD6F7742B9DD66"
@@ -50,7 +49,7 @@
 		}
 		{
 			title: "Structure Finder"
-			x: 0.0d
+			x: -3.0d
 			y: 1.0d
 			description: ["Points towards the selected structure!"]
 			dependencies: [
@@ -58,7 +57,6 @@
 				"3E42C3CC0FCB3654"
 			]
 			hide: true
-			optional: true
 			id: "61693591787AD7D5"
 			tasks: [{
 				id: "13C31B6FCB430804"
@@ -68,13 +66,12 @@
 		}
 		{
 			title: "Clock in a Block"
-			x: -1.5d
+			x: -4.5d
 			y: 0.0d
 			subtitle: "Pleasant clock ASMR"
 			description: ["Use a comparator to get a redstone signal which roughly represents the time of day."]
 			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
-			optional: true
 			id: "6A08E26F037079CE"
 			tasks: [{
 				id: "582C86EDFDC0A1BC"
@@ -84,7 +81,7 @@
 		}
 		{
 			title: "Meteorite Finder"
-			x: 0.0d
+			x: -3.0d
 			y: -1.0d
 			description: [
 				"Meteorites have a chest containing goodies needed for progressing in Applied Energistcs 2."
@@ -93,7 +90,6 @@
 			]
 			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
-			optional: true
 			id: "5F0AB886903AC94F"
 			tasks: [{
 				id: "41F9E5A5AF479042"
@@ -103,12 +99,11 @@
 		}
 		{
 			title: "The Piston's Lost Brother"
-			x: -1.5d
+			x: -4.5d
 			y: 1.0d
 			description: ["Launches entities, and can be recompressed during activation if impacted. Yeets entities up to 12 blocks vertically, or 10.5 due to recompression."]
 			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
-			optional: true
 			id: "338594399DBFDC61"
 			tasks: [{
 				id: "399041B9059A0959"
@@ -117,7 +112,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: -4.5d
 			y: -1.0d
 			subtitle: "Wanted for tree griefing!"
 			description: [
@@ -126,7 +121,6 @@
 			]
 			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
-			optional: true
 			id: "3894066F5204B007"
 			tasks: [{
 				id: "382240092C0B353A"
@@ -193,6 +187,81 @@
 					type: "item"
 					item: "minecraft:gilded_blackstone"
 					count: 9
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 2.5d
+			description: ["Prevents the Wandering Trader from stopping by to sell his wares."]
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			id: "7BCDAD6E5C37AAA3"
+			tasks: [{
+				id: "2688CCC85938A1FF"
+				type: "item"
+				item: "nomowanderer:no_soliciting_sign"
+			}]
+		}
+		{
+			title: "Handheld Library"
+			x: -3.0d
+			y: 2.5d
+			description: ["Store all of your instructional books in one! Punch the air to restore the tome into its original form after transforming it."]
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			id: "5AEB6A9ED67CF39C"
+			tasks: [{
+				id: "5DAF73DFB678A0B5"
+				type: "item"
+				item: "akashictome:tome"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 2.5d
+			description: ["Crouch and use to store food items. When you're hungry, eat your cuisine without even opening the Lunchbox."]
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			id: "47D5DC6FF9821525"
+			tasks: [{
+				id: "3B1D17B1BBF70694"
+				type: "item"
+				item: {
+					id: "cyclic:lunchbox"
+					Count: 1b
+					tag: {
+						count_max: 7
+						count_empty: 7
+					}
+					ForgeCaps: {
+						Parent: {
+							Size: 7
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5621006BDA37E11B"
+					type: "item"
+					item: "thermal:pbj_sandwich"
+				}
+				{
+					id: "0C76937DB708FD5B"
+					type: "item"
+					item: "pamhc2foodextended:strawberryyogurtitem"
+				}
+				{
+					id: "59367F7D665815D0"
+					type: "item"
+					item: "pamhc2foodcore:trailmixitem"
+				}
+				{
+					id: "6DBDE5A6166A7898"
+					type: "item"
+					item: "pamhc2foodcore:applejuiceitem"
 				}
 			]
 		}

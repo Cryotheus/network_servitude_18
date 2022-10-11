@@ -75,6 +75,11 @@
 				type: "checkmark"
 				title: "Click me!"
 			}]
+			rewards: [{
+				id: "30EB7B3BB2AE44E6"
+				type: "choice"
+				table_id: 8753205411725883896L
+			}]
 		}
 		{
 			x: -1.5d
@@ -224,6 +229,18 @@
 				id: "3DA0BB5CE345644B"
 				type: "item"
 				item: "pamhc2foodextended:pinacoladaitem"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: ["Campfires not only heal nearby players and friendly mobs, but also prevent hostile mobs from spawning nearby!"]
+			dependencies: ["1A68FA9C6DD432C8"]
+			id: "4727B54ACE009CF0"
+			tasks: [{
+				id: "58283C44E6A23EDE"
+				type: "item"
+				item: "minecraft:campfire"
 			}]
 		}
 	]

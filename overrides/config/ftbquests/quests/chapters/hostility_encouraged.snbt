@@ -24,8 +24,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 1.5d
+			x: -1.5d
+			y: 0.0d
 			dependencies: ["4CC2174E5B8A8378"]
 			id: "12B553769E82DE60"
 			tasks: [{
@@ -33,16 +33,124 @@
 				type: "item"
 				item: "hostilenetworks:deep_learner"
 			}]
+			rewards: [{
+				id: "2C88F02EF89B7EED"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 2s
+							id: "minecraft:sharpness"
+						}]
+					}
+				}
+			}]
 		}
 		{
-			x: 0.0d
-			y: -1.5d
+			x: -1.0d
+			y: -1.0d
+			description: ["Given a Data Model as a catalyst, and a Prediction Matrix as an input, produces Mob Predictions and Dimension Predictions."]
 			dependencies: ["4CC2174E5B8A8378"]
 			id: "46489307ED0EAD18"
 			tasks: [{
 				id: "3518BA86271BFEF8"
 				type: "item"
 				item: "hostilenetworks:loot_fabricator"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			description: ["Use the framework on an enemy to create a data model of the enemy. Works best with vanilla Minecraft mobs."]
+			dependencies: ["4CC2174E5B8A8378"]
+			id: "555F846CE75D7C94"
+			tasks: [{
+				id: "7164856972760496"
+				type: "item"
+				item: "hostilenetworks:blank_data_model"
+			}]
+			rewards: [{
+				id: "4566889FE1E08AC1"
+				type: "item"
+				item: "hostilenetworks:blank_data_model"
+				count: 3
+			}]
+		}
+		{
+			title: "Mob Data Model"
+			x: 1.0d
+			y: -1.0d
+			description: ["Improve your data model by killing the matching mob. Before the model can generate materials, you must kill enough to reach the first tier. Kills are only counted while the model is in a Deep Learner."]
+			dependencies: ["555F846CE75D7C94"]
+			id: "3605271D128FB73A"
+			tasks: [{
+				id: "52B9D1C5428A746D"
+				type: "item"
+				title: "Any Data Model"
+				icon: {
+					id: "hostilenetworks:data_model"
+					Count: 1b
+					tag: {
+						data_model: {
+							id: "hostilenetworks:creeper"
+						}
+					}
+				}
+				item: {
+					id: "hostilenetworks:data_model"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			description: ["This is the input item for the Loot Fabricated. One is consumed for every simulation."]
+			dependencies: ["4CC2174E5B8A8378"]
+			id: "7F61E61818BE12B9"
+			tasks: [{
+				id: "3EE05CAB14119C81"
+				type: "item"
+				item: "hostilenetworks:empty_prediction"
+			}]
+			rewards: [{
+				id: "08CA2D1BB8B61FC3"
+				type: "item"
+				item: "hostilenetworks:empty_prediction"
+				count: 16
+			}]
+		}
+		{
+			title: "Mob Prediction"
+			x: 0.0d
+			y: -2.5d
+			dependencies: [
+				"46489307ED0EAD18"
+				"3605271D128FB73A"
+				"7F61E61818BE12B9"
+			]
+			id: "10455471504ABEDD"
+			tasks: [{
+				id: "2D7B84047B998090"
+				type: "item"
+				title: "Any Prediction"
+				icon: {
+					id: "hostilenetworks:prediction"
+					Count: 1b
+					tag: {
+						data_model: {
+							id: "hostilenetworks:creeper"
+						}
+					}
+				}
+				item: {
+					id: "hostilenetworks:prediction"
+					Count: 1b
+					tag: { }
+				}
 			}]
 		}
 	]
