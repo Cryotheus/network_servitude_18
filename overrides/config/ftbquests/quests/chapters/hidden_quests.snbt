@@ -45,5 +45,52 @@
 				item: "quark:diamond_heart"
 			}]
 		}
+		{
+			x: 0.0d
+			y: 1.0d
+			description: ["You followed the Nature's Compass all the way to the world's origin... have you nothing better to do?"]
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			secret: true
+			id: "72A29A32A7E32767"
+			tasks: [{
+				id: "0230E6FB23BC0A9B"
+				type: "location"
+				title: "Visit the origin of the world"
+				icon: "enigmaticlegacy:void_pearl"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-3
+					0
+					-3
+				]
+				size: [I;
+					7
+					512
+					7
+				]
+			}]
+			rewards: [{
+				id: "605D64AD7F2F8386"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: {
+						RepairCost: 1
+						"quark:RuneAttached": 1b
+						Enchantments: [{
+							lvl: 1s
+							id: "ensorcellation:curse_fool"
+						}]
+						"quark:RuneColor": {
+							id: "quark:rainbow_rune"
+							Count: 1b
+						}
+					}
+				}
+			}]
+		}
 	]
 }

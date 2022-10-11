@@ -15,6 +15,19 @@
 	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	images: [{
+		x: 1.5d
+		y: 4.5d
+		width: 5.0d
+		height: 5.0d
+		rotation: 0.0d
+		image: "minecraft:textures/gui/presets/isles.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+		dependency: "215C47E160FC91BC"
+	}]
 	quests: [
 		{
 			title: "Biome Finder"
@@ -23,6 +36,7 @@
 			description: ["Points towards the selected biome!"]
 			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
+			optional: true
 			id: "185CC4A32DDD7E28"
 			tasks: [{
 				id: "1FCD6F7742B9DD66"
@@ -44,6 +58,7 @@
 				"3E42C3CC0FCB3654"
 			]
 			hide: true
+			optional: true
 			id: "61693591787AD7D5"
 			tasks: [{
 				id: "13C31B6FCB430804"
@@ -55,7 +70,7 @@
 			title: "Clock in a Block"
 			x: -1.5d
 			y: 0.0d
-			subtitle: "Clock ASMR"
+			subtitle: "Pleasant clock ASMR"
 			description: ["Use a comparator to get a redstone signal which roughly represents the time of day."]
 			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
@@ -78,6 +93,7 @@
 			]
 			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
+			optional: true
 			id: "5F0AB886903AC94F"
 			tasks: [{
 				id: "41F9E5A5AF479042"
@@ -92,12 +108,93 @@
 			description: ["Launches entities, and can be recompressed during activation if impacted. Yeets entities up to 12 blocks vertically, or 10.5 due to recompression."]
 			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
+			optional: true
 			id: "338594399DBFDC61"
 			tasks: [{
 				id: "399041B9059A0959"
 				type: "item"
 				item: "supplementaries:spring_launcher"
 			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			subtitle: "Wanted for tree griefing!"
+			description: [
+				"Right click a Notice Board with a Book and Quill that contains text to set the message."
+				"Maps and Patterns can also be displayed."
+			]
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			optional: true
+			id: "3894066F5204B007"
+			tasks: [{
+				id: "382240092C0B353A"
+				type: "item"
+				item: "supplementaries:notice_board"
+			}]
+			rewards: [{
+				id: "425BBCB6BB054FF0"
+				type: "item"
+				item: "minecraft:writable_book"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			description: ["Drops from a Crazed Illager found in Woodland Mansions."]
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			optional: true
+			secret: true
+			id: "215C47E160FC91BC"
+			tasks: [{
+				id: "1CC8CE0A54C8C7A9"
+				type: "item"
+				item: "brazier:living_flame"
+			}]
+		}
+		{
+			icon: "brazier:icon"
+			x: -1.5d
+			y: 5.0d
+			description: ["Structure that prevents natural hostile mob spawns in a large area. The taller it is, the futher it reaches."]
+			dependencies: ["215C47E160FC91BC"]
+			optional: true
+			id: "1DFCF1D646CBF462"
+			tasks: [
+				{
+					id: "6D3FB34E100407B6"
+					type: "item"
+					item: "brazier:brazier"
+				}
+				{
+					id: "21AF38117C068F72"
+					type: "item"
+					item: "minecraft:netherite_block"
+					count: 12L
+				}
+				{
+					id: "67E3020B94507FC4"
+					type: "item"
+					item: "minecraft:gilded_blackstone"
+					count: 9L
+				}
+			]
+			rewards: [
+				{
+					id: "62819C753FF9822D"
+					type: "item"
+					item: "minecraft:netherite_block"
+					count: 12
+				}
+				{
+					id: "42BD84A91310D441"
+					type: "item"
+					item: "minecraft:gilded_blackstone"
+					count: 9
+				}
+			]
 		}
 	]
 }
