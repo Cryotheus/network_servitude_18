@@ -16,17 +16,11 @@ function grant_items(player) {
 	
 	//inventory.set(7, Item.of('6x extendedmushrooms:mushroom_bread', '{display:{Name:"{\\"text\\":\\"§fBRED 46a-2§r\\"}",Lore:["{\\"text\\":\\"§7Expired... but still edible§r\\"}","{\\"text\\":\\"§7Standard issue for Network Serfs§r\\"}"]}}'))
 	inventory.set(7, Item.of('8x pamhc2foodextended:driedsoupitem', '{display:{Name:"{\\"text\\":\\"§fMeat Supplement v2.4.19d (Revision A)§r\\"}",Lore:["{\\"text\\":\\"§7Best described as a \\\\\\"Jerky Brick\\\\\\"§r\\"}","{\\"text\\":\\"§7Standard issue for Network Serfs§r\\"}"]}}'))
-	inventory.set(8, Item.of('sophisticatedbackpacks:backpack', "{borderColor:" + color_random() + ",clothColor:" + color_random() + "}"))
+	inventory.set(8, Item.of('sophisticatedbackpacks:backpack', "{borderColor:" + color_random() + ",clothColor:" + color_random() + ',display:{Name:"{\\"text\\":\\"§fSerf\'s Ruck§r\\"}",Lore:["{\\"text\\":\\"§7Standard issue for Network Serfs§r\\"}", "{\\"text\\":\\"§7Issued to: ' + player.name.string + '§r\\"}"]}}'))
 	
 	//inventory
 	//inventory.set(9, '2x lootbagmod:lootbag')
 }
-
-onEvent('ftbquests.completed.initial_items', event => {
-	var player = event.player
-	
-	if (player) {grant_items(player)}
-})
 
 onEvent("player.logged_in", event => {
 	if (!event.player.stages.has("network_servitude_initial_items")) {
