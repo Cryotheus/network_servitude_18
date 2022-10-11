@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": [
+		"OCO",
+		"CPC",
+		"ORO"
+	],
+	
+	"key": {
+		"P": {"item": "hostilenetworks:sim_chamber"},
+		"O": {"tag": "forge:obsidian"},
+		"R": {"tag": "forge:dusts/redstone"},
+		"C": {"item": "minecraft:repeater"}
+	},
+	
+	"result": {"item": "hostilenetworks:deep_learner"}
+}

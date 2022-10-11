@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": [
+		" P ",
+		"EOE",
+		"LCL"
+	],
+	
+	"key": {
+		"P": {"tag": "forge:ingots/netherite"},
+		"E": {"tag": "forge:gems/diamond"},
+		"O": {"item": "hostilenetworks:sim_chamber"},
+		"L": {"tag": "forge:ingots/gold"},
+		"C": {"item": "minecraft:comparator"}
+	},
+	
+	"result": {"item": "hostilenetworks:loot_fabricator"}
+}
