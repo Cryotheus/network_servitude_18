@@ -10,12 +10,13 @@ onEvent("jei.hide.items", event => {
 	event.hide("ae2things:advanced_inscriber")
 	event.hide("ae2things:crystal_growth")
 	
+	//avaritia
+	event.hide("avaritia:extreme_crafting_table")
+	event.hide(/avaritia:.*_singularity/)
+	
 	//blue skies
 	event.hide("blue_skies:black_fire")
 	event.hide("blue_skies:blue_fire")
-	
-	//chisel & bits
-	event.hide(/^chiselsandbits:block_bit/)
 	
 	//cyclic
 	event.hide("cyclic:sleeping_mat")
@@ -27,6 +28,7 @@ onEvent("jei.hide.items", event => {
 	event.hide(/^extendedcrafting:elite/)
 	
 	event.hide(Item.of("extendedcrafting:singularity", "{Id:\"extendedcrafting:aluminum\"}"))
+	event.hide(Item.of("extendedcrafting:singularity", "{Id:\"extendedcrafting:platinum\"}"))
 	
 	//jaopca
 	event.hide("jaopca:dusts.aluminum")
@@ -38,6 +40,9 @@ onEvent("jei.hide.items", event => {
 	event.hide("jaopca:mekanism_shards.aluminum")
 	event.hide("jaopca:raw_storage_blocks.aluminum")
 	event.hide("jaopca:storage_blocks.aluminum")
+	
+	//mystical agriculture
+	event.hide(/^mysticalagriculture:platinum/)
 	
 	//tconstruct
 	event.hide("tconstruct:broad_axe")
