@@ -6,20 +6,51 @@ Generates similar recipes so we don't have to write them by hand.
 Currently creates recipes for ore unification and bans some items that are useless to the pack.
 
 Currently affects:
+- Avaritia
 - Extended Crafting
 - JAOPCA
 - Mekanism
 '''
 
+#paths
 data_path = "overrides/kubejs/data/"
 extended_crafting_path = data_path + "extendedcrafting/recipes/"
 kubejs_path = data_path + "kubejs/recipes/"
 mekanism_path = data_path + "mekanism/recipes/"
 
+#the magical ban recipe
 ban_recipe = {
 	"type": "crafting_shapeless",
 	"ingredients": [{"item": "minecraft:barrier"}],
 	"result": {"item": "minecraft:barrier"}
+}
+
+#seedlings
+bans = {
+	"avaritia": [
+		#general crafts
+		"compressor",
+		"extreme_crafting_table",
+		
+		#singularities
+		"amethyst_singularity",
+		"copper_singularity",
+		"diamond_singularity",
+		"emerald_singularity",
+		"fluxed_singularity",
+		"gold_singularity",
+		"iridium_singularity",
+		"iron_singularity",
+		"lapis_singularity",
+		"lead_singularity",
+		"netherite_singularity",
+		"nickel_singularity",
+		"platinum_singularity",
+		"quartz_singularity",
+		"redstone_singularity",
+		"silver_singularity",
+		"tin_singularity",
+	]
 }
 
 extended_crafting_tiers = ["advanced", "basic", "elite"]
@@ -179,6 +210,17 @@ def write_json(file_path, object):
 #sets the current working directory to the parent folder of the script
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 os.makedirs(extended_crafting_path, 0o777, True)
+print("\n - Building ban files...")
+
+for namespace in bans: #general recipe bans
+	recipe_path = data_path + namespace + "/recipes/"
+	
+	os.makedirs(recipe_path, 0o777, True)
+	print("Building ban files for " + namespace)
+	
+	for local_path in bans[namespace]: write_ban(recipe_path + local_path + ".json")
+
+print("\n - Building metal files...")
 
 for metal in metals: #Mekanism and JAOPCA
 	info = metals[metal]
@@ -275,6 +317,8 @@ for metal in metals: #Mekanism and JAOPCA
 	write_ban(processing_path + "slurry/dirty/from_ore.json")
 	write_ban(processing_path + "slurry/dirty/from_raw_block.json")
 
+print("\n - Building Extended Crafting files...")
+
 for tier in extended_crafting_tiers: #Extended Crafting
 	tier_path = extended_crafting_path + tier
 	
@@ -285,4 +329,4 @@ for tier in extended_crafting_tiers: #Extended Crafting
 	write_ban(tier_path + "_component.json")
 	write_ban(tier_path + "_table.json")
 
-print("Completed!")
+print("\n - Completed!")
