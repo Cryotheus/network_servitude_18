@@ -43,7 +43,7 @@ worldgenMushrooms = true
 
 [gardenOfGlass]
 	#Set this to false to disable spawning with a Lexica Botania in Garden of Glass worlds, if you are modifying the modpack's progression to not start with Botania.
-	spawnWithLexicon = true
+	spawnWithLexicon = false
 	#The multiplier for island distances for multiplayer Garden of Glass worlds.
 	#Islands are placed on a grid with 256 blocks between points, with the spawn island always being placed on 256, 256.
 	#By default, the scale is 8, putting each island on points separated by 2048 blocks.
