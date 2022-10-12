@@ -1,1 +1,1 @@
-{"type":"mekanism:enriching","input":{"ingredient":{"item":"tconstruct:raw_cobalt"}},"output":{"item":"jaopca:mekanism_dusts.cobalt","count":4}}
+{"type":"mekanism:enriching","input":{"ingredient":{"item":"tconstruct:raw_cobalt"}},"output":{"item":"jaopca:dusts.cobalt","count":4}}

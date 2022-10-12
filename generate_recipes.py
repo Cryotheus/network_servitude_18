@@ -49,7 +49,16 @@ bans = {
 		"quartz_singularity",
 		"redstone_singularity",
 		"silver_singularity",
-		"tin_singularity",
+		"tin_singularity"
+	],
+	
+	"village_employment": [
+		"apiarist_apron_recipe",
+		"apiarist_hat_recipe",
+		"beekeeper_goggle_recipe",
+		"beekeeper_jacket_recipe",
+		"traveler_pants_recipe",
+		"traveler_robe_recipe"
 	]
 }
 
