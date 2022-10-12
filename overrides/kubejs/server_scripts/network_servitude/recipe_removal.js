@@ -5,6 +5,9 @@ onEvent("recipes", event => {
 	event.remove({id: "extendedcrafting:platinum_singularity"})
 	
 	//jaopca
+	event.remove({id: "jaopca:dusts.to_material.aluminum"})
+	
+	//jaopca:mekanism
 	event.remove({id: "jaopca:mekanism.raw_storage_block_to_dirty_slurry.aluminum"})
 	
 	event.remove({id: "jaopca:mekanism.ore_to_dirty_slurry.cobalt"})
