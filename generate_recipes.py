@@ -61,13 +61,11 @@ metals = {
 		"clump": "jaopca:mekanism_clumps.cobalt",
 		"crystal": "jaopca:mekanism_crystals.cobalt",
 		"dirty_slurry": "jaopca:mekanism_dirty.cobalt",
-		"dust": "jaopca:mekanism_dusts.cobalt",
+		"dust": "jaopca:dusts.cobalt",
 		"ingot": "tconstruct:cobalt_ingot",
 		"ore_tag": "forge:ores/cobalt",
 		"raw_ore": "tconstruct:raw_cobalt",
-		"shard": "jaopca:mekanism_shards.cobalt",
-		
-		"write_kubejs": True
+		"shard": "jaopca:mekanism_shards.cobalt"
 	},
 	
 	"copper": {
@@ -127,9 +125,7 @@ metals = {
 		"ingot": "thermal:nickel_ingot",
 		"ore_tag": "forge:ores/nickel",
 		"raw_ore": "thermal:raw_nickel",
-		"shard": "jaopca:mekanism_shards.nickel",
-		
-		"write_kubejs": True
+		"shard": "jaopca:mekanism_shards.nickel"
 	},
 	
 	"osmium": {
@@ -153,9 +149,7 @@ metals = {
 		"ingot": "thermal:silver_ingot",
 		"ore_tag": "forge:ores/silver",
 		"raw_ore": "thermal:raw_silver",
-		"shard": "jaopca:mekanism_shards.silver",
-		
-		"write_kubejs": True
+		"shard": "jaopca:mekanism_shards.silver"
 	},
 	
 	"tin": {
@@ -225,9 +219,6 @@ print("\n - Building metal files...")
 for metal in metals: #Mekanism and JAOPCA
 	info = metals[metal]
 	processing_path = mekanism_path + "processing/" + metal + "/"
-	
-	#if info.has_key("write_kubejs"): processing_path = kubejs_path + "processing/" + metal + "/"
-	#else: processing_path = mekanism_path + "processing/" + metal + "/"
 	
 	print("Building metal files " + metal + "...")
 	
