@@ -27,6 +27,11 @@
 				}
 				stage: "network_servitude_initial_items"
 			}]
+			rewards: [{
+				id: "5C090BE3EE47C66F"
+				type: "random"
+				table_id: 2317290549728759982L
+			}]
 		}
 		{
 			x: 0.5d
@@ -49,9 +54,14 @@
 				}
 				stage: ""
 			}]
+			rewards: [{
+				id: "3BFEC827DF8A577C"
+				type: "random"
+				table_id: 2317290549728759982L
+			}]
 		}
 		{
-			x: 0.5d
+			x: 1.0d
 			y: 1.0d
 			dependencies: ["2A53B1BFF8397650"]
 			hide: true
@@ -63,9 +73,14 @@
 				icon: "ae2:controller"
 				stage: ""
 			}]
+			rewards: [{
+				id: "795C7DCF19CE265F"
+				type: "random"
+				table_id: 2317290549728759982L
+			}]
 		}
 		{
-			x: -0.5d
+			x: 0.0d
 			y: 1.0d
 			dependencies: ["182D1E21C732C58C"]
 			hide: true
@@ -75,6 +90,22 @@
 				type: "gamestage"
 				title: "Complete Hostility Encouraged"
 				icon: "hostilenetworks:deep_learner"
+				stage: ""
+			}]
+			rewards: [{
+				id: "62FECA2A2FC0394E"
+				type: "random"
+				table_id: 2317290549728759982L
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			id: "0646548C104517D2"
+			tasks: [{
+				id: "52E88F447CA49CA7"
+				type: "gamestage"
+				title: "Complete Crafting++"
 				stage: ""
 			}]
 		}

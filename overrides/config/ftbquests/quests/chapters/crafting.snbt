@@ -1,0 +1,35 @@
+{
+	id: "6090BE59DE6CEAA0"
+	group: "141609C65CF7DF6F"
+	order_index: 0
+	filename: "crafting"
+	title: "Crafting++"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["614EA9EFBD6A72AE"]
+			size: 2.0d
+			id: "72BF0CBDC3F88680"
+			tasks: [{
+				id: "5307E376A80FD06E"
+				type: "item"
+				item: "extendedcrafting:ultimate_table"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["7B1B12E018652FD8"]
+			hide: true
+			id: "614EA9EFBD6A72AE"
+			tasks: [{
+				id: "4BF40A93EC2053D9"
+				type: "item"
+				item: "extendedcrafting:black_iron_ingot"
+			}]
+		}
+	]
+}
