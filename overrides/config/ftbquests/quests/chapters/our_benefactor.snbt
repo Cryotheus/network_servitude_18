@@ -7,6 +7,19 @@
 	icon: "ae2:controller"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	images: [{
+		x: 5.5d
+		y: 3.75d
+		width: 5.0d
+		height: 5.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/quantum_link.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+		dependency: "25A8F8D9218A0F4F"
+	}]
 	quests: [
 		{
 			title: "Jesse!"

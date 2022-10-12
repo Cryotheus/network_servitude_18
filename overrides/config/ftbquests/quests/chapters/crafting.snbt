@@ -4,12 +4,14 @@
 	order_index: 0
 	filename: "crafting"
 	title: "Crafting++"
+	icon: "avaritia:extreme_crafting_table"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			x: 0.0d
 			y: 0.0d
+			subtitle: "Because 9 ingredients is not nearly enough >:D"
 			dependencies: ["614EA9EFBD6A72AE"]
 			size: 2.0d
 			id: "72BF0CBDC3F88680"
@@ -20,6 +22,7 @@
 			}]
 		}
 		{
+			title: "Effectively: Meteoric Iron?"
 			x: 0.0d
 			y: -1.5d
 			dependencies: ["7B1B12E018652FD8"]
@@ -29,6 +32,44 @@
 				id: "4BF40A93EC2053D9"
 				type: "item"
 				item: "extendedcrafting:black_iron_ingot"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			dependencies: ["614EA9EFBD6A72AE"]
+			id: "609EECB68639CB42"
+			tasks: [{
+				id: "459821210370ACDC"
+				type: "item"
+				item: "extendedcrafting:compressor"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["609EECB68639CB42"]
+			id: "7A819660FF97C82E"
+			tasks: [{
+				id: "77C288E8D5F023CB"
+				type: "item"
+				title: "Any Singularity"
+				icon: {
+					id: "extendedcrafting:ultimate_singularity"
+					Count: 1b
+					tag: {
+						"quark:RuneAttached": 1b
+						"quark:RuneColor": {
+							Count: 1b
+							id: "quark:blank_rune"
+						}
+					}
+				}
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: { }
+				}
 			}]
 		}
 	]

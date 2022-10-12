@@ -16,12 +16,12 @@
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [{
-		x: 1.5d
+		x: 1.0d
 		y: 4.5d
 		width: 5.0d
 		height: 5.0d
 		rotation: 0.0d
-		image: "minecraft:textures/gui/presets/isles.png"
+		image: "kubejs:textures/quest/brazier.png"
 		hover: [ ]
 		click: ""
 		dev: false
@@ -264,6 +264,76 @@
 					item: "pamhc2foodcore:applejuiceitem"
 				}
 			]
+		}
+		{
+			x: -1.5d
+			y: 1.0d
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			id: "1FAF68B244519E57"
+			tasks: [{
+				id: "2865EB4665135512"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_building"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+						energy: 500000.0d
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			id: "3A518C454297E122"
+			tasks: [{
+				id: "5FEA7885BB4AFBE3"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_destruction"
+					Count: 1b
+					tag: {
+						overlay: 1b
+						fuzzy: 1b
+						energy: 1000000.0d
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			id: "2EF4123FA5D6F660"
+			tasks: [{
+				id: "0CC73AFCF61680A6"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_exchanging"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+						energy: 500000.0d
+					}
+				}
+			}]
 		}
 	]
 }
