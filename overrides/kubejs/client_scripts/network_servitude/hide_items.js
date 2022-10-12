@@ -21,6 +21,7 @@ onEvent("jei.hide.items", event => {
 	event.hide("cyclic:sleeping_mat")
 	
 	//extendedcrafting
+	event.hide("extendedcrafting:recipe_maker")
 	event.hide(/^extendedcrafting:advanced/)
 	event.hide(/^extendedcrafting:basic/)
 	event.hide(/^extendedcrafting:elite/)
