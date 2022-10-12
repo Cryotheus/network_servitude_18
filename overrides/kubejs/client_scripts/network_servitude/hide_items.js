@@ -28,9 +28,6 @@ onEvent("jei.hide.items", event => {
 	event.hide(/^extendedcrafting:basic/)
 	event.hide(/^extendedcrafting:elite/)
 	
-	event.hide(Item.of("extendedcrafting:singularity", "{Id:\"extendedcrafting:aluminum\"}"))
-	event.hide(Item.of("extendedcrafting:singularity", "{Id:\"extendedcrafting:platinum\"}"))
-	
 	//jaopca
 	event.hide("jaopca:dusts.aluminum")
 	event.hide("jaopca:mekanism_clean.aluminum")

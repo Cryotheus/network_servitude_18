@@ -1,9 +1,5 @@
 //this file is only for recipes that cannot be removed using the data pack
 onEvent("recipes", event => {
-	//extended crafting
-	event.remove({id: "extendedcrafting:aluminum_singularity"})
-	event.remove({id: "extendedcrafting:platinum_singularity"})
-	
 	//jaopca
 	event.remove({id: "jaopca:dusts.to_material.aluminum"})
 	
