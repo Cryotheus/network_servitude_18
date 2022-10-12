@@ -11,6 +11,7 @@ onEvent("jei.hide.items", event => {
 	event.hide("ae2things:crystal_growth")
 	
 	//avaritia
+	event.hide("avaritia:compressor")
 	event.hide("avaritia:extreme_crafting_table")
 	event.hide(/avaritia:.*_singularity/)
 	
