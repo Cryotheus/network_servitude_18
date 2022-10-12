@@ -1,7 +1,11 @@
 {
 	"type": "farmersdelight:cutting",
 	"ingredients": [{"item": "culturaldelights:avocado_log"}],
-	"tool": {"tag": "forge:tools/axe"},
+	
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "axe_dig"
+	},
 	
 	"result": [
 		{"item": "minecraft:stripped_jungle_log"},
