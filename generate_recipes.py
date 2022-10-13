@@ -10,11 +10,13 @@ Currently affects:
 - Extended Crafting
 - JAOPCA
 - Mekanism
+- Village Employment
 '''
 
 #paths
 data_path = "overrides/kubejs/data/"
 extended_crafting_path = data_path + "extendedcrafting/recipes/"
+extended_crafting_singularities_path = "overrides/config/extendedcrafting/singularities/"
 kubejs_path = data_path + "kubejs/recipes/"
 mekanism_path = data_path + "mekanism/recipes/"
 
@@ -63,6 +65,41 @@ bans = {
 }
 
 extended_crafting_tiers = ["advanced", "basic", "elite"]
+
+extended_crafting_recipes = {
+	#default singularities, with exclusions
+	"bronze": {"colors": ["d99f43", "bb6b3b"]},
+	"coal": {"colors": ["363739", "261e24"], "item": "minecraft:coal"},
+	"copper": {"colors": ["fa977c", "bc5430"]},
+	"diamond": {"colors": ["a6fce9", "1aaca8"], "tag": "forge:gems/diamond"},
+	"electrum": {"colors": ["f5f18e", "9e8d3e"]},
+	"emerald": {"colors": ["7df8ac", "8e1a"], "tag": "forge:gems/emerald"},
+	"glowstone": {"colors": ["ffd38f", "a06135"], "tag": "forge:dusts/glowstone"},
+	"gold": {"colors": ["fdf55f", "d98e04"]},
+	"invar": {"colors": ["bcc5bb", "5d7877"]},
+	"iron": {"colors": ["e1e1e1", "6c6c6c"]},
+	"lapis_lazuli": {"colors": ["678dea", "1b53a7"], "tag": "forge:gems/lapis"},
+	"lead": {"colors": ["6c7d92", "323562"]},
+	"nickel": {"colors": ["e1d798", "b1976c"]},
+	"redstone": {"colors": ["ff0000", "8a0901"], "tag": "forge:dusts/redstone"},
+	"silver": {"colors": ["c0cdd2", "5f6e7c"]},
+	"steel": {"colors": ["565656", "232323"]},
+	"tin": {"colors": ["a0bebd", "527889"]},
+	
+	#custom singularities
+	"certus_quartz": {
+		"colors": ["b8d8fc", "466580"],
+		"name": "Certus Quartz",
+		"tag": "forge:gems/certus_quartz"
+	},
+	
+	"amethyst_bronze": {"colors": ["e3bdda", "8d5f88"], "name": "Amethyst Bronze"},
+	"fluix_steel": {"colors": ["be8ef4", "4d3b93"], "name": "Fluix Steel"},
+	"lumium": {"colors": ["fcf9e0", "fceea8"], "name": "Lumium"},
+	"osmium": {"colors": ["d7eff6", "78829c"], "name": "Osmium"},
+	"rose_gold": {"colors": ["f4cbb9", "cc8e7d"], "name": "Rose Gold"},
+	"uranium": {"colors": ["defadc", "73a771"], "name": "Uranium"}
+}
 
 metals = {
 	"cobalt": {
@@ -212,7 +249,6 @@ def write_json(file_path, object):
 
 #sets the current working directory to the parent folder of the script
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-os.makedirs(extended_crafting_path, 0o777, True)
 print("\n - Building ban files...")
 
 for namespace in bans: #general recipe bans
@@ -318,15 +354,40 @@ for metal in metals: #Mekanism and JAOPCA
 	write_ban(processing_path + "slurry/dirty/from_raw_block.json")
 
 print("\n - Building Extended Crafting files...")
+os.makedirs(extended_crafting_path, 0o777, True)
 
 for tier in extended_crafting_tiers: #Extended Crafting
 	tier_path = extended_crafting_path + tier
 	
 	print("Building Extended Crafting tier files " + tier + "...")
-	
 	write_ban(tier_path + "_auto_table.json")
 	write_ban(tier_path + "_catalyst.json")
 	write_ban(tier_path + "_component.json")
 	write_ban(tier_path + "_table.json")
+
+print("\n - Building Extended Crafting singularity configurations...")
+os.makedirs(extended_crafting_singularities_path, 0o777, True)
+
+for type in extended_crafting_recipes:
+	info = extended_crafting_recipes[type]
+	
+	if "ingredient" in info: ingredient_object = info["ingredient"]
+	else:
+		if "tag" in info: ingredient_object = {"tag": info["tag"]}
+		elif "item" in info: ingredient_object = {"item": info["item"]}
+		else: ingredient_object = {"tag": "forge:ingots/" + type}
+	
+	if "name" in info: name = info["name"]
+	else: name = "singularity.extendedcrafting." + type
+	
+	object = {
+		"name": name,
+		"colors": info["colors"],
+		"ingredient": ingredient_object
+	}
+	
+	if "excluded" in info: object["inUltimateSingularity"] = False
+	
+	write_json(extended_crafting_singularities_path + type + ".json", object)
 
 print("\n - Completed!")
