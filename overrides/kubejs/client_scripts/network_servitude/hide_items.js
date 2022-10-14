@@ -4,7 +4,7 @@ onEvent("jei.hide.items", event => {
 	event.hide(/^excavated_variants:/)
 	
 	//ae2
-	event.hide("ae2:facade")
+	//event.hide("ae2:facade")
 	
 	//ae2 things
 	event.hide("ae2things:advanced_inscriber")
