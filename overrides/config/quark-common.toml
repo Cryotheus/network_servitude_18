@@ -234,7 +234,7 @@
 	"Quick Armor Swapping" = true
 	"Item Sharing" = true
 	"Inventory Sorting" = false
-	"Hotbar Changer" = true
+	"Hotbar Changer" = false
 	"Expanded Item Interactions" = false
 	"Easy Transfering" = false
 	"Chests In Boats" = true
@@ -1553,10 +1553,10 @@
 	"Totem Of Holding" = true
 	"Tiny Potato" = true
 	Pipes = true
-	"Matrix Enchanting" = true
+	"Matrix Enchanting" = false
 	Magnets = true
 	Crate = true
-	Backpack = true
+	Backpack = false
 
 	[oddities.totem_of_holding]
 		#Set this to false to remove the behaviour where totems destroy themselves if the player dies again.
