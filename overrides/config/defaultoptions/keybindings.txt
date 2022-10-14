@@ -214,9 +214,9 @@ key_tetra.toolbelt.binding.access:key.keyboard.unknown:NONE
 key_tetra.toolbelt.binding.restock:key.keyboard.unknown:NONE
 key_tetra.toolbelt.binding.open:key.keyboard.unknown:NONE
 key_keybind.sophisticatedbackpacks.open_backpack:key.keyboard.b:NONE
-key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.c:NONE
+key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown:NONE
 key_keybind.sophisticatedbackpacks.tool_swap:key.keyboard.unknown:NONE
-key_keybind.sophisticatedbackpacks.sort:key.mouse.middle:NONE
+key_keybind.sophisticatedbackpacks.sort:key.keyboard.unknown:NONE
 key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown:NONE
 key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown:NONE
 key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown:NONE
