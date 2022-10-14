@@ -5,6 +5,7 @@
 	filename: "hostility_encouraged"
 	title: "Hostility Encouraged"
 	icon: "hostilenetworks:deep_learner"
+	subtitle: ["Has AI gone too far?"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

@@ -4,18 +4,13 @@
 	order_index: 0
 	filename: "initialization"
 	title: "Initialization"
-	icon: {
-		id: "sophisticatedstorage:crafting_upgrade"
-		Count: 1b
-		ForgeCaps: {
-			"polymorph:stack_recipe_data": { }
-		}
-	}
+	icon: "sophisticatedstorage:crafting_upgrade"
+	subtitle: ["Hello, World!"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [{
-		x: -5.0d
-		y: -1.5d
+		x: -2.0d
+		y: 2.5d
 		width: 4.0d
 		height: 4.0d
 		rotation: 0.0d
@@ -107,7 +102,7 @@
 		}
 		{
 			x: -2.5d
-			y: -2.0d
+			y: 0.0d
 			dependencies: ["3B333E1F59BDE681"]
 			id: "67AB6AA142AF62EB"
 			tasks: [{
@@ -118,7 +113,7 @@
 		}
 		{
 			x: -3.0d
-			y: -3.0d
+			y: -1.0d
 			dependencies: ["67AB6AA142AF62EB"]
 			id: "221A28E9904D3971"
 			tasks: [{
@@ -143,7 +138,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: -1.0d
 			y: -2.0d
 			dependencies: ["26FD2F5057A89993"]
 			id: "25234C5508FA5727"
@@ -155,7 +150,7 @@
 		}
 		{
 			x: -2.0d
-			y: -3.0d
+			y: -2.0d
 			dependencies: ["25234C5508FA5727"]
 			id: "364E58829C936D06"
 			tasks: [{
@@ -165,8 +160,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -4.0d
+			x: -3.0d
+			y: -2.0d
 			dependencies: ["364E58829C936D06"]
 			id: "77612C304B0A6C1A"
 			tasks: [{
@@ -236,11 +231,38 @@
 			y: 1.5d
 			description: ["Campfires not only heal nearby players and friendly mobs, but also prevent hostile mobs from spawning nearby!"]
 			dependencies: ["1A68FA9C6DD432C8"]
+			hide: true
 			id: "4727B54ACE009CF0"
 			tasks: [{
 				id: "58283C44E6A23EDE"
 				type: "item"
 				item: "minecraft:campfire"
+			}]
+		}
+		{
+			title: "Sophisticated Storage"
+			x: 1.5d
+			y: 0.0d
+			description: [
+				"If you like having an upgradable backpack, then try doing the same to a chest!"
+				""
+				"Combine a chest with a Redstone Torch to convert it into a Sophisticated Storage Chest."
+			]
+			dependencies: ["1A68FA9C6DD432C8"]
+			hide: true
+			id: "7B7013BF2D4EC7CC"
+			tasks: [{
+				id: "4420D45AF22320A4"
+				type: "item"
+				title: "Any Sophisticated Storage Chest"
+				icon: {
+					id: "sophisticatedstorage:chest"
+					Count: 1b
+					tag: {
+						woodType: "oak"
+					}
+				}
+				item: "sophisticatedstorage:chest"
 			}]
 		}
 	]

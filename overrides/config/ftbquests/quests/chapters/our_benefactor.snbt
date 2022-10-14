@@ -5,11 +5,12 @@
 	filename: "our_benefactor"
 	title: "Our Benefactor"
 	icon: "ae2:controller"
+	subtitle: ["... I elected to establish my administration here ..."]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [{
 		x: 5.5d
-		y: 3.75d
+		y: 4.5d
 		width: 5.0d
 		height: 5.0d
 		rotation: 0.0d
@@ -23,6 +24,7 @@
 	quests: [
 		{
 			title: "Jesse!"
+			icon: "ae2:charged_certus_quartz_crystal"
 			x: 0.0d
 			y: 2.0d
 			subtitle: "Where is all starts."
@@ -93,6 +95,7 @@
 			x: -1.0d
 			y: 0.0d
 			dependencies: ["3A0CE8C56581A97E"]
+			hide: true
 			id: "43E7137742F7D890"
 			tasks: [{
 				id: "09A7B4302092D95B"
@@ -102,10 +105,12 @@
 		}
 		{
 			title: "Do NOT Inhale"
+			icon: "mekanism:dust_quartz"
 			x: -1.0d
 			y: 1.0d
 			subtitle: "These are NOT drugs, Silicosis and Mesothelioma are not a joke."
 			dependencies: ["7197724A4AB64179"]
+			hide: true
 			id: "7D4D3BF655831150"
 			tasks: [{
 				id: "360B1198BAC09A0C"
@@ -136,11 +141,12 @@
 			title: "Fragile \"Cables\""
 			x: -2.0d
 			y: 1.0d
-			subtitle: "Those glass splinters get everywher! In your fingers, eyes, lungs, I even found some in my wife's forearm, and she doesn't even go to work!"
+			subtitle: "Those glass splinters get everywhere! In your fingers, eyes, lungs, I even found some in my wife's forearm, and she doesn't even go to work!"
 			dependencies: [
 				"3BD92744DD71756F"
 				"43E7137742F7D890"
 			]
+			hide: true
 			id: "7D0B5D7724237015"
 			tasks: [{
 				id: "22E4A82C34B430ED"
@@ -205,6 +211,7 @@
 				"7D0B5D7724237015"
 				"6226C69E82FB0819"
 			]
+			hide: true
 			id: "56E084F7037171F1"
 			tasks: [{
 				id: "54A9977BD78CDACB"
@@ -218,6 +225,7 @@
 			y: 3.0d
 			subtitle: "Even if it's irresistible."
 			dependencies: ["7D4D3BF655831150"]
+			hide: true
 			id: "77EBE4ADDB398754"
 			tasks: [{
 				id: "174BCB67F8B4DDE1"
@@ -291,6 +299,7 @@
 			y: 5.0d
 			subtitle: "THE, WRIST, GAAAAAAME!!!"
 			dependencies: ["77EBE4ADDB398754"]
+			hide: true
 			id: "4F2E0D9BFD9DCE4D"
 			tasks: [{
 				id: "3205C35D90239F19"
@@ -308,6 +317,7 @@
 				"6226C69E82FB0819"
 				"7B1B12E018652FD8"
 			]
+			hide: true
 			size: 2.0d
 			id: "6EB47684DF1A1168"
 			tasks: [{
@@ -324,6 +334,7 @@
 				"27E0A6717CC22485"
 				"56BB4984545AE7C5"
 			]
+			hide: true
 			id: "56C2B0672AD77541"
 			tasks: [{
 				id: "497C123339931E4E"
@@ -335,6 +346,7 @@
 			x: 0.0d
 			y: 6.0d
 			dependencies: ["6226C69E82FB0819"]
+			hide: true
 			id: "56BB4984545AE7C5"
 			tasks: [{
 				id: "6EB084574FC6358A"
@@ -347,6 +359,7 @@
 			x: -1.0d
 			y: 4.0d
 			dependencies: ["6226C69E82FB0819"]
+			hide: true
 			id: "21D85736FA33ACE0"
 			tasks: [{
 				id: "271D8D6F8FF3817E"
@@ -362,6 +375,7 @@
 				"7246AB15370CAF7B"
 				"56E084F7037171F1"
 			]
+			hide: true
 			id: "66F2A0FA23445094"
 			tasks: [{
 				id: "17D7E0BA40C96E14"
@@ -378,6 +392,7 @@
 				"66F2A0FA23445094"
 				"37A682D6D66278CB"
 			]
+			hide: true
 			optional: true
 			id: "2E68F0FFFE9B016A"
 			tasks: [{
@@ -392,6 +407,7 @@
 			y: 6.0d
 			subtitle: "HALF BIT!"
 			dependencies: ["7246AB15370CAF7B"]
+			hide: true
 			id: "7CC1C4AA92BF64EE"
 			tasks: [{
 				id: "05F67610A321E9C8"
@@ -408,6 +424,7 @@
 				"7CC1C4AA92BF64EE"
 				"2F1D32B693D3DB99"
 			]
+			hide: true
 			id: "363969EC5EA5BAC2"
 			tasks: [{
 				id: "0E0A15BE9A5E54FA"
@@ -421,6 +438,7 @@
 			y: 8.0d
 			subtitle: "8 Bits"
 			dependencies: ["363969EC5EA5BAC2"]
+			hide: true
 			id: "4AB6D1E86D5BE469"
 			tasks: [{
 				id: "4A8F6174EFC84D59"
@@ -437,6 +455,7 @@
 				"4AB6D1E86D5BE469"
 				"5E95386F00C4773A"
 			]
+			hide: true
 			id: "149796284121699E"
 			tasks: [{
 				id: "1691B3F87174A3BB"
@@ -450,6 +469,7 @@
 			y: 9.0d
 			subtitle: "Has gaming gone too far?"
 			dependencies: ["149796284121699E"]
+			hide: true
 			id: "6E24E1CFE917F988"
 			tasks: [{
 				id: "62545B12EEDEA9E5"
@@ -464,6 +484,7 @@
 			subtitle: "Store all those pesky swords!"
 			description: ["This drive is not limited by types, only bytes."]
 			dependencies: ["149796284121699E"]
+			hide: true
 			id: "48DBEC036DCAAB58"
 			tasks: [{
 				id: "5DE4984DF3B2AFB5"
@@ -481,6 +502,7 @@
 			y: 9.0d
 			subtitle: "Finally, enough space to store your \"Homework\""
 			dependencies: ["6E24E1CFE917F988"]
+			hide: true
 			id: "4E695B5AAA801E9C"
 			tasks: [{
 				id: "5D7615C70A92EB93"
@@ -511,6 +533,7 @@
 				"658137F4C4A95BA0"
 				"6226C69E82FB0819"
 			]
+			hide: true
 			id: "0919968CD952F0C6"
 			tasks: [{
 				id: "5C52C1AB487E3EC6"
@@ -524,6 +547,7 @@
 			y: 8.0d
 			subtitle: "I know I said the same thing with the silicon, but in all seriousness, don't. It's so heavy, it WILL rip a hole through your stomach lining."
 			dependencies: ["149796284121699E"]
+			hide: true
 			id: "658137F4C4A95BA0"
 			tasks: [{
 				id: "0484F494C52D6E33"
@@ -550,6 +574,7 @@
 			x: -4.0d
 			y: 5.0d
 			dependencies: ["7246AB15370CAF7B"]
+			hide: true
 			id: "32B155DD04AC18F1"
 			tasks: [
 				{
@@ -618,6 +643,7 @@
 			x: -6.0d
 			y: 6.0d
 			dependencies: ["79377BD25C23EC11"]
+			hide: true
 			id: "6C75AD13700B69A3"
 			tasks: [{
 				id: "275F7BE2919C36C7"
@@ -634,6 +660,7 @@
 				"07FA6541FE33BEF6"
 				"798C9D7D5F404A4B"
 			]
+			hide: true
 			id: "206DD888B3A25B09"
 			tasks: [{
 				id: "727EA68F52104F33"
@@ -661,6 +688,7 @@
 				"79377BD25C23EC11"
 				"7D0B5D7724237015"
 			]
+			hide: true
 			id: "5B2835CED37005AD"
 			tasks: [{
 				id: "7C272DB50096C31F"
@@ -672,6 +700,7 @@
 			x: -3.0d
 			y: 7.0d
 			dependencies: ["2F1D32B693D3DB99"]
+			hide: true
 			id: "798C9D7D5F404A4B"
 			tasks: [{
 				id: "20D6CEF6A180908C"
@@ -721,6 +750,7 @@
 			y: 1.0d
 			subtitle: "Oops..."
 			dependencies: ["2E68F0FFFE9B016A"]
+			hide: true
 			optional: true
 			secret: true
 			id: "796171440001B7EC"
@@ -740,9 +770,13 @@
 					item: "minecraft:stone"
 				}
 			}
-			x: 1.0d
+			x: 0.0d
 			y: -1.0d
-			description: ["Make your walls three blocks thick, and cable management becomes much easier!"]
+			description: [
+				"Make your walls three blocks thick, and cable management becomes much easier!"
+				""
+				"Place on cables to diguise one side as a block"
+			]
 			dependencies: ["3AA84C8B1D288324"]
 			optional: true
 			id: "7DF08648AB7F3C90"
@@ -789,8 +823,9 @@
 		}
 		{
 			title: "Link, START!"
+			icon: "ae2:quantum_ring"
 			x: 4.0d
-			y: 6.0d
+			y: 7.0d
 			description: ["Like a portal, but for your ME system! The sides of the ring are the media to pass your channels through."]
 			dependencies: ["725E9EA3981CC990"]
 			id: "25A8F8D9218A0F4F"
@@ -815,6 +850,7 @@
 			y: 1.0d
 			subtitle: "I've got a BAAAAAD feeling about this one Scoobs..."
 			dependencies: ["7D0B5D7724237015"]
+			hide: true
 			optional: true
 			id: "37A682D6D66278CB"
 			tasks: [{
@@ -829,6 +865,7 @@
 			y: 4.0d
 			description: ["If you alternatively always need an inventory to have an item and want it crafted when the ME system runs out, use and ME Export Bus with a Crafting Card."]
 			dependencies: ["2E60D3E116A71A50"]
+			hide: true
 			optional: true
 			id: "28D2D40442493F49"
 			tasks: [{
@@ -841,11 +878,19 @@
 			x: 2.0d
 			y: 5.0d
 			dependencies: ["6226C69E82FB0819"]
+			hide: true
 			id: "53958BDF9D3769E4"
 			tasks: [{
-				id: "47468FD716CCE7F7"
+				id: "52B548B9137BB841"
 				type: "item"
-				item: "ae2:crafting_accelerator"
+				title: "Any #kubejs:network_servitude_crafting_storage"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:network_servitude_crafting_storage"
+					}
+				}
 			}]
 		}
 		{
@@ -875,7 +920,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 3.0d
 			y: 1.0d
 			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
@@ -890,11 +935,46 @@
 			x: 3.0d
 			y: 2.0d
 			dependencies: ["3D0BB3DD52BF427E"]
+			hide: true
 			id: "7B1B12E018652FD8"
 			tasks: [{
 				id: "086B1D1F3E6B5447"
 				type: "item"
 				item: "ae2:smooth_sky_stone_block"
+			}]
+		}
+		{
+			title: "Who's Steve Jobs?"
+			x: -7.0d
+			y: 8.0d
+			description: ["Craft any terminal together with another terminal of a different type to get a Universal Terminal."]
+			dependencies: ["206DD888B3A25B09"]
+			hide: true
+			id: "525747BFA4CE5913"
+			tasks: [{
+				id: "2FBA90BB2C29C700"
+				type: "item"
+				item: {
+					id: "ae2wtlib:wireless_universal_terminal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "63378D4221007C45"
+				type: "item"
+				item: "cyclic:apple_bone"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.0d
+			dependencies: ["53958BDF9D3769E4"]
+			id: "73565FFB75D54AE5"
+			tasks: [{
+				id: "51EFEE807A83532D"
+				type: "item"
+				item: "ae2:crafting_accelerator"
 			}]
 		}
 	]

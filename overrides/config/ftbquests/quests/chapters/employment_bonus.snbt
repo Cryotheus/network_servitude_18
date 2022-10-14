@@ -5,10 +5,15 @@
 	filename: "employment_bonus"
 	title: "Employment Bonus"
 	icon: "reliquary:fortune_coin"
+	subtitle: [
+		"Compensation for overtime?"
+		"How can you have overtime when a 168 hour work week is standard?"
+	]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			disable_toast: true
 			x: -0.5d
 			y: 0.0d
 			dependencies: ["79FA0B9C1817887E"]
@@ -18,13 +23,8 @@
 				id: "4546E1F02D79A753"
 				type: "gamestage"
 				title: "Complete Initialization"
-				icon: {
-					id: "sophisticatedstorage:crafting_upgrade"
-					Count: 1b
-					ForgeCaps: {
-						"polymorph:stack_recipe_data": { }
-					}
-				}
+				icon: "sophisticatedstorage:crafting_upgrade"
+				disable_toast: true
 				stage: "network_servitude_initial_items"
 			}]
 			rewards: [{
@@ -34,6 +34,7 @@
 			}]
 		}
 		{
+			disable_toast: true
 			x: 0.5d
 			y: 0.0d
 			dependencies: ["5B752BEC2E68A859"]
@@ -52,6 +53,7 @@
 						energy: 1000000.0d
 					}
 				}
+				disable_toast: true
 				stage: ""
 			}]
 			rewards: [{
@@ -61,6 +63,7 @@
 			}]
 		}
 		{
+			disable_toast: true
 			x: 1.0d
 			y: 1.0d
 			dependencies: ["2A53B1BFF8397650"]
@@ -71,7 +74,8 @@
 				type: "gamestage"
 				title: "Complete Our Benefactor"
 				icon: "ae2:controller"
-				stage: ""
+				disable_toast: true
+				stage: "network_servitude_initial_items"
 			}]
 			rewards: [{
 				id: "795C7DCF19CE265F"
@@ -80,6 +84,7 @@
 			}]
 		}
 		{
+			disable_toast: true
 			x: 0.0d
 			y: 1.0d
 			dependencies: ["182D1E21C732C58C"]
@@ -90,7 +95,8 @@
 				type: "gamestage"
 				title: "Complete Hostility Encouraged"
 				icon: "hostilenetworks:deep_learner"
-				stage: ""
+				disable_toast: true
+				stage: "network_servitude_initial_items"
 			}]
 			rewards: [{
 				id: "62FECA2A2FC0394E"
@@ -99,15 +105,55 @@
 			}]
 		}
 		{
+			disable_toast: true
 			x: -1.0d
 			y: 1.0d
 			dependencies: ["6090BE59DE6CEAA0"]
+			hide: true
 			id: "0646548C104517D2"
 			tasks: [{
 				id: "52E88F447CA49CA7"
 				type: "gamestage"
 				title: "Complete Crafting++"
+				icon: "avaritia:extreme_crafting_table"
+				disable_toast: true
+				stage: "network_servitude_initial_items"
+			}]
+			rewards: [{
+				id: "716E17E38B05117D"
+				type: "random"
+				table_id: 2317290549728759982L
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -1.0d
+			dependencies: ["15A0BB305230C21B"]
+			hide: true
+			id: "1FD4CA76923D9C5C"
+			tasks: [{
+				id: "70180CD1DAA2A4EB"
+				type: "gamestage"
+				title: "Complete Hidden Quests"
+				icon: {
+					id: "extendedcrafting:ultimate_singularity"
+					Count: 1b
+					tag: {
+						"quark:RuneAttached": 1b
+						"quark:RuneColor": {
+							Count: 1b
+							id: "quark:blank_rune"
+						}
+					}
+				}
+				disable_toast: true
 				stage: ""
+			}]
+			rewards: [{
+				id: "755B0F475B29F5EC"
+				type: "choice"
+				table_id: 2317290549728759982L
 			}]
 		}
 	]

@@ -13,11 +13,12 @@
 			energy: 1000000.0d
 		}
 	}
+	subtitle: ["Quality of life is MANDATORY."]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [{
 		x: 1.0d
-		y: 4.5d
+		y: 5.0d
 		width: 5.0d
 		height: 5.0d
 		rotation: 0.0d
@@ -333,6 +334,36 @@
 						energy: 500000.0d
 					}
 				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 6.0d
+			description: ["Use a Torch on the Brazier to get a Living Torch. While holding a Living Torch, you will be able to see the maximum range of the Brazier when you are within 5 blocks of its maximum range."]
+			dependencies: ["1DFCF1D646CBF462"]
+			id: "74F87EC988867D81"
+			tasks: [{
+				id: "62DE188FCAEF75C2"
+				type: "item"
+				item: "brazier:living_torch"
+			}]
+		}
+		{
+			title: "Hoarding Solutions™"
+			x: 0.0d
+			y: 2.5d
+			description: [
+				"The Crate is like a Chest, but it only limits the quantity of items instead of both quantity and types."
+				""
+				"TL;DR: use it to store unstackable items"
+			]
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			id: "1681848B1A491295"
+			tasks: [{
+				id: "41FE795349CED532"
+				type: "item"
+				item: "quark:crate"
 			}]
 		}
 	]
