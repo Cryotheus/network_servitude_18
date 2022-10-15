@@ -35,7 +35,10 @@
 			x: -3.0d
 			y: 0.0d
 			description: ["Points towards the selected biome!"]
-			dependencies: ["3E42C3CC0FCB3654"]
+			dependencies: [
+				"3E42C3CC0FCB3654"
+				"5F0AB886903AC94F"
+			]
 			hide: true
 			id: "185CC4A32DDD7E28"
 			tasks: [{
