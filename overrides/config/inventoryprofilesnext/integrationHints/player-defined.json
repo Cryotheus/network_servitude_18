@@ -6,5 +6,7 @@
 	"de.mari_023.ae2wtlib.wct.WCTMenu": {"ignore": true},
 	"de.mari_023.ae2wtlib.wct.WCTScreen": {"ignore": true},
 	"de.mari_023.ae2wtlib.wet.WETMenu": {"ignore": true},
-	"de.mari_023.ae2wtlib.wet.WETScreen": {"ignore": true}
+	"de.mari_023.ae2wtlib.wet.WETScreen": {"ignore": true},
+	"se.mickelus.tetra.blocks.workbench.gui.WorkbenchScreen": {"ignore": true},
+	"se.mickelus.tetra.blocks.workbench.WorkbenchContainer": {"ignore": true}
 }
