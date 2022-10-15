@@ -29,15 +29,7 @@ onEvent("jei.hide.items", event => {
 	event.hide(/^extendedcrafting:elite/)
 	
 	//jaopca
-	event.hide("jaopca:dusts.aluminum")
-	event.hide("jaopca:mekanism_clean.aluminum")
-	event.hide("jaopca:mekanism_clumps.aluminum")
-	event.hide("jaopca:mekanism_crystals.aluminum")
-	event.hide("jaopca:mekanism_dirty_dusts.aluminum")
-	event.hide("jaopca:mekanism_dirty.aluminum")
-	event.hide("jaopca:mekanism_shards.aluminum")
-	event.hide("jaopca:raw_storage_blocks.aluminum")
-	event.hide("jaopca:storage_blocks.aluminum")
+	event.hide(/jaopca:.*\.aluminum/)
 	
 	//mystical agriculture
 	event.hide(/^mysticalagriculture:platinum/)
@@ -62,4 +54,7 @@ onEvent("jei.hide.items", event => {
 	event.hide("telepastries:custom_cake2")
 	event.hide("telepastries:custom_cake3")
 	event.hide("telepastries:lost_city_cake")
+	
+	//twilightforest
+	event.hide("twilightforest:uncrafting_table")
 })

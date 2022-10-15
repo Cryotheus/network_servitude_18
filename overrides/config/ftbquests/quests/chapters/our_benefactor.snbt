@@ -328,7 +328,7 @@
 		}
 		{
 			title: "Take This, Intel!"
-			x: -1.0d
+			x: 0.0d
 			y: 7.0d
 			dependencies: [
 				"27E0A6717CC22485"
@@ -479,11 +479,11 @@
 		}
 		{
 			title: "Need More Types?"
-			x: 0.0d
-			y: 9.0d
+			x: -5.0d
+			y: 8.0d
 			subtitle: "Store all those pesky swords!"
 			description: ["This drive is not limited by types, only bytes."]
-			dependencies: ["149796284121699E"]
+			dependencies: ["7CC1C4AA92BF64EE"]
 			hide: true
 			id: "48DBEC036DCAAB58"
 			tasks: [{
@@ -595,7 +595,10 @@
 			title: "Automation Love Life"
 			x: -5.0d
 			y: 5.0d
-			description: ["Use in conjunction with the ME Pattern Encoding Terminal to specify what inventories items need to be inserted into to get the result of a currently queued craft."]
+			description: [
+				"Use in conjunction with the ME Pattern Encoding Terminal to specify what items the inventories attached need to get the pattern's output."
+				"The ME system will register a successful craft once the item is imported to the system either by an Import Bus or Interface."
+			]
 			dependencies: ["32B155DD04AC18F1"]
 			id: "2E60D3E116A71A50"
 			tasks: [{
@@ -883,7 +886,7 @@
 			tasks: [{
 				id: "52B548B9137BB841"
 				type: "item"
-				title: "Any #kubejs:network_servitude_crafting_storage"
+				title: "Any Crafting Storage"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -975,6 +978,32 @@
 				id: "51EFEE807A83532D"
 				type: "item"
 				item: "ae2:crafting_accelerator"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 6.0d
+			description: ["Crafting machine for use in your ME system via an Interface."]
+			dependencies: ["32B155DD04AC18F1"]
+			hide: true
+			id: "11EA2BA6A42BB6AA"
+			tasks: [{
+				id: "768DB5D3C7CEA5F4"
+				type: "item"
+				item: "ae2:molecular_assembler"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 7.0d
+			dependencies: ["07FA6541FE33BEF6"]
+			hide: true
+			optional: true
+			id: "47868074EDA09655"
+			tasks: [{
+				id: "7076F48C4BD83881"
+				type: "item"
+				item: "ae2:biometric_card"
 			}]
 		}
 	]
