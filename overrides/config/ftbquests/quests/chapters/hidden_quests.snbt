@@ -34,8 +34,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -1.0d
+			x: 1.0d
+			y: 1.0d
 			dependencies: ["3E42C3CC0FCB3654"]
 			hide: true
 			secret: true
@@ -91,6 +91,28 @@
 						}
 					}
 				}
+			}]
+		}
+		{
+			title: "JAMES BROWN IS DEAD"
+			x: 1.0d
+			y: 0.0d
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			secret: true
+			id: "32F1A894D0133807"
+			tasks: [{
+				id: "0EF5584C485D54C6"
+				type: "kill"
+				title: "Kill a Bee"
+				icon: "minecraft:bee_nest"
+				entity: "minecraft:bee"
+				value: 1L
+			}]
+			rewards: [{
+				id: "1535D40558E4519D"
+				type: "item"
+				item: "quark:rainbow_rune"
 			}]
 		}
 	]
