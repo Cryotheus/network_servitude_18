@@ -1,0 +1,19 @@
+{
+	"type": "mekanism:mek_data",
+	"result": {"item": "mekanism:purification_chamber"},
+	
+	"pattern": [
+		"ABA",
+		"CDC",
+		"EFE"
+	],
+	
+	"key": {
+		"A": {"item": "thermal:cured_rubber"},
+		"B": {"item": "mekanism:advanced_control_circuit"},
+		"C": {"item": "mekanism:ingot_osmium"},
+		"D": {"item": "mekanism:enrichment_chamber"},
+		"E": {"item": "extendedcrafting:black_iron_ingot"},
+		"F": {"item": "extendedcrafting:redstone_ingot"}
+	}
+}

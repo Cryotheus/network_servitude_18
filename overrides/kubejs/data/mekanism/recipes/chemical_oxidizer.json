@@ -1,0 +1,20 @@
+{
+	"type": "mekanism:mek_data",
+	"result": {"item": "mekanism:chemical_oxidizer"},
+	
+	"pattern": [
+		"ABA",
+		"CDE",
+		"FGF"
+	],
+	
+	"key": {
+		"A": {"item": "mekanism:alloy_infused"},
+		"B": {"item": "mekanism:basic_control_circuit"},
+		"C": {"tag": "mekanism:personal_storage"},
+		"D": {"item": "mekanism:dynamic_tank"},
+		"E": {"item": "mekanism:basic_chemical_tank"},
+		"F": {"item": "extendedcrafting:redstone_ingot"},
+		"G": {"item": "extendedcrafting:black_iron_ingot"}
+	}
+}

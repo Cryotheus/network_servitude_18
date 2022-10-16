@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"result": {"item": "mekanism:logistical_sorter"},
+	
+	"pattern": [
+		"A",
+		"B",
+		"C"
+	],
+	
+	"key": {
+		"A": {"item": "minecraft:piston"},
+		"B": {"item": "mekanism:basic_control_circuit"},
+		"C": {"item": "extendedcrafting:black_iron_slate"}
+	}
+}

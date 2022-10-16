@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"result": {"item": "mekanism:energized_smelter"},
+	
+	"pattern": [
+		"ABA",
+		"CDC",
+		"EFE"
+	],
+	
+	"key": {
+		"A": {"item": "ae2:silicon"},
+		"B": {"item": "mekanism:basic_control_circuit"},
+		"C": {"item": "extendedcrafting:black_iron_slate"},
+		"D": {"item": "mekanism:steel_casing"},
+		"E": {"item": "extendedcrafting:black_iron_ingot"},
+		"F": {"item": "minecraft:copper_ingot"}
+	}
+}

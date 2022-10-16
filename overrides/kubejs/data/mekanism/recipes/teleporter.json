@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"result": {"item": "mekanism:teleporter"},
+	
+	"pattern": [
+		"ABCBA",
+		"BDEDB",
+		"CEFEC",
+		"BDEDB",
+		"ABCBA"
+	],
+	
+	"key": {
+		"A": {"item": "extendedcrafting:black_iron_slate"},
+		"B": {"item": "thermal:cured_rubber"},
+		"C": {"item": "mekanism:basic_control_circuit"},
+		"D": {"item": "waystones:warp_dust"},
+		"E": {"item": "mekanism:steel_casing"},
+		"F": {"item": "mekanism:teleportation_core"}
+	}
+}

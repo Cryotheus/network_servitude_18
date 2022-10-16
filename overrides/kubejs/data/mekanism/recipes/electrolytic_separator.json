@@ -1,0 +1,19 @@
+{
+	"type": "mekanism:mek_data",
+	"result": {"item": "mekanism:electrolytic_separator"},
+	
+	"pattern": [
+		"ABA",
+		"CDC",
+		"EFE"
+	],
+	
+	"key": {
+		"A": {"item": "thermal:cured_rubber"},
+		"B": {"item": "mekanism:basic_fluid_tank"},
+		"C": {"item": "mekanism:alloy_infused"},
+		"D": {"item": "mekanism:electrolytic_core"},
+		"E": {"item": "extendedcrafting:black_iron_ingot"},
+		"F": {"item": "extendedcrafting:redstone_ingot"}
+	}
+}

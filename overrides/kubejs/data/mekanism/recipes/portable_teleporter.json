@@ -1,0 +1,18 @@
+{
+	"type": "mekanism:mek_data",
+	"result": {"item": "mekanism:portable_teleporter"},
+	
+	"pattern": [
+		"ABA",
+		"ACA",
+		"DED"
+	],
+	
+	"key": {
+		"A": {"item": "mekanism:ingot_steel"},
+		"B": {"item": "mekanism:basic_control_circuit"},
+		"C": {"item": "mekanism:teleporter"},
+		"D": {"item": "waystones:warp_dust"},
+		"E": {"item": "mekanism:energy_tablet"}
+	}
+}

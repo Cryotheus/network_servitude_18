@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"result": {"item": "mekanism:electric_pump"},
+	
+	"pattern": [
+		" A ",
+		"BCB",
+		"DED"
+	],
+	
+	"key": {
+		"A": {"item": "minecraft:bucket"},
+		"B": {"item": "mekanism:alloy_infused"},
+		"C": {"item": "mekanism:steel_casing"},
+		"D": {"item": "extendedcrafting:black_iron_ingot"},
+		"E": {"item": "mekanism:ingot_osmium"}
+	}
+}

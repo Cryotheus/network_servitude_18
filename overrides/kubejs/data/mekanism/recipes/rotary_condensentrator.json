@@ -1,0 +1,19 @@
+{
+	"type": "mekanism:mek_data",
+	"result": {"item": "mekanism:rotary_condensentrator"},
+	
+	"pattern": [
+		"ABA",
+		"CDE",
+		"FFF"
+	],
+	
+	"key": {
+		"A": {"item": "thermal:cured_rubber"},
+		"B": {"item": "mekanism:basic_control_circuit"},
+		"C": {"item": "mekanism:basic_chemical_tank"},
+		"D": {"item": "extendedcrafting:frame"},
+		"E": {"item": "mekanism:basic_fluid_tank"},
+		"F": {"item": "extendedcrafting:black_iron_ingot"}
+	}
+}

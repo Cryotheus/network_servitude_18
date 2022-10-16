@@ -1,0 +1,19 @@
+{
+	"type": "mekanism:mek_data",
+	"result": {"item": "mekanism:chemical_injection_chamber"},
+	
+	"pattern": [
+		"ABA",
+		"CDC",
+		"EFE"
+	],
+	
+	"key": {
+		"A": {"item": "mekanism:alloy_reinforced"},
+		"B": {"item": "mekanism:elite_control_circuit"},
+		"C": {"item": "minecraft:gold_ingot"},
+		"D": {"item": "mekanism:purification_chamber"},
+		"E": {"item": "extendedcrafting:black_iron_ingot"},
+		"F": {"item": "thermal:cured_rubber"}
+	}
+}
