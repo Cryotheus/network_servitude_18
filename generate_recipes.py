@@ -18,6 +18,7 @@ data_path = "overrides/kubejs/data/"
 extended_crafting_path = data_path + "extendedcrafting/recipes/"
 extended_crafting_singularities_path = "overrides/config/extendedcrafting/singularities/"
 kubejs_path = data_path + "kubejs/recipes/"
+kubejs_tag_conversion_path = kubejs_path + "tag_conversions/"
 mekanism_path = data_path + "mekanism/recipes/"
 
 #the magical ban recipe
@@ -233,6 +234,29 @@ raws = {
 	"redstone": []
 }
 
+ingot_tag_conversions = {
+	"bronze": {
+		"dusts": "mekanism:dust_bronze",
+		"ingots": "mekanism:ingot_bronze",
+	},
+	
+	"lead": {
+		"dusts": "mekanism:dust_lead",
+		"ingots": "mekanism:ingot_lead",
+		"raw_materials": "mekanism:raw_lead",
+	},
+	
+	"steel": {
+		"ingots": "mekanism:ingot_steel",
+	},
+	
+	"tin": {
+		"dusts": "mekanism:dust_tin",
+		"ingots": "mekanism:ingot_tin",
+		"raw_materials": "mekanism:raw_tin",
+	},
+}
+
 #simple function for the sole purpose of writing ban_recipe to a json file
 def write_ban(file_path):
 	recipe = open(file_path, "w")
@@ -352,6 +376,23 @@ for metal in metals: #Mekanism and JAOPCA
 	write_ban(processing_path + "shard/from_raw_block.json")
 	write_ban(processing_path + "slurry/dirty/from_ore.json")
 	write_ban(processing_path + "slurry/dirty/from_raw_block.json")
+
+print("\n - Building tag conversion files...")
+
+for material in ingot_tag_conversions:
+	ingot_tag_conversion = ingot_tag_conversions[material]
+	material_path = kubejs_tag_conversion_path + material + "/"
+	
+	print("Building " + material + " conversion files...")
+	
+	for sub_tag in ingot_tag_conversion:
+		os.makedirs(material_path, 0o777, True)
+		write_json(material_path + sub_tag + ".json", {
+			"type": "crafting_shapeless",
+			"ingredients": [{"tag": "forge:" + sub_tag + "/" + material}],
+			"result": {"item": ingot_tag_conversion[sub_tag]}
+		})
+
 
 print("\n - Building Extended Crafting files...")
 os.makedirs(extended_crafting_path, 0o777, True)
