@@ -1,0 +1,15 @@
+{
+	"type": "crafting_shaped",
+	"result": {"item": "extendedcrafting:black_iron_ingot"},
+	
+	"pattern": [
+		"AAA",
+		"ABA",
+		"AAA"
+	],
+	
+	"key": {
+		"A": {"item": "minecraft:iron_ingot"},
+		"B": {"item": "ae2:smooth_sky_stone_block"}
+	}	
+}

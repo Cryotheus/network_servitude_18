@@ -1,0 +1,11 @@
+{
+	"type": "mekanism:metallurgic_infusing",
+	"itemInput": {"ingredient": {"item": "mekanism:alloy_infused"}},
+	
+	"chemicalInput": {
+		"amount": 10,
+		"tag": "mekanism:tin"
+	},
+	
+	"output": {"item": "extendedcrafting:redstone_ingot"}
+}
