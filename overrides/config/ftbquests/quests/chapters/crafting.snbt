@@ -36,9 +36,10 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -1.0d
-			dependencies: ["614EA9EFBD6A72AE"]
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["17FBD5E2D6D3A2A5"]
+			hide: true
 			id: "609EECB68639CB42"
 			tasks: [{
 				id: "459821210370ACDC"
@@ -47,9 +48,10 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 0.0d
+			x: -1.0d
+			y: 1.0d
 			dependencies: ["609EECB68639CB42"]
+			hide: true
 			id: "7A819660FF97C82E"
 			tasks: [{
 				id: "77C288E8D5F023CB"
@@ -71,6 +73,66 @@
 					Count: 1b
 					tag: { }
 				}
+			}]
+			rewards: [{
+				id: "66D4353D63E9199B"
+				type: "random"
+				table_id: 2317290549728759982L
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			dependencies: ["614EA9EFBD6A72AE"]
+			hide: true
+			id: "17FBD5E2D6D3A2A5"
+			tasks: [{
+				id: "7B30DDC9E4DD479B"
+				type: "item"
+				item: "extendedcrafting:frame"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: [
+				"7A819660FF97C82E"
+				"2AC325FEAF11CB83"
+			]
+			hide: true
+			id: "0C3F9B9DB547611D"
+			tasks: [{
+				id: "0E7FF86C12C79F4F"
+				type: "item"
+				item: "avaritia:infinity_catalyst"
+			}]
+			rewards: [{
+				id: "72EFD64C1AD8C65D"
+				type: "random"
+				table_id: 2317290549728759982L
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["72BF0CBDC3F88680"]
+			hide: true
+			id: "5274C844A7A93520"
+			tasks: [{
+				id: "7971145D17698555"
+				type: "item"
+				item: "avaritia:neutron_collector"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			dependencies: ["5274C844A7A93520"]
+			id: "2AC325FEAF11CB83"
+			tasks: [{
+				id: "05AFCE9077411C59"
+				type: "item"
+				item: "avaritia:neutron_pile"
 			}]
 		}
 	]

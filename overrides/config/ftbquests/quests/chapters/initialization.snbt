@@ -227,6 +227,7 @@
 			}]
 		}
 		{
+			title: "Discount Brazier"
 			x: 0.0d
 			y: 1.5d
 			description: ["Campfires not only heal nearby players and friendly mobs, but also prevent hostile mobs from spawning nearby!"]
