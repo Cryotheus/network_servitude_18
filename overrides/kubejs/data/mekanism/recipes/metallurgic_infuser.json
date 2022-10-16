@@ -1,1 +1,19 @@
-{"type":"minecraft:crafting_shaped","result":{"item":"mekanism:metallurgic_infuser"},"pattern":["I#I","ROR","I#I"],"key":{"I":{"tag":"forge:ingots/iron"},"O":{"tag":"forge:ingots/osmium"},"R":{"tag":"forge:dusts/redstone"},"#":{"item":"minecraft:furnace"}}}
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"ABA",
+		"CDE",
+		"FFF"
+	],
+	
+	"key": {
+		"A": {"item": "mekanism:ingot_osmium"},
+		"B": {"item": "thermal:electrum_ingot"},
+		"C": {"item": "mekanism:basic_fluid_tank"},
+		"D": {"item": "extendedcrafting:frame"},
+		"E": {"item": "thermal:redstone_servo"},
+		"F": {"item": "extendedcrafting:black_iron_ingot"}
+	},
+	
+	"result": {"item": "mekanism:metallurgic_infuser"}
+}

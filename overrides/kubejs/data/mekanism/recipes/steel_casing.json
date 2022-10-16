@@ -1,0 +1,19 @@
+{
+	"type": "extendedcrafting:shaped_table",
+	
+	"pattern": [
+		"ABA",
+		"CDC",
+		"ECE"
+	],
+	
+	"key": {
+		"A": {"item": "mekanism:ingot_osmium"},
+		"B": {"item": "thermal:cured_rubber"},
+		"C": {"item": "ae2:silicon"},
+		"D": {"item": "extendedcrafting:frame"},
+		"E": {"item": "mekanism:ingot_steel"}
+	},
+	
+	"result": {"item": "mekanism:steel_casing"}
+}
