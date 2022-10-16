@@ -1,0 +1,19 @@
+{
+	"type": "mekanism:mek_data",
+	"result": {"item": "rangedpumps:pump"},
+	
+	"pattern": [
+		"ABA",
+		"CDC",
+		"EFE"
+	],
+	
+	"key": {
+		"A": {"item": "thermal:cured_rubber"},
+		"B": {"item": "mekanism:alloy_reinforced"},
+		"C": {"item": "ae2:silicon"},
+		"D": {"item": "mekanism:electric_pump"},
+		"E": {"item": "minecraft:obsidian"},
+		"F": {"item": "waystones:warp_dust"}
+	}
+}
