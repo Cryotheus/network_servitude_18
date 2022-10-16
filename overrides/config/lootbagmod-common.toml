@@ -1,0 +1,219 @@
+
+["Loot Bag Mod Config"]
+
+	["Loot Bag Mod Config".Misc]
+		#Maximum possible stack size for dropped items
+		#Range: 1 ~ 64
+		stacksize = 1
+		#How many items drop when a loot bag is used
+		#Range: 1 ~ 1000
+		dropamount = 1
+		#Try to place items into inventory before dropping them onto the ground
+		itemsininventory = true
+
+	["Loot Bag Mod Config"."Debug/Modpack tools"]
+		#Print mobs registry name to chat and log file when killed
+		entityname = false
+		#Print list of items dropped to debug.log
+		itemsdropped = false
+		#Print list of items dropped to the chat
+		itemsdroppedchat = false
+
+	["Loot Bag Mod Config"."Black And White Lists"]
+		#Use the whitelist
+		enablewhitelist = false
+		#BlackList (Syntax "minecraft or modid : item or block name"; example "minecraft:air" or "lootbagmod:lootbag")
+		blacklist = [
+			'appmek:creative_chemical_cell',
+			
+			"ae2:cable_bus",
+			"ae2:creative_energy_cell",
+			"ae2:creative_fluid_cell",
+			"ae2:creative_item_cell",
+			"ae2:facade",
+			"ae2:identity_annihilation_plane",
+			
+			"ae2things:advanced_inscriber",
+			"ae2things:crystal_growth",
+			
+			"avaritia:compressor",
+			"avaritia:extreme_crafting_table",
+			"avaritia:amethyst_singularity",
+			"avaritia:copper_singularity",
+			"avaritia:diamond_singularity",
+			"avaritia:emerald_singularity",
+			"avaritia:fluxed_singularity",
+			"avaritia:gold_singularity",
+			"avaritia:iridium_singularity",
+			"avaritia:iron_singularity",
+			"avaritia:lapis_singularity",
+			"avaritia:lead_singularity",
+			"avaritia:netherite_singularity",
+			"avaritia:nickel_singularity",
+			"avaritia:platinum_singularity",
+			"avaritia:quartz_singularity",
+			"avaritia:redstone_singularity",
+			"avaritia:silver_singularity",
+			"avaritia:tin_singularity",
+			
+			"blue_skies:black_fire",
+			"blue_skies:blue_fire",
+			
+			"botania:corporea_spark_creative",
+			"botania:creative_pool",
+			"botania:infrangible_platform",
+			"botania:lens_storm",
+			
+			"buildinggadgets:construction_paste_container_creative",
+			
+			"chiselsandbits:block_bit",
+			"chiselsandbits:chiseledclay",
+			"chiselsandbits:chiseledcloth",
+			"chiselsandbits:chiseledfluid",
+			"chiselsandbits:chiseledglass",
+			"chiselsandbits:chiseledgrass",
+			"chiselsandbits:chiseledground",
+			"chiselsandbits:chiseledice",
+			"chiselsandbits:chiselediron",
+			"chiselsandbits:chiseledleaves",
+			"chiselsandbits:chiselednether_wood",
+			"chiselsandbits:chiseledpacked_ice",
+			"chiselsandbits:chiseledplant",
+			"chiselsandbits:chiseledrock",
+			"chiselsandbits:chiseledsand",
+			"chiselsandbits:chiseledsnow",
+			"chiselsandbits:chiseledwood",
+			"chiselsandbits:chiseledwool",
+			"chiselsandbits:pattern_multi_use",
+			"chiselsandbits:pattern_single_use",
+			
+			"cyclic:battery_infinite",
+			"cyclic:sleeping_mat",
+			
+			"everlastingabilities:ability_totem",
+			
+			"extendedcrafting:advanced_auto_table",
+			"extendedcrafting:advanced_catalyst",
+			"extendedcrafting:advanced_component",
+			"extendedcrafting:advanced_table",
+			"extendedcrafting:basic_auto_table",
+			"extendedcrafting:basic_catalyst",
+			"extendedcrafting:basic_component",
+			"extendedcrafting:basic_table",
+			"extendedcrafting:elite_auto_table",
+			"extendedcrafting:elite_catalyst",
+			"extendedcrafting:elite_component",
+			"extendedcrafting:elite_table",
+			
+			"integrateddynamics:energy_battery_creative",
+			
+			"lootbagmod:lootbag",
+			
+			"mcjtylib:multipart",
+			
+			"mekanism:creative_bin",
+			"mekanism:creative_chemical_tank",
+			"mekanism:creative_energy_cube",
+			"mekanism:creative_fluid_tank",
+			
+			"minecraft:air",
+			"minecraft:barrier",
+			"minecraft:bedrock",
+			"minecraft:chain_command_block",
+			"minecraft:command_block",
+			"minecraft:enchanted_book",
+			"minecraft:knowledge_book",
+			"minecraft:lingering_potion",
+			"minecraft:mob_spawner",
+			"minecraft:potion",
+			"minecraft:repeating_command_block",
+			"minecraft:spawn_egg",
+			"minecraft:splash_potion",
+			"minecraft:structure_block",
+			"minecraft:structure_void",
+			"minecraft:written_book",
+			
+			"modularrouters:creative_module",
+			
+			"mysticalagriculture:creative_soulium_dagger",
+			
+			"rftoolsutility:creative_screen",
+			
+			"storagedrawers:creative_storage_upgrade",
+			"storagedrawers:creative_vending_upgrade",
+			
+			"tconstruct:broad_axe_head",
+			"tconstruct:broad_blade",
+			"tconstruct:hammer_head",
+			"tconstruct:large_plate",
+			"tconstruct:pick_head",
+			"tconstruct:repair_kit",
+			"tconstruct:round_plate",
+			"tconstruct:small_axe_head",
+			"tconstruct:small_blade",
+			"tconstruct:tool_binding",
+			"tconstruct:tool_handle",
+			"tconstruct:tough_handle",
+			
+			"telepastries:custom_cake",
+			"telepastries:custom_cake2",
+			"telepastries:custom_cake3",
+			"telepastries:lost_city_cake",
+			
+			"tetra:modular_bow",
+			"tetra:modular_crossbow",
+			"tetra:modular_double",
+			"tetra:modular_shield",
+			"tetra:modular_single",
+			"tetra:modular_sword",
+			"tetra:modular_toolbelt",
+			
+			"thermal:fluid_tank_creative_augment",
+			"thermal:machine_catalyst_creative_augment",
+			"thermal:machine_efficiency_creative_augment",
+			"thermal:rf_coil_creative_augment",
+			
+			"twilightforest:uncrafting_table",
+			
+			"village_employment:apiarist_apron_recipe",
+			"village_employment:apiarist_hat_recipe",
+			"village_employment:beekeeper_goggle_recipe",
+			"village_employment:beekeeper_jacket_recipe",
+			"village_employment:traveler_pants_recipe",
+			"village_employment:traveler_robe_recipe",
+			
+			"waterstrainer:super_worm"
+		]
+		
+		#WhiteList Syntax "minecraft or modid : item or block name"; example minecraft:air or lootbagmod:lootbag)
+		whitelist = []
+
+	["Loot Bag Mod Config"."Mod List"]
+		#Mod black/whitelist (Syntax " modid ")
+		modlist = [
+			"avaritia",
+			"enigmaticlegacy",
+			"everycomp",
+			"excavated_variants",
+			"ftbquests",
+			"jaopca",
+			"titanium"
+		]
+
+	["Loot Bag Mod Config"."Contains List"]
+		#Contains List (Synyax "word")
+		contains = []
+		#Enable Contains List
+		enablecontains = false
+
+	["Loot Bag Mod Config"."Mob Drops"]
+		#Mob drops list (Syntax " minecraft or modname : mobregistryname ")
+		mobdropslist = []
+		#Loot Bag drop chance from mobs (the higher the number the more common they are)
+		#Range: 1 ~ 100
+		dropchance = 10
+		#Make Loot Bags dropppable from all hostile Mobs
+		allHostileMobs = false
+		#Make Loot Bags droppable from all passive and neutral mobs
+		allNonHostileMobs = false
+
