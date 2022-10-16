@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"result": {"item": "mekanism:osmium_compressor"},
+	
+	"pattern": [
+		"ABA",
+		"CDC",
+		"EFE"
+	],
+	
+	"key": {
+		"A": {"item": "mekanism:alloy_infused"},
+		"B": {"item": "mekanism:advanced_control_circuit"},
+		"C": {"item": "mekanism:advanced_fluid_tank"},
+		"D": {"item": "mekanism:steel_casing"},
+		"E": {"item": "extendedcrafting:black_iron_ingot"},
+		"F": {"item": "extendedcrafting:black_iron_slate"}
+	}
+}

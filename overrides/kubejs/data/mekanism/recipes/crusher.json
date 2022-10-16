@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"result": {"item": "mekanism:crusher"},
+	
+	"pattern": [
+		"ABA",
+		"CDC",
+		"EFE"
+	],
+	
+	"key": {
+		"A": {"item": "thermal:cured_rubber"},
+		"B": {"item": "mekanism:alloy_infused"},
+		"C": {"item": "mekanism:advanced_control_circuit"},
+		"D": {"item": "mekanism:steel_casing"},
+		"E": {"item": "extendedcrafting:redstone_ingot"},
+		"F": {"item": "extendedcrafting:black_iron_ingot"}
+	}
+}

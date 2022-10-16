@@ -1,5 +1,7 @@
 {
 	"type": "minecraft:crafting_shaped",
+	"result": {"item": "mekanism:metallurgic_infuser"},
+	
 	"pattern": [
 		"ABA",
 		"CDE",
@@ -13,7 +15,5 @@
 		"D": {"item": "extendedcrafting:frame"},
 		"E": {"item": "thermal:redstone_servo"},
 		"F": {"item": "extendedcrafting:black_iron_ingot"}
-	},
-	
-	"result": {"item": "mekanism:metallurgic_infuser"}
+	}
 }

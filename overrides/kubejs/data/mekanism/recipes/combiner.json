@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"result": {"item": "mekanism:combiner"},
+	
+	"pattern": [
+		"ABA",
+		"CDC",
+		"EEE"
+	],
+	
+	"key": {
+		"A": {"item": "mekanism:elite_control_circuit"},
+		"B": {"item": "ae2:silicon"},
+		"C": {"item": "extendedcrafting:black_iron_block"},
+		"D": {"item": "mekanism:steel_casing"},
+		"E": {"item": "extendedcrafting:black_iron_ingot"}
+	}
+}

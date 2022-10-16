@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"result": {"item": "mekanism:teleportation_core"},
+	
+	"pattern": [
+		"ABA",
+		"CDC",
+		"ABA"
+	],
+	
+	"key": {
+		"A": {"item": "waystones:warp_dust"},
+		"B": {"item": "mekanism:enriched_diamond"},
+		"C": {"item": "tconstruct:rose_gold_ingot"},
+		"D": {"item": "mekanism:ultimate_control_circuit"}
+	}
+}

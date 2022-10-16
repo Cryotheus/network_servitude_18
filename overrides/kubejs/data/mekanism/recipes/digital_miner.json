@@ -1,0 +1,27 @@
+{
+	"type": "extendedcrafting:shaped_table",
+	"result": {"item": "mekanism:digital_miner"},
+	
+	"pattern": [
+		"ABCBA",
+		"DEFED",
+		"GHIHG",
+		"DJKJD",
+		"ABLBA"
+	],
+	
+	"key": {
+		"A": {"item": "mekanism:seismic_vibrator"},
+		"B": {"item": "extendedcrafting:black_iron_slate"},
+		"C": {"item": "mekanism:seismic_reader"},
+		"D": {"item": "extendedcrafting:black_iron_ingot"},
+		"E": {"item": "mekanism:alloy_atomic"},
+		"F": {"item": "mekanism:ultimate_control_circuit"},
+		"G": {"item": "mekanism:logistical_sorter"},
+		"H": {"item": "mekanism:energy_tablet"},
+		"I": {"item": "mekanism:steel_casing"},
+		"J": {"item": "mekanism:teleportation_core"},
+		"K": {"item": "mekanism:robit"},
+		"L": {"item": "hostilenetworks:deep_learner"}
+	}
+}

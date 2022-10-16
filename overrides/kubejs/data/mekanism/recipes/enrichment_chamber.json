@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"result": {"item": "mekanism:enrichment_chamber"},
+	
+	"pattern": [
+		"ABA",
+		"CDC",
+		"EEE"
+	],
+	
+	"key": {
+		"A": {"item": "minecraft:redstone"},
+		"B": {"item": "mekanism:basic_control_circuit"},
+		"C": {"item": "extendedcrafting:black_iron_slate"},
+		"D": {"item": "mekanism:steel_casing"},
+		"E": {"item": "extendedcrafting:black_iron_ingot"}
+	}
+}
