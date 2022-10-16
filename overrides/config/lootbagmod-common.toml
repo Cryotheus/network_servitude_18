@@ -104,6 +104,7 @@
 			"extendedcrafting:elite_catalyst",
 			"extendedcrafting:elite_component",
 			"extendedcrafting:elite_table",
+			"extendedcrafting:recipe_maker",
 			
 			"integrateddynamics:energy_battery_creative",
 			
@@ -139,6 +140,8 @@
 			
 			"rftoolsutility:creative_screen",
 			
+			"sophisticatedstorage:debug_tool",
+			
 			"storagedrawers:creative_storage_upgrade",
 			"storagedrawers:creative_vending_upgrade",
 			
@@ -167,6 +170,7 @@
 			"tetra:modular_single",
 			"tetra:modular_sword",
 			"tetra:modular_toolbelt",
+			"tetra:scroll_rolled"
 			
 			"thermal:fluid_tank_creative_augment",
 			"thermal:machine_catalyst_creative_augment",
