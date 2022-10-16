@@ -106,6 +106,8 @@
 			"extendedcrafting:elite_table",
 			"extendedcrafting:recipe_maker",
 			
+			"integrateddynamics:block_liquid_chorus",
+			"integrateddynamics:block_menril_resin",
 			"integrateddynamics:energy_battery_creative",
 			
 			"lootbagmod:lootbag",
@@ -196,6 +198,7 @@
 		#Mod black/whitelist (Syntax " modid ")
 		modlist = [
 			"avaritia",
+			"chipped",
 			"enigmaticlegacy",
 			"everycomp",
 			"excavated_variants",
@@ -206,9 +209,14 @@
 
 	["Loot Bag Mod Config"."Contains List"]
 		#Contains List (Synyax "word")
-		contains = []
+		contains = [
+			"button",
+			"carpet",
+			"fence"
+		]
+		
 		#Enable Contains List
-		enablecontains = false
+		enablecontains = true
 
 	["Loot Bag Mod Config"."Mob Drops"]
 		#Mob drops list (Syntax " minecraft or modname : mobregistryname ")
