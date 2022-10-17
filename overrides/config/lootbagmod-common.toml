@@ -32,6 +32,7 @@
 			"ae2:creative_item_cell",
 			"ae2:facade",
 			"ae2:identity_annihilation_plane",
+			"ae2:matrix_frame",
 			
 			"ae2things:advanced_inscriber",
 			"ae2things:crystal_growth",
@@ -56,8 +57,12 @@
 			"avaritia:silver_singularity",
 			"avaritia:tin_singularity",
 			
+			"blue_skies:alchemist_spawn_egg",
+			"blue_skies:arachnarch_spawn_egg",
 			"blue_skies:black_fire",
 			"blue_skies:blue_fire",
+			"blue_skies:starlit_crusher_spawn_egg",
+			"blue_skies:summoner_spawn_egg",
 			
 			"botania:corporea_spark_creative",
 			"botania:creative_pool",
@@ -204,6 +209,8 @@
 			"excavated_variants",
 			"ftbquests",
 			"jaopca",
+			"kubejs",
+			"lootr",
 			"titanium"
 		]
 
