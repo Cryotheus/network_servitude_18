@@ -1,0 +1,155 @@
+{
+	id: "6651006277B19046"
+	group: "141609C65CF7DF6F"
+	order_index: 2
+	filename: "material_meltdown"
+	title: "Material Meltdown"
+	icon: "forbidden_arcanus:smelter_prism"
+	subtitle: ["Tinkers' Construct, with a focus on alloying."]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -2.5d
+		y: 0.5d
+		width: 4.0d
+		height: 4.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/smeltery.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+		dependency: "18E2AD803A8E6938"
+	}]
+	quests: [
+		{
+			title: "Grout!"
+			x: 0.0d
+			y: -0.5d
+			subtitle: "Not Gout."
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			id: "43482AE85A605A42"
+			tasks: [{
+				id: "53FAAF6A599B30FA"
+				type: "item"
+				item: "tconstruct:grout"
+			}]
+		}
+		{
+			title: "Metling So Soon?"
+			icon: "tconstruct:seared_melter"
+			x: 0.0d
+			y: 0.5d
+			description: ["You will need these to craft a full-blown smeltery."]
+			dependencies: ["43482AE85A605A42"]
+			id: "27407F0237558B39"
+			tasks: [
+				{
+					id: "5DD72A8DE7A6F93E"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "711E6C957885D3C3"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+				{
+					id: "5B282E83057CBBF6"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+				{
+					id: "2AE61896E6B0089A"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+				}
+			]
+		}
+		{
+			title: "I'M MELTIIIING!"
+			icon: "tconstruct:smeltery_controller"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Some molten metals will alloy together when in a hot enough smeltery."
+				""
+			]
+			dependencies: ["27407F0237558B39"]
+			size: 2.0d
+			id: "18E2AD803A8E6938"
+			tasks: [
+				{
+					id: "1051BCF8245F941A"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+				{
+					id: "28BA955D6D780D81"
+					type: "item"
+					item: "tconstruct:seared_drain"
+				}
+				{
+					id: "230346F4780743D3"
+					type: "item"
+					item: "tconstruct:seared_fuel_tank"
+				}
+				{
+					id: "6C663290A3E0B30D"
+					type: "item"
+					item: "tconstruct:seared_bricks"
+					count: 4L
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			dependencies: ["27407F0237558B39"]
+			id: "2B112B8C547119C6"
+			tasks: [{
+				id: "2B87E6E076C5AE7A"
+				type: "item"
+				item: "tconstruct:ingot_cast"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			description: ["Gold an Silver, very conductive and resistant to tarnishing."]
+			dependencies: ["18E2AD803A8E6938"]
+			hide: true
+			id: "2EC95DDF94ECEAD6"
+			tasks: [{
+				id: "65FDB9EF0882DB72"
+				type: "item"
+				item: "thermal:electrum_ingot"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			dependencies: ["18E2AD803A8E6938"]
+			hide: true
+			id: "3FFC3D12DCFF9487"
+			tasks: [{
+				id: "01A88D5BB39F0293"
+				type: "item"
+				item: "tconstruct:rose_gold_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			dependencies: ["18E2AD803A8E6938"]
+			hide: true
+			id: "621065DA7AF05282"
+			tasks: [{
+				id: "52388AC6AA7E866A"
+				type: "item"
+				item: "mekanism:ingot_bronze"
+			}]
+		}
+	]
+}

@@ -115,5 +115,24 @@
 				item: "quark:rainbow_rune"
 			}]
 		}
+		{
+			title: "Attractive Energy Levels"
+			x: 0.0d
+			y: -1.0d
+			dependencies: ["21800071D2A2758D"]
+			hide: true
+			secret: true
+			id: "28A62DE4852F38AA"
+			tasks: [{
+				id: "53EB3BEF1B31D1DA"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+			}]
+			rewards: [{
+				id: "689700F56CBE8886"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+			}]
+		}
 	]
 }

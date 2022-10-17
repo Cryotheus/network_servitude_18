@@ -83,6 +83,7 @@
 		{
 			x: -1.0d
 			y: -1.0d
+			description: ["Prepare to mass produce these in the somewhat-near-future."]
 			dependencies: ["614EA9EFBD6A72AE"]
 			hide: true
 			id: "17FBD5E2D6D3A2A5"

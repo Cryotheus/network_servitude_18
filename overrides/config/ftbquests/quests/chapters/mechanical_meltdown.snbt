@@ -1,0 +1,12 @@
+{
+	id: "4DEB24DFD228782D"
+	group: "141609C65CF7DF6F"
+	order_index: 3
+	filename: "mechanical_meltdown"
+	title: "Mechanical Meltdown"
+	icon: "thermal:basalz_powder"
+	subtitle: ["Everything about and around the Thermal Series."]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}
