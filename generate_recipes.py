@@ -102,6 +102,37 @@ extended_crafting_recipes = {
 	"uranium": {"colors": ["defadc", "73a771"], "name": "Uranium"}
 }
 
+ingot_tag_conversions = {
+	"bronze": {
+		"dusts": "mekanism:dust_bronze",
+		"ingots": "mekanism:ingot_bronze",
+	},
+	
+	"lead": {
+		"dusts": "mekanism:dust_lead",
+		"ingots": "mekanism:ingot_lead",
+		"raw_materials": "mekanism:raw_lead",
+	},
+	
+	"steel": {
+		"ingots": "mekanism:ingot_steel",
+	},
+	
+	"tin": {
+		"dusts": "mekanism:dust_tin",
+		"ingots": "mekanism:ingot_tin",
+		"raw_materials": "mekanism:raw_tin",
+	},
+}
+
+item_self_recrafts = { #for items that we need to reset
+	"ae2": [
+		"spatial_storage_cell_2",
+		"spatial_storage_cell_16",
+		"spatial_storage_cell_128"
+	]
+}
+
 metals = {
 	"cobalt": {
 		"clean_slurry": "jaopca:mekanism_clean.cobalt",
@@ -234,28 +265,8 @@ raws = {
 	"redstone": []
 }
 
-ingot_tag_conversions = {
-	"bronze": {
-		"dusts": "mekanism:dust_bronze",
-		"ingots": "mekanism:ingot_bronze",
-	},
-	
-	"lead": {
-		"dusts": "mekanism:dust_lead",
-		"ingots": "mekanism:ingot_lead",
-		"raw_materials": "mekanism:raw_lead",
-	},
-	
-	"steel": {
-		"ingots": "mekanism:ingot_steel",
-	},
-	
-	"tin": {
-		"dusts": "mekanism:dust_tin",
-		"ingots": "mekanism:ingot_tin",
-		"raw_materials": "mekanism:raw_tin",
-	},
-}
+#makes my life easier
+def make_dirs(path): os.makedirs(path, 0o777, True)
 
 #simple function for the sole purpose of writing ban_recipe to a json file
 def write_ban(file_path):
@@ -278,7 +289,7 @@ print("\n - Building ban files...")
 for namespace in bans: #general recipe bans
 	recipe_path = data_path + namespace + "/recipes/"
 	
-	os.makedirs(recipe_path, 0o777, True)
+	make_dirs(recipe_path)
 	print("Building ban files for " + namespace)
 	
 	for local_path in bans[namespace]: write_ban(recipe_path + local_path + ".json")
@@ -301,11 +312,11 @@ for metal in metals: #Mekanism and JAOPCA
 	raw_ore = info["raw_ore"]
 	shard = info["shard"]
 	
-	os.makedirs(processing_path + "clump", 0o777, True)
-	os.makedirs(processing_path + "shard", 0o777, True)
-	os.makedirs(processing_path + "slurry/dirty", 0o777, True)
-	os.makedirs(processing_path + "dust", 0o777, True)
-	os.makedirs(processing_path + "ore", 0o777, True)
+	make_dirs(processing_path + "clump")
+	make_dirs(processing_path + "shard")
+	make_dirs(processing_path + "slurry/dirty")
+	make_dirs(processing_path + "dust")
+	make_dirs(processing_path + "ore")
 	
 	#replace recipe for ore to dust with ore to raw ore
 	write_json(processing_path + "dust/from_ore.json", {
@@ -386,16 +397,32 @@ for material in ingot_tag_conversions:
 	print("Building " + material + " conversion files...")
 	
 	for sub_tag in ingot_tag_conversion:
-		os.makedirs(material_path, 0o777, True)
+		make_dirs(material_path)
 		write_json(material_path + sub_tag + ".json", {
 			"type": "crafting_shapeless",
 			"ingredients": [{"tag": "forge:" + sub_tag + "/" + material}],
 			"result": {"item": ingot_tag_conversion[sub_tag]}
 		})
 
+print("\n - Building item self recraft files...")
+
+for namespace in item_self_recrafts:
+	path = kubejs_path + namespace + "/"
+	
+	make_dirs(path)
+	print("Build recraft files for " + namespace)
+	
+	for item_name in item_self_recrafts[namespace]:
+		fqin = namespace + ":" + item_name
+		
+		write_json(path + item_name + ".json", {
+			"type": "crafting_shapeless",
+			"ingredients": [{"item": fqin}],
+			"result": {"item": fqin}
+		})
 
 print("\n - Building Extended Crafting files...")
-os.makedirs(extended_crafting_path, 0o777, True)
+make_dirs(extended_crafting_path)
 
 for tier in extended_crafting_tiers: #Extended Crafting
 	tier_path = extended_crafting_path + tier
@@ -407,7 +434,7 @@ for tier in extended_crafting_tiers: #Extended Crafting
 	write_ban(tier_path + "_table.json")
 
 print("\n - Building Extended Crafting singularity configurations...")
-os.makedirs(extended_crafting_singularities_path, 0o777, True)
+make_dirs(extended_crafting_singularities_path)
 
 for type in extended_crafting_recipes:
 	info = extended_crafting_recipes[type]
