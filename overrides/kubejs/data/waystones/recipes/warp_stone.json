@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"result": {"item": "waystones:warp_stone"},
+	
+	"pattern": [
+		"ABA",
+		"BCB",
+		"ABA"
+	],
+	
+	"key": {
+		"A": {"item": "waystones:warp_dust"},
+		"B": {"item": "hostilenetworks:end_prediction"},
+		"C": {"item": "minecraft:netherite_ingot"}
+	}
+}
+
+
