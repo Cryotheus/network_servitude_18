@@ -465,7 +465,7 @@
 		}
 		{
 			title: "256 Bits?"
-			x: 1.0d
+			x: 0.0d
 			y: 9.0d
 			subtitle: "Has gaming gone too far?"
 			dependencies: ["149796284121699E"]
@@ -760,6 +760,7 @@
 			tasks: [{
 				id: "3F3B358D69DA1838"
 				type: "dimension"
+				title: "Enter a Spatial Storage Cell"
 				icon: "minecraft:black_concrete"
 				dimension: "ae2:spatial_storage"
 			}]
@@ -1004,6 +1005,22 @@
 				id: "7076F48C4BD83881"
 				type: "item"
 				item: "ae2:biometric_card"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			description: [
+				"Keeps the entirety of the connected ME system loaded."
+				"Can consume a lot power."
+			]
+			dependencies: ["37A682D6D66278CB"]
+			hide: true
+			id: "73F11525161DE07E"
+			tasks: [{
+				id: "32B729E93546975A"
+				type: "item"
+				item: "ae2:spatial_anchor"
 			}]
 		}
 	]
