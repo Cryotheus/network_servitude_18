@@ -1,290 +1,221 @@
 # Network Servitude 18
 Complete mod list for version 0.0.9  
-forge- version 40.1.84  
+forge version 40.1.84  
 
-| Project | File | Check |
+| Mod Name | Authors | Enabled |
 | :--- | :--- | :---: |
-| 570368 | 3840760 | ✔️ |
-| 240630 | 3831559 | ✔️ |
-| 622737 | 3989569 | ✔️ |
-| 388800 | 3995029 | ✔️ |
-| 261251 | 3800660 | ✔️ |
-| 271835 | 4022680 | ✔️ |
-| 257356 | 4024126 | ✔️ |
-| 551453 | 3859156 | ✔️ |
-| 237307 | 4016730 | ✔️ |
-| 373774 | 3669561 | ✔️ |
-| 256247 | 3859536 | ✔️ |
-| 618298 | 4019678 | ✔️ |
-| 342584 | 4034159 | ✔️ |
-| 552574 | 4019567 | ✔️ |
-| 574856 | 4024781 | ✔️ |
-| 319194 | 3759157 | ✔️ |
-| 574300 | 3968835 | ✔️ |
-| 378802 | 4018606 | ✔️ |
-| 637808 | 3854764 | ✔️ |
-| 577096 | 3808487 | ✔️ |
-| 368223 | 3932280 | ✔️ |
-| 325892 | 3987703 | ✔️ |
-| 431725 | 3971494 | ✔️ |
-| 225635 | 3883933 | ✔️ |
-| 401648 | 4030561 | ✔️ |
-| 381597 | 3941670 | ✔️ |
-| 225643 | 3936568 | ✔️ |
-| 609977 | 3795991 | ✔️ |
-| 291936 | 3732916 | ✔️ |
-| 342623 | 3952599 | ✔️ |
-| 365460 | 3951942 | ✔️ |
-| 289712 | 4029100 | ✔️ |
-| 402231 | 3998848 | ✔️ |
-| 222880 | 4022682 | ✔️ |
-| 404465 | 3909755 | ✔️ |
-| 470193 | 3833738 | ✔️ |
-| 559313 | 3787188 | ✔️ |
-| 345425 | 3875980 | ✔️ |
-| 268560 | 3875976 | ✔️ |
-| 367706 | 4032649 | ✔️ |
-| 361579 | 3824951 | ✔️ |
-| 404468 | 3990419 | ✔️ |
-| 268566 | 3875978 | ✔️ |
-| 303657 | 3990351 | ✔️ |
-| 268567 | 3875979 | ✔️ |
-| 495267 | 4029128 | ✔️ |
-| 69162 | 4022665 | ✔️ |
-| 320926 | 3759354 | ✔️ |
-| 576589 | 3751528 | ✔️ |
-| 69163 | 4022681 | ✔️ |
-| 422301 | 4006088 | ✔️ |
-| 442354 | 3711717 | ✔️ |
-| 496394 | 3756127 | ✔️ |
-| 350464 | 3707479 | ✔️ |
-| 261348 | 4010682 | ✔️ |
-| 368293 | 3820310 | ✔️ |
-| 245755 | 3830849 | ✔️ |
-| 231275 | 3548400 | ✔️ |
-| 392805 | 3826151 | ✔️ |
-| 276951 | 4019552 | ✔️ |
-| 280294 | 3680770 | ✔️ |
-| 480816 | 3781652 | ✔️ |
-| 283644 | 4027410 | ✔️ |
-| 400058 | 3962120 | ✔️ |
-| 386134 | 3993576 | ✔️ |
-| 266936 | 4024422 | ✔️ |
-| 261924 | 3830914 | ✔️ |
-| 347706 | 4008043 | ✔️ |
-| 241319 | 4001490 | ✔️ |
-| 236307 | 3993501 | ✔️ |
-| 295910 | 4033098 | ✔️ |
-| 502561 | 3654272 | ✔️ |
-| 395620 | 3759822 | ✔️ |
-| 358304 | 3751574 | ✔️ |
-| 228525 | 3961347 | ✔️ |
-| 241895 | 3830926 | ✔️ |
-| 282001 | 4013868 | ✔️ |
-| 610632 | 3770580 | ✔️ |
-| 224633 | 3546561 | ✔️ |
-| 241344 | 3754969 | ✔️ |
-| 583345 | 3886082 | ✔️ |
-| 309858 | 3906364 | ✔️ |
-| 459701 | 3803098 | ✔️ |
-| 354428 | 3833646 | ✔️ |
-| 394535 | 3773710 | ✔️ |
-| 251389 | 3993554 | ✔️ |
-| 291493 | 3840073 | ✔️ |
-| 365578 | 3723285 | ✔️ |
-| 247496 | 3714025 | ✔️ |
-| 246939 | 3699221 | ✔️ |
-| 251396 | 3883932 | ✔️ |
-| 399558 | 3712396 | ✔️ |
-| 226889 | 3669491 | ✔️ |
-| 532127 | 3933646 | ✔️ |
-| 298187 | 3725903 | ✔️ |
-| 679177 | 4028724 | ✔️ |
-| 326041 | 3970754 | ✔️ |
-| 577805 | 4000542 | ✔️ |
-| 306549 | 3954953 | ✔️ |
-| 363363 | 4033047 | ✔️ |
-| 251407 | 3666468 | ✔️ |
-| 250294 | 3776175 | ✔️ |
-| 314906 | 3983773 | ✔️ |
-| 421850 | 4032728 | ✔️ |
-| 266450 | 3549135 | ✔️ |
-| 396234 | 3683674 | ✔️ |
-| 349447 | 4022669 | ✔️ |
-| 350006 | 4008044 | ✔️ |
-| 416294 | 4022965 | ✔️ |
-| 456956 | 4020976 | ✔️ |
-| 422981 | 3807283 | ✔️ |
-| 620723 | 3819824 | ✔️ |
-| 317716 | 3601975 | ✔️ |
-| 265917 | 3812175 | ✔️ |
-| 277616 | 3571539 | ✔️ |
-| 538850 | 3933645 | ✔️ |
-| 414640 | 3618311 | ✔️ |
-| 596224 | 3812301 | ✔️ |
-| 309927 | 3841948 | ✔️ |
-| 255902 | 4027885 | ✔️ |
-| 489843 | 4032249 | ✔️ |
-| 267602 | 3933537 | ✔️ |
-| 628539 | 3916828 | ✔️ |
-| 563928 | 3957976 | ✔️ |
-| 233071 | 3830906 | ✔️ |
-| 238086 | 4022967 | ✔️ |
-| 353942 | 3969644 | ✔️ |
-| 254241 | 4018844 | ✔️ |
-| 247560 | 4027275 | ✔️ |
-| 301034 | 3776062 | ✔️ |
-| 247007 | 3768491 | ✔️ |
-| 456996 | 3670425 | ✔️ |
-| 582327 | 3797990 | ✔️ |
-| 398521 | 3999153 | ✔️ |
-| 266515 | 3957263 | ✔️ |
-| 536660 | 3777944 | ✔️ |
-| 243121 | 3840125 | ✔️ |
-| 280441 | 3878822 | ✔️ |
-| 250363 | 3642382 | ✔️ |
-| 301051 | 3575623 | ✔️ |
-| 457570 | 4010624 | ✔️ |
-| 254268 | 3724596 | ✔️ |
-| 419699 | 3983970 | ✔️ |
-| 252042 | 3788082 | ✔️ |
-| 233105 | 3994822 | ✔️ |
-| 620784 | 3982023 | ✔️ |
-| 74924 | 3829975 | ✔️ |
-| 463155 | 3705945 | ✔️ |
-| 580129 | 3919400 | ✔️ |
-| 254284 | 3738299 | ✔️ |
-| 416935 | 3886212 | ✔️ |
-| 410811 | 3773058 | ✔️ |
-| 220318 | 3827434 | ✔️ |
-| 495476 | 3804332 | ✔️ |
-| 224218 | 3905502 | ✔️ |
-| 319466 | 4031435 | ✔️ |
-| 250398 | 3950209 | ✔️ |
-| 551736 | 3817266 | ✔️ |
-| 469301 | 3544598 | ✔️ |
-| 271009 | 3606213 | ✔️ |
-| 431430 | 3544460 | ✔️ |
-| 336184 | 3852970 | ✔️ |
-| 356236 | 3699372 | ✔️ |
-| 70496 | 3734491 | ✔️ |
-| 631401 | 3855148 | ✔️ |
-| 389665 | 3855186 | ✔️ |
-| 250419 | 3976092 | ✔️ |
-| 240950 | 4008038 | ✔️ |
-| 558998 | 3736072 | ✔️ |
-| 231484 | 4019015 | ✔️ |
-| 289412 | 3725771 | ✔️ |
-| 239286 | 3990119 | ✔️ |
-| 495509 | 3931224 | ✔️ |
-| 280510 | 3801087 | ✔️ |
-| 361276 | 3991008 | ✔️ |
-| 410295 | 4031715 | ✔️ |
-| 412525 | 3829113 | ✔️ |
-| 429235 | 3767288 | ✔️ |
-| 638111 | 3933410 | ✔️ |
-| 406959 | 4022685 | ✔️ |
-| 238747 | 3574005 | ✔️ |
-| 499980 | 3842421 | ✔️ |
-| 351264 | 3925887 | ✔️ |
-| 574622 | 4000179 | ✔️ |
-| 577411 | 3867010 | ✔️ |
-| 484954 | 3843498 | ✔️ |
-| 248787 | 3686482 | ✔️ |
-| 238761 | 3793199 | ✔️ |
-| 398623 | 3788448 | ✔️ |
-| 391382 | 3924730 | ✔️ |
-| 363535 | 3888542 | ✔️ |
-| 230976 | 3693140 | ✔️ |
-| 313970 | 4027804 | ✔️ |
-| 238222 | 4029818 | ✔️ |
-| 347394 | 3952617 | ✔️ |
-| 531761 | 3914491 | ✔️ |
-| 227639 | 3998681 | ✔️ |
-| 228756 | 3966367 | ✔️ |
-| 231549 | 3686734 | ✔️ |
-| 348521 | 3972426 | ✔️ |
-| 459929 | 4013966 | ✔️ |
-| 448233 | 3743929 | ✔️ |
-| 554065 | 3761120 | ✔️ |
-| 308989 | 3650485 | ✔️ |
-| 433760 | 3739668 | ✔️ |
-| 454372 | 3863129 | ✔️ |
-| 232131 | 3830896 | ✔️ |
-| 237701 | 3834621 | ✔️ |
-| 306770 | 3846086 | ✔️ |
-| 536254 | 3810716 | ✔️ |
-| 256087 | 3712112 | ✔️ |
-| 291737 | 4022683 | ✔️ |
-| 520110 | 4010801 | ✔️ |
-| 60028 | 3948611 | ✔️ |
-| 480006 | 3777937 | ✔️ |
-| 312353 | 3984105 | ✔️ |
-| 491151 | 3749665 | ✔️ |
-| 510089 | 3777934 | ✔️ |
-| 223794 | 4023502 | ✔️ |
-| 539057 | 3671421 | ✔️ |
-| 312918 | 3788736 | ✔️ |
-| 71738 | 3832652 | ✔️ |
-| 246640 | 4005473 | ✔️ |
-| 351914 | 3788376 | ✔️ |
-| 361385 | 3952167 | ✔️ |
-| 327968 | 3681801 | ✔️ |
-| 417645 | 3670345 | ✔️ |
-| 242195 | 3830309 | ✔️ |
-| 372534 | 3951938 | ✔️ |
-| 412082 | 4029367 | ✔️ |
-| 402616 | 3922575 | ✔️ |
-| 393149 | 3683668 | ✔️ |
-| 551894 | 3846597 | ✔️ |
-| 342466 | 4008040 | ✔️ |
-| 383129 | 3856668 | ✔️ |
-| 268387 | 3885707 | ✔️ |
-| 282313 | 3757606 | ✔️ |
-| 483391 | 3693469 | ✔️ |
-| 362528 | 3965454 | ✔️ |
-| 368098 | 4000541 | ✔️ |
-| 257814 | 3948720 | ✔️ |
-| 465575 | 3778231 | ✔️ |
-| 271740 | 3929072 | ✔️ |
-| 250577 | 3740180 | ✔️ |
-| 370890 | 3672172 | ✔️ |
-| 287342 | 3819942 | ✔️ |
-| 248353 | 3884910 | ✔️ |
-| 232758 | 3900719 | ✔️ |
-| 60089 | 3578801 | ✔️ |
-| 631016 | 3950598 | ✔️ |
-| 377582 | 3834251 | ✔️ |
-| 299045 | 3570230 | ✔️ |
-| 619320 | 4006092 | ✔️ |
-| 223852 | 3807626 | ✔️ |
-| 676136 | 4024855 | ✔️ |
-| 231095 | 3957651 | ✔️ |
-| 256717 | 3913406 | ✔️ |
-| 316873 | 3553486 | ✔️ |
-| 622112 | 4027408 | ✔️ |
-| 287357 | 3993516 | ✔️ |
-| 441647 | 4018363 | ✔️ |
-| 316881 | 3568547 | ✔️ |
-| 451682 | 3725041 | ✔️ |
-| 536348 | 3810720 | ✔️ |
-| 272335 | 4005476 | ✔️ |
-| 495693 | 3810400 | ✔️ |
-| 232791 | 3965743 | ✔️ |
-| 235577 | 3658064 | ✔️ |
-| 242818 | 4009409 | ✔️ |
-| 252848 | 3858196 | ✔️ |
-| 443900 | 3819249 | ✔️ |
-| 465066 | 3678612 | ✔️ |
-| 438332 | 3862966 | ✔️ |
-| 238372 | 3859673 | ✔️ |
-| 241160 | 3549513 | ✔️ |
-| 266784 | 3738448 | ✔️ |
-| 560323 | 3669114 | ✔️ |
-| 363703 | 4010650 | ✔️ |
-| 445025 | 3565298 | ✔️ |
-| 309674 | 3993780 | ✔️ |
-| 324717 | 3970956 | ✔️ |
-| 74072 | 3998764 | ✔️ |
-| 315811 | 4032069 | ✔️ |
-| 475117 | 3755834 | ✔️ |
+| [Raised](https://www.curseforge.com/minecraft/mc-mods/raised)| 1 author(s) | ✔️ |
+| [Just Enough Resources (JER)](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer)| 1 author(s) | ✔️ |
+| [FTB Backups 2](https://www.curseforge.com/minecraft/mc-mods/ftb-backups-2)| 2 author(s) | ✔️ |
+| [Polymorph (Forge)](https://www.curseforge.com/minecraft/mc-mods/polymorph)| 1 author(s) | ✔️ |
+| [Bad Wither No Cookie - Reloaded](https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded)| 1 author(s) | ✔️ |
+| [In Control!](https://www.curseforge.com/minecraft/mc-mods/in-control)| 1 author(s) | ✔️ |
+| [Rare Ice (Forge/Fabric)](https://www.curseforge.com/minecraft/mc-mods/rare-ice)| 1 author(s) | ✔️ |
+| [Mystical Agradditions](https://www.curseforge.com/minecraft/mc-mods/mystical-agradditions)| 1 author(s) | ✔️ |
+| [Collective (Forge)](https://www.curseforge.com/minecraft/mc-mods/collective)| 1 author(s) | ✔️ |
+| [Rubidium](https://www.curseforge.com/minecraft/mc-mods/rubidium)| 1 author(s) | ✔️ |
+| [Glassential](https://www.curseforge.com/minecraft/mc-mods/glassential)| 1 author(s) | ✔️ |
+| [Applied Mekanistics](https://www.curseforge.com/minecraft/mc-mods/applied-mekanistics)| 3 author(s) | ✔️ |
+| [Structure Gel API](https://www.curseforge.com/minecraft/mc-mods/structure-gel-api)| 2 author(s) | ✔️ |
+| [Dynamic Asset Generator](https://www.curseforge.com/minecraft/mc-mods/dynamic-asset-generator)| 1 author(s) | ✔️ |
+| [Health Overlay (Forge)](https://www.curseforge.com/minecraft/mc-mods/health-overlay)| 1 author(s) | ✔️ |
+| [Mystical Adaptations](https://www.curseforge.com/minecraft/mc-mods/mystical-adaptations)| 1 author(s) | ✔️ |
+| [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)| 1 author(s) | ✔️ |
+| [AgriCraft](https://www.curseforge.com/minecraft/mc-mods/agricraft)| 1 author(s) | ✔️ |
+| [BetterF3](https://www.curseforge.com/minecraft/mc-mods/betterf3)| 1 author(s) | ✔️ |
+| [Regrowth](https://www.curseforge.com/minecraft/mc-mods/regrowth)| 1 author(s) | ✔️ |
+| [Botania](https://www.curseforge.com/minecraft/mc-mods/botania)| 1 author(s) | ✔️ |
+| [AE2 Things [Forge]](https://www.curseforge.com/minecraft/mc-mods/ae2-things-forge)| 2 author(s) | ✔️ |
+| [FindMe](https://www.curseforge.com/minecraft/mc-mods/findme)| 1 author(s) | ✔️ |
+| [Healing Campfire (Forge)](https://www.curseforge.com/minecraft/mc-mods/healing-campfire)| 1 author(s) | ✔️ |
+| [Tetra](https://www.curseforge.com/minecraft/mc-mods/tetra)| 1 author(s) | ✔️ |
+| [FTB Library (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge)| 2 author(s) | ✔️ |
+| [AEInfinityBooster](https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster)| 1 author(s) | ✔️ |
+| [Mekanism Additions](https://www.curseforge.com/minecraft/mc-mods/mekanism-additions)| 4 author(s) | ✔️ |
+| [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism)| 4 author(s) | ✔️ |
+| [FancyMenu [Forge]](https://www.curseforge.com/minecraft/mc-mods/fancymenu-forge)| 1 author(s) | ✔️ |
+| [spark](https://www.curseforge.com/minecraft/mc-mods/spark)| 1 author(s) | ✔️ |
+| [FTB Teams (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge)| 2 author(s) | ✔️ |
+| [Mekanism Generators](https://www.curseforge.com/minecraft/mc-mods/mekanism-generators)| 4 author(s) | ✔️ |
+| [Kiwi 🥝 (Forge)](https://www.curseforge.com/minecraft/mc-mods/kiwi)| 1 author(s) | ✔️ |
+| [Mekanism Tools](https://www.curseforge.com/minecraft/mc-mods/mekanism-tools)| 4 author(s) | ✔️ |
+| [Inventory Profiles Next](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next)| 1 author(s) | ✔️ |
+| [Scalable Cat's Force](https://www.curseforge.com/minecraft/mc-mods/scalable-cats-force)| 1 author(s) | ✔️ |
+| [PolyLib](https://www.curseforge.com/minecraft/mc-mods/polylib)| 3 author(s) | ✔️ |
+| [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks)| 1 author(s) | ✔️ |
+| [Repurposed Structures (Forge)](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures)| 1 author(s) | ✔️ |
+| [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)| 1 author(s) | ✔️ |
+| [Ding](https://www.curseforge.com/minecraft/mc-mods/ding)| 1 author(s) | ✔️ |
+| [CleanCut](https://www.curseforge.com/minecraft/mc-mods/cleancut)| 1 author(s) | ✔️ |
+| [Comforts (Forge)](https://www.curseforge.com/minecraft/mc-mods/comforts)| 1 author(s) | ✔️ |
+| [Placebo](https://www.curseforge.com/minecraft/mc-mods/placebo)| 1 author(s) | ✔️ |
+| [MythicBotany](https://www.curseforge.com/minecraft/mc-mods/mythicbotany)| 1 author(s) | ✔️ |
+| [FTB Ultimine (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge)| 2 author(s) | ✔️ |
+| [JAOPCA](https://www.curseforge.com/minecraft/mc-mods/jaopca)| 1 author(s) | ✔️ |
+| [Farming for Blockheads](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads)| 1 author(s) | ✔️ |
+| [Reliquary Reincarnations](https://www.curseforge.com/minecraft/mc-mods/reliquary-v1-3)| 1 author(s) | ✔️ |
+| [Integrated Dynamics](https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics)| 1 author(s) | ✔️ |
+| [Integrated Terminals](https://www.curseforge.com/minecraft/mc-mods/integrated-terminals)| 1 author(s) | ✔️ |
+| [Equipment Compare](https://www.curseforge.com/minecraft/mc-mods/equipment-compare)| 1 author(s) | ✔️ |
+| [Item Collectors](https://www.curseforge.com/minecraft/mc-mods/item-collectors)| 1 author(s) | ✔️ |
+| [Login Protection[Forge/Fabric]](https://www.curseforge.com/minecraft/mc-mods/login-protection)| 1 author(s) | ✔️ |
+| [Bookshelf](https://www.curseforge.com/minecraft/mc-mods/bookshelf)| 1 author(s) | ✔️ |
+| [KleeSlabs](https://www.curseforge.com/minecraft/mc-mods/kleeslabs)| 1 author(s) | ✔️ |
+| [CC: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked)| 1 author(s) | ✔️ |
+| [Passthrough Signs](https://www.curseforge.com/minecraft/mc-mods/passthrough-signs)| 1 author(s) | ✔️ |
+| [Jade Addons (Forge)](https://www.curseforge.com/minecraft/mc-mods/jade-addons)| 1 author(s) | ✔️ |
+| [Forbidden and Arcanus](https://www.curseforge.com/minecraft/mc-mods/forbidden-arcanus)| 1 author(s) | ✔️ |
+| [NoMoWanderer](https://www.curseforge.com/minecraft/mc-mods/nomowanderer)| 1 author(s) | ✔️ |
+| [Trash Cans](https://www.curseforge.com/minecraft/mc-mods/trash-cans)| 1 author(s) | ✔️ |
+| [Integrated Tunnels](https://www.curseforge.com/minecraft/mc-mods/integrated-tunnels)| 1 author(s) | ✔️ |
+| [Portality](https://www.curseforge.com/minecraft/mc-mods/portality)| 1 author(s) | ✔️ |
+| [Decorative Blocks Compat](https://www.curseforge.com/minecraft/mc-mods/decorative-blocks-compat)| 2 author(s) | ✔️ |
+| [Ranged Pumps](https://www.curseforge.com/minecraft/mc-mods/ranged-pumps)| 1 author(s) | ✔️ |
+| [Construction Wand](https://www.curseforge.com/minecraft/mc-mods/construction-wand)| 1 author(s) | ✔️ |
+| [CleanView](https://www.curseforge.com/minecraft/mc-mods/cleanview)| 1 author(s) | ✔️ |
+| [Legendary Tooltips](https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips)| 1 author(s) | ✔️ |
+| [Building Gadgets](https://www.curseforge.com/minecraft/mc-mods/building-gadgets)| 2 author(s) | ✔️ |
+| [libIPN](https://www.curseforge.com/minecraft/mc-mods/libipn)| 1 author(s) | ✔️ |
+| [Tips](https://www.curseforge.com/minecraft/mc-mods/tips)| 1 author(s) | ✔️ |
+| [Extreme sound muffler (Forge)](https://www.curseforge.com/minecraft/mc-mods/extreme-sound-muffler)| 1 author(s) | ✔️ |
+| [Client Tweaks](https://www.curseforge.com/minecraft/mc-mods/client-tweaks)| 1 author(s) | ✔️ |
+| [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers)| 1 author(s) | ✔️ |
+| [FTB Chunks (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-forge)| 2 author(s) | ✔️ |
+| [YUNG's API (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-api)| 1 author(s) | ✔️ |
+| [Inventory Spam](https://www.curseforge.com/minecraft/mc-mods/inventory-spam)| 1 author(s) | ✔️ |
+| [Rhino](https://www.curseforge.com/minecraft/mc-mods/rhino)| 1 author(s) | ✔️ |
+| [Chipped](https://www.curseforge.com/minecraft/mc-mods/chipped)| 3 author(s) | ✔️ |
+| [Elytra Slot (Forge)](https://www.curseforge.com/minecraft/mc-mods/elytra-slot)| 1 author(s) | ✔️ |
+| [JEI Integration](https://www.curseforge.com/minecraft/mc-mods/jei-integration)| 1 author(s) | ✔️ |
+| [Spice of Life: Carrot Edition](https://www.curseforge.com/minecraft/mc-mods/spice-of-life-carrot-edition)| 1 author(s) | ✔️ |
+| [TwerkItMeal - Twerk To Grow All The Things](https://www.curseforge.com/minecraft/mc-mods/twerkitmeal)| 1 author(s) | ✔️ |
+| [Debugify](https://www.curseforge.com/minecraft/mc-mods/debugify)| 1 author(s) | ✔️ |
+| [Curios API (Forge)](https://www.curseforge.com/minecraft/mc-mods/curios)| 1 author(s) | ✔️ |
+| [Wither Skeleton Tweaks](https://www.curseforge.com/minecraft/mc-mods/wither-skeleton-tweaks)| 1 author(s) | ✔️ |
+| [Lazier AE2](https://www.curseforge.com/minecraft/mc-mods/lazierae2)| 2 author(s) | ✔️ |
+| [ConnectedTexturesMod](https://www.curseforge.com/minecraft/mc-mods/ctm)| 1 author(s) | ✔️ |
+| [TerraBlender (Forge)](https://www.curseforge.com/minecraft/mc-mods/terrablender)| 1 author(s) | ✔️ |
+| [Crafting Tweaks](https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks)| 1 author(s) | ✔️ |
+| [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs)| 1 author(s) | ✔️ |
+| [Snow Under Trees](https://www.curseforge.com/minecraft/mc-mods/snow-under-trees)| 1 author(s) | ✔️ |
+| [Oh The Biomes You'll Go](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go)| 3 author(s) | ✔️ |
+| [Entangled](https://www.curseforge.com/minecraft/mc-mods/entangled)| 1 author(s) | ✔️ |
+| [Common Capabilities](https://www.curseforge.com/minecraft/mc-mods/common-capabilities)| 1 author(s) | ✔️ |
+| [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)| 1 author(s) | ✔️ |
+| [Industrial Foregoing](https://www.curseforge.com/minecraft/mc-mods/industrial-foregoing)| 2 author(s) | ✔️ |
+| [YUNG's Bridges (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-bridges)| 1 author(s) | ✔️ |
+| [Quark](https://www.curseforge.com/minecraft/mc-mods/quark)| 1 author(s) | ✔️ |
+| [Mystical Customization](https://www.curseforge.com/minecraft/mc-mods/mystical-customization)| 1 author(s) | ✔️ |
+| [AutoRegLib](https://www.curseforge.com/minecraft/mc-mods/autoreglib)| 1 author(s) | ✔️ |
+| [Quark Oddities](https://www.curseforge.com/minecraft/mc-mods/quark-oddities)| 1 author(s) | ✔️ |
+| [Configured](https://www.curseforge.com/minecraft/mc-mods/configured)| 1 author(s) | ✔️ |
+| [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster)| 1 author(s) | ✔️ |
+| [Architectury API (Fabric/Forge)](https://www.curseforge.com/minecraft/mc-mods/architectury-api)| 3 author(s) | ✔️ |
+| [Paintings ++](https://www.curseforge.com/minecraft/mc-mods/paintings)| 1 author(s) | ✔️ |
+| [Geode+](https://www.curseforge.com/minecraft/mc-mods/geode-forge)| 1 author(s) | ✔️ |
+| [Mantle](https://www.curseforge.com/minecraft/mc-mods/mantle)| 6 author(s) | ✔️ |
+| [Falling Leaves (Forge)](https://www.curseforge.com/minecraft/mc-mods/falling-leaves-forge)| 1 author(s) | ✔️ |
+| [AmbientSounds 5](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)| 1 author(s) | ✔️ |
+| [FTB Essentials (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-essentials-forge)| 2 author(s) | ✔️ |
+| [Biomes O' Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)| 2 author(s) | ✔️ |
+| [Puzzles Lib](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib)| 1 author(s) | ✔️ |
+| [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)| 2 author(s) | ✔️ |
+| [TelePastries](https://www.curseforge.com/minecraft/mc-mods/telepastries)| 1 author(s) | ✔️ |
+| [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)| 1 author(s) | ✔️ |
+| [Magnesium/Rubidium Dynamic Lights](https://www.curseforge.com/minecraft/mc-mods/dynamiclights-reforged)| 1 author(s) | ✔️ |
+| [Forgiving Void](https://www.curseforge.com/minecraft/mc-mods/forgiving-void)| 1 author(s) | ✔️ |
+| [Enigmatic Legacy](https://www.curseforge.com/minecraft/mc-mods/enigmatic-legacy)| 1 author(s) | ✔️ |
+| [Loot Bag Mod](https://www.curseforge.com/minecraft/mc-mods/loot-bag-mod)| 1 author(s) | ✔️ |
+| [BdLib](https://www.curseforge.com/minecraft/mc-mods/bdlib)| 1 author(s) | ✔️ |
+| [YUNG's Better Witch Huts (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts)| 2 author(s) | ✔️ |
+| [YUNG's Better Mineshafts (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts-forge)| 1 author(s) | ✔️ |
+| [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions)| 1 author(s) | ✔️ |
+| [Re-chiseled](https://www.curseforge.com/minecraft/mc-mods/rechiseled)| 1 author(s) | ✔️ |
+| [Cooking for Blockheads](https://www.curseforge.com/minecraft/mc-mods/cooking-for-blockheads)| 1 author(s) | ✔️ |
+| [FTB Quests (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge)| 2 author(s) | ✔️ |
+| [Spirit](https://www.curseforge.com/minecraft/mc-mods/spirit)| 3 author(s) | ✔️ |
+| [AttributeFix](https://www.curseforge.com/minecraft/mc-mods/attributefix)| 1 author(s) | ✔️ |
+| [Lootr (Forge)](https://www.curseforge.com/minecraft/mc-mods/lootr)| 3 author(s) | ✔️ |
+| [Konkrete [Forge]](https://www.curseforge.com/minecraft/mc-mods/konkrete)| 1 author(s) | ✔️ |
+| [LibX](https://www.curseforge.com/minecraft/mc-mods/libx)| 2 author(s) | ✔️ |
+| [FerriteCore (Forge)](https://www.curseforge.com/minecraft/mc-mods/ferritecore)| 1 author(s) | ✔️ |
+| [Prism](https://www.curseforge.com/minecraft/mc-mods/prism-lib)| 1 author(s) | ✔️ |
+| [Kotlin for Forge](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge)| 1 author(s) | ✔️ |
+| [Cultural Delights](https://www.curseforge.com/minecraft/mc-mods/cultural-delights)| 1 author(s) | ✔️ |
+| [More Villagers](https://www.curseforge.com/minecraft/mc-mods/more-villagers)| 2 author(s) | ✔️ |
+| [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)| 1 author(s) | ✔️ |
+| [Pickle Tweaks](https://www.curseforge.com/minecraft/mc-mods/pickle-tweaks)| 1 author(s) | ✔️ |
+| [More Overlays Updated](https://www.curseforge.com/minecraft/mc-mods/more-overlays-updated)| 1 author(s) | ✔️ |
+| [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis)| 1 author(s) | ✔️ |
+| [Just Enough Items (JEI)](https://www.curseforge.com/minecraft/mc-mods/jei)| 1 author(s) | ✔️ |
+| [No Hostiles Around Campfire (Forge)](https://www.curseforge.com/minecraft/mc-mods/no-hostiles-around-campfire)| 1 author(s) | ✔️ |
+| [Balm (Forge Edition)](https://www.curseforge.com/minecraft/mc-mods/balm)| 1 author(s) | ✔️ |
+| [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest)| 6 author(s) | ✔️ |
+| [Iron Chests](https://www.curseforge.com/minecraft/mc-mods/iron-chests)| 2 author(s) | ✔️ |
+| [Compacter](https://www.curseforge.com/minecraft/mc-mods/compacter)| 1 author(s) | ✔️ |
+| [Cloth Config API (Fabric/Forge)](https://www.curseforge.com/minecraft/mc-mods/cloth-config)| 2 author(s) | ✔️ |
+| [Applied Energistics 2 Wireless Terminals](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2-wireless-terminals)| 2 author(s) | ✔️ |
+| [Entity Culling Fabric/Forge](https://www.curseforge.com/minecraft/mc-mods/entityculling)| 1 author(s) | ✔️ |
+| [Caelus API (Forge)](https://www.curseforge.com/minecraft/mc-mods/caelus)| 1 author(s) | ✔️ |
+| [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations)| 1 author(s) | ✔️ |
+| [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)| 1 author(s) | ✔️ |
+| [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options)| 1 author(s) | ✔️ |
+| [ReAuth](https://www.curseforge.com/minecraft/mc-mods/reauth)| 1 author(s) | ✔️ |
+| [Patchouli](https://www.curseforge.com/minecraft/mc-mods/patchouli)| 1 author(s) | ✔️ |
+| [Notes](https://www.curseforge.com/minecraft/mc-mods/notes)| 1 author(s) | ✔️ |
+| [Iceberg](https://www.curseforge.com/minecraft/mc-mods/iceberg)| 1 author(s) | ✔️ |
+| [Aquaculture 2](https://www.curseforge.com/minecraft/mc-mods/aquaculture)| 2 author(s) | ✔️ |
+| [YUNG's Extras (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-extras)| 2 author(s) | ✔️ |
+| [Artifacts](https://www.curseforge.com/minecraft/mc-mods/artifacts)| 1 author(s) | ✔️ |
+| [Structures' Compass](https://www.curseforge.com/minecraft/mc-mods/structures-compass)| 3 author(s) | ✔️ |
+| [YUNG's Better Dungeons (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons)| 2 author(s) | ✔️ |
+| [Applied Energistics 2](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2)| 5 author(s) | ✔️ |
+| [Trading Post](https://www.curseforge.com/minecraft/mc-mods/trading-post)| 1 author(s) | ✔️ |
+| [ShetiPhianCore](https://www.curseforge.com/minecraft/mc-mods/shetiphiancore)| 1 author(s) | ✔️ |
+| [Mystical Agriculture](https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture)| 1 author(s) | ✔️ |
+| [GoProne](https://www.curseforge.com/minecraft/mc-mods/goprone)| 1 author(s) | ✔️ |
+| [Just Enough Professions (JEP)](https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep)| 2 author(s) | ✔️ |
+| [Dark Utilities](https://www.curseforge.com/minecraft/mc-mods/dark-utilities)| 1 author(s) | ✔️ |
+| [Brazier](https://www.curseforge.com/minecraft/mc-mods/brazier)| 1 author(s) | ✔️ |
+| [Runelic](https://www.curseforge.com/minecraft/mc-mods/runelic)| 1 author(s) | ✔️ |
+| [Connected Glass](https://www.curseforge.com/minecraft/mc-mods/connected-glass)| 1 author(s) | ✔️ |
+| [Extended Crafting](https://www.curseforge.com/minecraft/mc-mods/extended-crafting)| 1 author(s) | ✔️ |
+| [TipTheScales](https://www.curseforge.com/minecraft/mc-mods/tipthescales)| 1 author(s) | ✔️ |
+| [Mysterious Mountain Lib](https://www.curseforge.com/minecraft/mc-mods/mysterious-mountain-lib)| 1 author(s) | ✔️ |
+| [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore)| 1 author(s) | ✔️ |
+| [YUNG's Better Strongholds (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds)| 2 author(s) | ✔️ |
+| [Toast Control](https://www.curseforge.com/minecraft/mc-mods/toast-control)| 1 author(s) | ✔️ |
+| [Akashic Tome](https://www.curseforge.com/minecraft/mc-mods/akashic-tome)| 1 author(s) | ✔️ |
+| [Just Another Void Dimension](https://www.curseforge.com/minecraft/mc-mods/just-another-void-dimension)| 2 author(s) | ✔️ |
+| [Titanium](https://www.curseforge.com/minecraft/mc-mods/titanium)| 1 author(s) | ✔️ |
+| [EverlastingAbilities](https://www.curseforge.com/minecraft/mc-mods/everlastingabilities)| 1 author(s) | ✔️ |
+| [Cyclops Core](https://www.curseforge.com/minecraft/mc-mods/cyclops-core)| 1 author(s) | ✔️ |
+| [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)| 1 author(s) | ✔️ |
+| [YUNG's Better Desert Temples (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples)| 2 author(s) | ✔️ |
+| [Transparent](https://www.curseforge.com/minecraft/mc-mods/transparent)| 1 author(s) | ✔️ |
+| [Mystical Agriculture Tiered Crystals](https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture-tiered-crystals)| 1 author(s) | ✔️ |
+| [Sophisticated Storage](https://www.curseforge.com/minecraft/mc-mods/sophisticated-storage)| 1 author(s) | ✔️ |
+| [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)| 1 author(s) | ✔️ |
+| [Chisels & Bits - For Forge](https://www.curseforge.com/minecraft/mc-mods/chisels-bits)| 2 author(s) | ✔️ |
+| [Clumps](https://www.curseforge.com/minecraft/mc-mods/clumps)| 1 author(s) | ✔️ |
+| [Charm of Undying (Forge)](https://www.curseforge.com/minecraft/mc-mods/charm-of-undying)| 1 author(s) | ✔️ |
+| [MEGA Cells](https://www.curseforge.com/minecraft/mc-mods/mega-cells)| 1 author(s) | ✔️ |
+| [Integrated Crafting](https://www.curseforge.com/minecraft/mc-mods/integrated-crafting)| 1 author(s) | ✔️ |
+| [Shulker Box Slot (Forge)](https://www.curseforge.com/minecraft/mc-mods/shulker-box-slot)| 1 author(s) | ✔️ |
+| [Cucumber Library](https://www.curseforge.com/minecraft/mc-mods/cucumber)| 1 author(s) | ✔️ |
+| [It's the little things](https://www.curseforge.com/minecraft/mc-mods/its-the-little-things)| 1 author(s) | ✔️ |
+| [TrashSlot](https://www.curseforge.com/minecraft/mc-mods/trashslot)| 1 author(s) | ✔️ |
+| [CodeChicken Lib 1.8.+](https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8)| 2 author(s) | ✔️ |
+| [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass)| 1 author(s) | ✔️ |
+| [Pipez](https://www.curseforge.com/minecraft/mc-mods/pipez)| 1 author(s) | ✔️ |
+| [ExpandAbility](https://www.curseforge.com/minecraft/mc-mods/expandability)| 2 author(s) | ✔️ |
+| [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib)| 1 author(s) | ✔️ |
+| [Neat](https://www.curseforge.com/minecraft/mc-mods/neat)| 1 author(s) | ✔️ |
+| [NetherPortalFix](https://www.curseforge.com/minecraft/mc-mods/netherportalfix)| 1 author(s) | ✔️ |
+| [Scannable](https://www.curseforge.com/minecraft/mc-mods/scannable)| 1 author(s) | ✔️ |
+| [Goblin Traders](https://www.curseforge.com/minecraft/mc-mods/goblin-traders)| 1 author(s) | ✔️ |
+| [Item Filters](https://www.curseforge.com/minecraft/mc-mods/item-filters)| 1 author(s) | ✔️ |
+| [Jade 🔍](https://www.curseforge.com/minecraft/mc-mods/jade)| 1 author(s) | ✔️ |
+| [Tinkers Construct](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct)| 4 author(s) | ✔️ |
+| [ShulkerBoxTooltip [Fabric/Forge]](https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip)| 1 author(s) | ✔️ |
+| [FastSuite](https://www.curseforge.com/minecraft/mc-mods/fastsuite)| 1 author(s) | ✔️ |
