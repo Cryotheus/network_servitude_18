@@ -1,6 +1,8 @@
 # Network Servitude 18
 Minecraft Forge 1.18.2 Modpack  
 
+[Mod list](https://github.com/Cryotheus/network_servitude_18/blob/main/modlist.md)  
+
 Active mod issues
 | Mod Name | Issue | Action Taken | Link
 | :------: | :---- | :----------- | :---
