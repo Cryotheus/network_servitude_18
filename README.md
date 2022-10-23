@@ -1,9 +1,15 @@
 # Network Servitude 18
-Minecraft Forge 1.18.2 Modpack  
+Minecraft Forge 1.18.2 modpack focused around technology, particularly [Applied Energistics 2](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2)  
 
-[Mod list](https://github.com/Cryotheus/network_servitude_18/blob/main/modlist.md)  
+## Features
+ *  Custom recipes
+ *  Tutorial-styled quest book
 
-Active mod issues
+## Links
+ *  [CurseForge](https://download.curseforge.com/) for installing the mod pack
+ *  [Mod list](https://github.com/Cryotheus/network_servitude_18/blob/main/modlist.md) (automatically generated)
+
+## Mod Issue Tracker
 | Mod Name | Issue | Action Taken | Link
 | :------: | :---- | :----------- | :---
 | [Applied Energistics 2](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) | Cannot hide facades in JEI (even with KubeJS) | | [GitHub Issue](https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/6698) |
