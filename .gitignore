@@ -1,3 +1,4 @@
 backup_manifest/*
 manifest_update.py
 modlist.html
+*.zip
