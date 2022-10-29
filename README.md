@@ -5,6 +5,14 @@ Minecraft Forge 1.18.2 modpack focused around technology, particularly [Applied 
  *  Custom recipes
  *  Tutorial-styled quest book
 
+## Installation
+1. Download the repository as a zip
+2. Open your CurseForge launcher and navigate to the **Minecraft** > **My Modpacks**
+3. Click **+ Create Custom Profile**
+4. Click the very hard to see **import** button near the top
+5. Select the zip file you had downloaded
+6. Lunch
+
 ## Links
  *  [CurseForge](https://download.curseforge.com/) for installing the mod pack
  *  [Mod list](https://github.com/Cryotheus/network_servitude_18/blob/main/modlist.md) (automatically generated)
