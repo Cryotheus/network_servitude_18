@@ -1,5 +1,5 @@
 # Network Servitude 18
-Complete mod list for version 0.0.9  
+Complete mod list for version 0.0.10  
 forge version 40.1.84  
 
 | Mod Name | Authors | Enabled |
@@ -169,7 +169,7 @@ forge version 40.1.84
 | [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism) | 4 author(s) | ✔️ |
 | [Mob Grinding Utils](https://www.curseforge.com/minecraft/mc-mods/mob-grinding-utils) | 2 author(s) | ✔️ |
 | [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip) | 1 author(s) | ✔️ |
-| [Model Gap Fix](https://www.curseforge.com/minecraft/mc-mods/model-gap-fix) | 1 author(s) | ✔️ |
+| [Model Gap Fix](https://www.curseforge.com/minecraft/mc-mods/model-gap-fix) | 1 author(s) | ❌ |
 | [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers) | 1 author(s) | ✔️ |
 | [Moonlight Lib](https://www.curseforge.com/minecraft/mc-mods/selene) | 1 author(s) | ✔️ |
 | [More Overlays Updated](https://www.curseforge.com/minecraft/mc-mods/more-overlays-updated) | 1 author(s) | ✔️ |
@@ -252,7 +252,7 @@ forge version 40.1.84
 | [Structures' Compass](https://www.curseforge.com/minecraft/mc-mods/structures-compass) | 3 author(s) | ✔️ |
 | [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) | 1 author(s) | ✔️ |
 | [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) | 1 author(s) | ✔️ |
-| [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) | 1 author(s) | ✔️ |
+| [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) | 1 author(s) | ❌ |
 | [TelePastries](https://www.curseforge.com/minecraft/mc-mods/telepastries) | 1 author(s) | ✔️ |
 | [TerraBlender (Forge)](https://www.curseforge.com/minecraft/mc-mods/terrablender) | 1 author(s) | ✔️ |
 | [Tetra](https://www.curseforge.com/minecraft/mc-mods/tetra) | 1 author(s) | ✔️ |
