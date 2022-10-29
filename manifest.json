@@ -11,8 +11,8 @@
 	"manifestType": "minecraftModpack",
 	"manifestVersion": 1,
 	"name": "Network Servitude 18",
-	"version": "0.0.10",
-	"author": "Cryotheum & SillyGoose078",
+	"version": "0.0.11",
+	"author": "Cryotheum#4096 & SillyGoose078",
 	"files": [
 		{
 			"projectID": 225635,
@@ -455,11 +455,6 @@
 			"required": true
 		},
 		{
-			"projectID": 676136,
-			"fileID": 4024855,
-			"required": false
-		},
-		{
 			"projectID": 412525,
 			"fileID": 3829113,
 			"required": true
@@ -531,7 +526,7 @@
 		},
 		{
 			"projectID": 580129,
-			"fileID": 3919400,
+			"fileID": 4056154,
 			"required": true
 		},
 		{
@@ -581,7 +576,7 @@
 		},
 		{
 			"projectID": 257356,
-			"fileID": 4054969,
+			"fileID": 4055864,
 			"required": true
 		},
 		{
@@ -1036,7 +1031,7 @@
 		},
 		{
 			"projectID": 628539,
-			"fileID": 3916828,
+			"fileID": 4056282,
 			"required": true
 		},
 		{
@@ -1335,23 +1330,23 @@
 			"required": true
 		},
 		{
+			"projectID": 412082,
+			"fileID": 4049235,
+			"required": true
+		},
+		{
 			"projectID": 69163,
 			"fileID": 4022681,
 			"required": true
 		},
 		{
-			"projectID": 412082,
-			"fileID": 4049235,
-			"required": false
+			"projectID": 631016,
+			"fileID": 3950598,
+			"required": true
 		},
 		{
 			"projectID": 502561,
 			"fileID": 3654272,
-			"required": true
-		},
-		{
-			"projectID": 631016,
-			"fileID": 3950598,
 			"required": true
 		},
 		{
