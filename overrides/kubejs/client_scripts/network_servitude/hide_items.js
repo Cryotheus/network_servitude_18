@@ -1,10 +1,12 @@
 onEvent("jei.hide.items", event => {
+	event.hide(/draconium/)
+	
 	//mods entirely hidden
 	event.hide(/^everycomp:/)
 	event.hide(/^excavated_variants:/)
 	
 	//ae2
-	//event.hide("ae2:facade")
+	//event.hide("ae2:facade") //doesn't work
 	
 	//ae2 things
 	event.hide("ae2things:advanced_inscriber")
