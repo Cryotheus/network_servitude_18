@@ -129,6 +129,7 @@
 			"minecraft:bedrock",
 			"minecraft:chain_command_block",
 			"minecraft:command_block",
+			"minecraft:command_block_minecart",
 			"minecraft:enchanted_book",
 			"minecraft:knowledge_book",
 			"minecraft:lingering_potion",
@@ -143,7 +144,15 @@
 			
 			"modularrouters:creative_module",
 			
+			"mysticalagradditions:awakened_draconium_crux",
+			
+			"mysticalagriculture:awakened_draconium_essence",
+			"mysticalagriculture:awakened_draconium_seeds",
 			"mysticalagriculture:creative_soulium_dagger",
+			"mysticalagriculture:draconium_essence",
+			"mysticalagriculture:draconium_seeds",
+			
+			"ob_aquamirae:frozen_chest",
 			
 			"rftoolsutility:creative_screen",
 			
@@ -202,6 +211,7 @@
 	["Loot Bag Mod Config"."Mod List"]
 		#Mod black/whitelist (Syntax " modid ")
 		modlist = [
+			"agricraft",
 			"avaritia",
 			"chipped",
 			"enigmaticlegacy",
@@ -211,6 +221,7 @@
 			"jaopca",
 			"kubejs",
 			"lootr",
+			"rechiseled",
 			"titanium"
 		]
 
@@ -219,7 +230,9 @@
 		contains = [
 			"button",
 			"carpet",
-			"fence"
+			"fence",
+			"spawn_egg",
+			"spawnegg"
 		]
 		
 		#Enable Contains List
