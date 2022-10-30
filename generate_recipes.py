@@ -55,6 +55,10 @@ bans = {
 		"tin_singularity"
 	],
 	
+	"twilightforest": [
+		"uncrafting_table"
+	],
+	
 	"village_employment": [
 		"apiarist_apron_recipe",
 		"apiarist_hat_recipe",
