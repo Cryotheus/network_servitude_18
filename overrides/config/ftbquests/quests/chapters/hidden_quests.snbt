@@ -134,5 +134,23 @@
 				item: "mekanism:pellet_antimatter"
 			}]
 		}
+		{
+			x: 1.0d
+			y: -1.0d
+			dependencies: ["3E42C3CC0FCB3654"]
+			hide: true
+			secret: true
+			id: "04C1A0289180FCF2"
+			tasks: [{
+				id: "5210C048F57210FC"
+				type: "item"
+				item: "aquaculture:message_in_a_bottle"
+			}]
+			rewards: [{
+				id: "3F251F18EA0B8FCF"
+				type: "item"
+				item: "pamhc2foodextended:fortunecookieitem"
+			}]
+		}
 	]
 }

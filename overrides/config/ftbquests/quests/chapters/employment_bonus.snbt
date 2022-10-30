@@ -64,7 +64,7 @@
 		}
 		{
 			disable_toast: true
-			x: 1.0d
+			x: 2.5d
 			y: 1.0d
 			dependencies: ["2A53B1BFF8397650"]
 			hide: true
@@ -85,7 +85,7 @@
 		}
 		{
 			disable_toast: true
-			x: 0.0d
+			x: -1.5d
 			y: 1.0d
 			dependencies: ["182D1E21C732C58C"]
 			hide: true
@@ -106,7 +106,7 @@
 		}
 		{
 			disable_toast: true
-			x: -1.0d
+			x: -2.5d
 			y: 1.0d
 			dependencies: ["6090BE59DE6CEAA0"]
 			hide: true
@@ -131,6 +131,8 @@
 			y: -1.0d
 			dependencies: ["15A0BB305230C21B"]
 			hide: true
+			optional: true
+			secret: true
 			id: "1FD4CA76923D9C5C"
 			tasks: [{
 				id: "70180CD1DAA2A4EB"
@@ -153,6 +155,60 @@
 			rewards: [{
 				id: "755B0F475B29F5EC"
 				type: "choice"
+				table_id: 2317290549728759982L
+			}]
+		}
+		{
+			title: "Complete Material Meltdown"
+			x: -0.5d
+			y: 1.0d
+			dependencies: ["6651006277B19046"]
+			id: "28C6286C6A177799"
+			tasks: [{
+				id: "6AE98C7DA9E2A94C"
+				type: "gamestage"
+				icon: "forbidden_arcanus:smelter_prism"
+				stage: "network_servitude_initial_items"
+			}]
+			rewards: [{
+				id: "2ECE7EDD38F358DC"
+				type: "random"
+				table_id: 2317290549728759982L
+			}]
+		}
+		{
+			title: "Complete Mechanical Meltdown"
+			x: 0.5d
+			y: 1.0d
+			dependencies: ["4DEB24DFD228782D"]
+			id: "5B89198D8C478392"
+			tasks: [{
+				id: "63B4D7C448614D32"
+				type: "gamestage"
+				icon: "thermal:basalz_powder"
+				stage: "network_servitude_initial_items"
+			}]
+			rewards: [{
+				id: "7DBE793A78504902"
+				type: "random"
+				table_id: 2317290549728759982L
+			}]
+		}
+		{
+			title: "Complete Modern Machinery"
+			x: 1.5d
+			y: 1.0d
+			dependencies: ["1663574C34190FA0"]
+			id: "1C3390AEB68592EE"
+			tasks: [{
+				id: "44666F7F567E5631"
+				type: "gamestage"
+				icon: "mekanism:elite_control_circuit"
+				stage: "network_servitude_initial_items"
+			}]
+			rewards: [{
+				id: "1DBC95D415A1548B"
+				type: "random"
 				table_id: 2317290549728759982L
 			}]
 		}

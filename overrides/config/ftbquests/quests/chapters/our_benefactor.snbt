@@ -10,7 +10,7 @@
 	default_hide_dependency_lines: false
 	images: [{
 		x: 5.5d
-		y: 4.5d
+		y: 3.0d
 		width: 5.0d
 		height: 5.0d
 		rotation: 0.0d
@@ -978,7 +978,14 @@
 			tasks: [{
 				id: "51EFEE807A83532D"
 				type: "item"
-				item: "ae2:crafting_accelerator"
+				title: "Any Crafting Co-Processing Unit"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:network_servitude_crafting_accelerator"
+					}
+				}
 			}]
 		}
 		{

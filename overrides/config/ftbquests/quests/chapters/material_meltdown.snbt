@@ -151,5 +151,20 @@
 				item: "mekanism:ingot_bronze"
 			}]
 		}
+		{
+			title: "Masterful Melting"
+			x: -1.5d
+			y: 3.0d
+			description: ["Same structure as the Smeltery, except the edgeds must be filled."]
+			dependencies: ["18E2AD803A8E6938"]
+			hide: true
+			size: 2.0d
+			id: "3F5F56705FCFF55B"
+			tasks: [{
+				id: "5902AA1B9FD06F0A"
+				type: "item"
+				item: "tconstruct:foundry_controller"
+			}]
+		}
 	]
 }

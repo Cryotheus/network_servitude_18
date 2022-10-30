@@ -8,5 +8,26 @@
 	subtitle: ["Everything about and around the Thermal Series."]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: -1.5d
+			y: 0.0d
+			id: "016711030A61822E"
+			tasks: [{
+				id: "16654D05E363D4C1"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			id: "7DF7CC153FC579D6"
+			tasks: [{
+				id: "278A65C3BC189B92"
+				type: "item"
+				item: "thermal:obsidian_glass"
+			}]
+		}
+	]
 }
