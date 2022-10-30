@@ -1,0 +1,16 @@
+{
+	"type": "crafting_shaped",
+	"result": {"item": "extendedcrafting:frame"},
+	
+	"pattern": [
+		"IGI",
+		"GSG",
+		"IGI"
+	],
+	
+	"key": {
+		"I": {"item": "extendedcrafting:black_iron_ingot"},
+		"G": {"item": "thermal:obsidian_glass"},
+		"S": {"item": "extendedcrafting:black_iron_slate"}
+	}
+}
