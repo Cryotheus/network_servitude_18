@@ -11,7 +11,7 @@
 	"manifestType": "minecraftModpack",
 	"manifestVersion": 1,
 	"name": "Network Servitude 18",
-	"version": "0.0.11",
+	"version": "0.0.12",
 	"author": "Cryotheum#4096 & SillyGoose078",
 	"files": [
 		{
@@ -156,7 +156,7 @@
 		},
 		{
 			"projectID": 536254,
-			"fileID": 3810716,
+			"fileID": 4059917,
 			"required": true
 		},
 		{
@@ -176,7 +176,7 @@
 		},
 		{
 			"projectID": 289412,
-			"fileID": 3725771,
+			"fileID": 4060300,
 			"required": true
 		},
 		{
@@ -186,7 +186,7 @@
 		},
 		{
 			"projectID": 404465,
-			"fileID": 3909755,
+			"fileID": 4060220,
 			"required": true
 		},
 		{
@@ -256,7 +256,7 @@
 		},
 		{
 			"projectID": 238086,
-			"fileID": 4055278,
+			"fileID": 4060538,
 			"required": true
 		},
 		{
@@ -446,7 +446,7 @@
 		},
 		{
 			"projectID": 320926,
-			"fileID": 3759354,
+			"fileID": 4059979,
 			"required": true
 		},
 		{
@@ -780,6 +780,11 @@
 			"required": true
 		},
 		{
+			"projectID": 638417,
+			"fileID": 4059905,
+			"required": true
+		},
+		{
 			"projectID": 459701,
 			"fileID": 3803098,
 			"required": true
@@ -1026,7 +1031,7 @@
 		},
 		{
 			"projectID": 342584,
-			"fileID": 4035504,
+			"fileID": 4058177,
 			"required": true
 		},
 		{

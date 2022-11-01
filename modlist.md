@@ -1,5 +1,5 @@
 # Network Servitude 18
-Complete mod list for version 0.0.11  
+Complete mod list for version 0.0.12  
 forge version 40.1.84  
 
 | Mod Name | Authors | Enabled |
@@ -117,7 +117,7 @@ forge version 40.1.84
 | [FTB Quests (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge) | 2 author(s) | ✔️ |
 | [FTB Teams (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge) | 2 author(s) | ✔️ |
 | [FTB Ultimine (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge) | 2 author(s) | ✔️ |
-| [Geode+](https://www.curseforge.com/minecraft/mc-mods/geode-forge) | 1 author(s) | ✔️ |
+| [Geode+](https://www.curseforge.com/minecraft/mc-mods/geode-forge-fabric) | 1 author(s) | ✔️ |
 | [Glassential](https://www.curseforge.com/minecraft/mc-mods/glassential) | 1 author(s) | ✔️ |
 | [Goblin Traders](https://www.curseforge.com/minecraft/mc-mods/goblin-traders) | 1 author(s) | ✔️ |
 | [GoProne](https://www.curseforge.com/minecraft/mc-mods/goprone) | 1 author(s) | ✔️ |
@@ -193,6 +193,7 @@ forge version 40.1.84
 | [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations) | 1 author(s) | ✔️ |
 | [Not Enough Crashes (Forge)](https://www.curseforge.com/minecraft/mc-mods/not-enough-crashes-forge) | 1 author(s) | ✔️ |
 | [Notes](https://www.curseforge.com/minecraft/mc-mods/notes) | 1 author(s) | ✔️ |
+| [Obscure API](https://www.curseforge.com/minecraft/mc-mods/obscure-api) | 1 author(s) | ✔️ |
 | [Obscuria's Essentials](https://www.curseforge.com/minecraft/mc-mods/ob-core) | 1 author(s) | ✔️ |
 | [Obscuria's Tooltips](https://www.curseforge.com/minecraft/mc-mods/ob-tooltips) | 1 author(s) | ✔️ |
 | [Oh The Biomes You'll Go](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go) | 3 author(s) | ✔️ |
