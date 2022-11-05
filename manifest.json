@@ -11,7 +11,7 @@
 	"manifestType": "minecraftModpack",
 	"manifestVersion": 1,
 	"name": "Network Servitude 18",
-	"version": "0.0.12",
+	"version": "0.0.13",
 	"author": "Cryotheum#4096 & SillyGoose078",
 	"files": [
 		{
@@ -156,7 +156,7 @@
 		},
 		{
 			"projectID": 536254,
-			"fileID": 4059917,
+			"fileID": 4068074,
 			"required": true
 		},
 		{
@@ -196,7 +196,7 @@
 		},
 		{
 			"projectID": 404468,
-			"fileID": 3990419,
+			"fileID": 4061657,
 			"required": true
 		},
 		{
@@ -321,7 +321,7 @@
 		},
 		{
 			"projectID": 239286,
-			"fileID": 4051593,
+			"fileID": 4066454,
 			"required": true
 		},
 		{
@@ -336,7 +336,7 @@
 		},
 		{
 			"projectID": 231484,
-			"fileID": 4019015,
+			"fileID": 4065856,
 			"required": true
 		},
 		{
@@ -386,7 +386,7 @@
 		},
 		{
 			"projectID": 238222,
-			"fileID": 4030311,
+			"fileID": 4062344,
 			"required": true
 		},
 		{
@@ -506,7 +506,7 @@
 		},
 		{
 			"projectID": 223794,
-			"fileID": 4055585,
+			"fileID": 4068003,
 			"required": true
 		},
 		{
@@ -576,7 +576,7 @@
 		},
 		{
 			"projectID": 257356,
-			"fileID": 4055864,
+			"fileID": 4062505,
 			"required": true
 		},
 		{
@@ -701,7 +701,7 @@
 		},
 		{
 			"projectID": 282001,
-			"fileID": 4013868,
+			"fileID": 4061947,
 			"required": true
 		},
 		{
@@ -781,7 +781,7 @@
 		},
 		{
 			"projectID": 638417,
-			"fileID": 4059905,
+			"fileID": 4068073,
 			"required": true
 		},
 		{
@@ -1001,7 +1001,7 @@
 		},
 		{
 			"projectID": 233105,
-			"fileID": 3994822,
+			"fileID": 4062573,
 			"required": true
 		},
 		{
@@ -1016,7 +1016,7 @@
 		},
 		{
 			"projectID": 416294,
-			"fileID": 4022965,
+			"fileID": 4068448,
 			"required": true
 		},
 		{
@@ -1157,11 +1157,6 @@
 		{
 			"projectID": 483391,
 			"fileID": 3693469,
-			"required": true
-		},
-		{
-			"projectID": 620784,
-			"fileID": 3982023,
 			"required": true
 		},
 		{
@@ -1335,18 +1330,13 @@
 			"required": true
 		},
 		{
-			"projectID": 412082,
-			"fileID": 4049235,
-			"required": true
-		},
-		{
 			"projectID": 69163,
 			"fileID": 4022681,
 			"required": true
 		},
 		{
-			"projectID": 631016,
-			"fileID": 3950598,
+			"projectID": 412082,
+			"fileID": 4065749,
 			"required": true
 		},
 		{
@@ -1355,8 +1345,13 @@
 			"required": true
 		},
 		{
+			"projectID": 631016,
+			"fileID": 3950598,
+			"required": true
+		},
+		{
 			"projectID": 314906,
-			"fileID": 3983773,
+			"fileID": 4061588,
 			"required": true
 		},
 		{
@@ -1426,7 +1421,7 @@
 		},
 		{
 			"projectID": 266936,
-			"fileID": 4024422,
+			"fileID": 4065624,
 			"required": true
 		},
 		{
